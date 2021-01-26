@@ -3,8 +3,13 @@ width: 100%;
 background-color: whitesmoke;
 display: flex;
 justify-content: center;
-align-self: center;
+align-items: center;
+flex-direction: column;
 }
 .footer p {
     color: blueviolet;
+}
+.footer img{
+    margin-bottom: auto;
+    width: 10%;
 }
