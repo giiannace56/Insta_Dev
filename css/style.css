@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;;
+    color: #f1f1f1;
+    background-color: #e5e5e534;
+}
+
+/* Header - início */
+
+.header-top{
+    width: 100%;
+    height: 3.31em;
+    /* background-color: aqua; */
+    border-bottom: solid 1px #f1f1f1;
+    background-color: #fff;
+}
+
+.content-header{
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    /* background-color: #ccc; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 33%;
+    height: 100%;
+    /* background-color: cadetblue; */
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 78px;
+    height: 27px;
+}
+
+.pesquisar{
+    width: 33%;
+    height: 100%;
+    /* background-color: chartreuse; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pesquisa{
+    width: 215px;
+    height: 28px;
+    text-align: center;
+    border: solid 1px #ccc;
+    border-radius: 2px;
+    background-color: #FAFAFA;
+    color: #afafaf;
+    font-weight: 500;
+    margin-right: 5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('../img/Vector.svg');
+    background-repeat: no-repeat;
+    background-position: 63px 9px;
+}
+
+.pesquisar button{
+    display: none;
+}
+
+.navegacao{
+    width: 34%;
+    height: 100%;
+    display: flex;
+}
+
+.navegacao ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    /* background-color: chocolate; */
+    justify-content: space-between;
+}
+
+.imagem-perfil{
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+}
