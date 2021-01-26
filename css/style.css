@@ -60,6 +60,8 @@ body{
 .caixa input[value="Cadastre-se"]{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
 }
 .caixa p{
     width: 22.68em;
