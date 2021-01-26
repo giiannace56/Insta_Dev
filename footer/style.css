@@ -1,15 +1,11 @@
-.footer{
-width: 100%;
-background-color: whitesmoke;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
+#myFooter{
+    height: auto;
+    width: 100%;
+    background-color: darkgrey;
 }
-.footer p {
-    color: blueviolet;
+.col-sm-3 img {
+    width: 60%;
 }
-.footer img{
-    margin-bottom: auto;
-    width: 10%;
+.Copyright{
+    padding-top: 3%;
 }
