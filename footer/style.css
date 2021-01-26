@@ -1,0 +1,10 @@
+.footer{
+width: 100%;
+background-color: whitesmoke;
+display: flex;
+justify-content: center;
+align-self: center;
+}
+.footer p {
+    color: blueviolet;
+}
