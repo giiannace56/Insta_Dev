@@ -1,11 +1,16 @@
 #myFooter{
     height: auto;
     width: 100%;
-    background-color: darkgrey;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,0.6502801804315477) 50%, rgba(252,176,69,1) 100%); 
+}
+.col-sm-2 li {
+    text-decoration: none;
+    text-decoration-color: black;
 }
 .col-sm-3 img {
-    width: 60%;
+    width: 70%;
 }
 .Copyright{
-    padding-top: 3%;
+    padding-top: 2%;
 }
