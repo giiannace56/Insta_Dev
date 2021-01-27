@@ -23,9 +23,8 @@ body{
 
 .content-header{
     width: 100%;
-    max-width: 1200px;
+    max-width: 1920px;
     height: 100%;
-    margin: auto;
     /* background-color: #ccc; */
     display: flex;
     justify-content: space-between;
@@ -33,24 +32,19 @@ body{
 
 .logo{
     width: 33%;
-    height: 100%;
     /* background-color: cadetblue; */
-    display: flex;
-    align-items: center;
+    display: flex; 
+    margin-top:10px;
 }
-
-.logo img{
-    width: 78px;
-    height: 27px;
+.imgp{
+    margin-left: 492px;
 }
-
 .pesquisar{
-    width: 33%;
     height: 100%;
     /* background-color: chartreuse; */
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 .pesquisa{
@@ -75,22 +69,49 @@ body{
 
 .navegacao{
     width: 34%;
-    height: 100%;
     display: flex;
 }
 
 .navegacao ul{
-    width: 100%;
-    height: 100%;
+    width: 200px;
+    height: 55px;
     display: flex;
     list-style-type: none;
     align-items: center;
-    /* background-color: chocolate; */
     justify-content: space-between;
+    margin-right: 493px;
 }
 
 .imagem-perfil{
     width: 30px;
     height: 30px;
     border-radius: 100px;
+}
+.main-principal{
+    width: 1920px;
+    height: 702px;
+    background-color: green;
+
+}
+.div-geral{
+    width: 935px;
+    height: 610px;
+    background-color: orange;
+    margin: auto;
+    margin-top: 2em;
+}
+
+.ul-edit {
+    width: 233px;
+    height: 610px;
+    list-style-type: none;
+    background-color: white;
+    display: flex;
+
+   
+}
+.art{
+    width: 935px;
+    height: 610px;
+    background-color: blue;
 }
