@@ -23,12 +23,21 @@
   .form-section{
     width: 100%;
     height: 100vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
+    background-color: #fafafa;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
-
+    .quadrado_cima{
+      width: 342px;
+      height: 380px;
+      background-color: white;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items: center;
+    }
   .title{
     font-family:'billabong', serif;
     font-size: 4.5em;
@@ -87,6 +96,9 @@
   }
 
   .sign-up{
+    width: 342px;
+    height: 75px;
+    background-color: white;
       display: flex;
       margin-top:3em;
       font-family: 'Segoe UI', Tahoma,Verdana, sans-serif;
@@ -96,11 +108,17 @@
 
   .sign-up p{
     color: #353535;
-    padding-right: 5px;
+    padding-left: 50px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    
   }
 
   .sign-up a{
       color: #2686CC;
+      display: flex;
+      align-items: center;
   }
 
   .app p{
