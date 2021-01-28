@@ -1,5 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -7,7 +12,7 @@
 }
 
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;;
     color: #f1f1f1;
     background-color: #e5e5e534;
 }
@@ -17,13 +22,14 @@ body{
 .header-top{
     width: 100%;
     height: 3.31em;
+    /* background-color: aqua; */
     border-bottom: solid 1px #f1f1f1;
     background-color: #fff;
 }
 
 .content-header{
     width: 95%;
-    max-width: 1200px;
+    max-width: 75em;
     height: 100%;
     margin: auto;
     /* background-color: #ccc; */
@@ -40,8 +46,8 @@ body{
 }
 
 .logo img{
-    width: 78px;
-    height: 27px;
+    max-width: 4.875em;
+    height: 1.6875em;
 }
 
 .pesquisar{
@@ -54,8 +60,8 @@ body{
 }
 
 .pesquisa{
-    width: 215px;
-    height: 28px;
+    width: 16em;
+    height: 2.15em;
     text-align: center;
     border: solid 1px #ccc;
     border-radius: 2px;
@@ -66,7 +72,7 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-image: url('../img/Vector.svg');
     background-repeat: no-repeat;
-    background-position: 63px 9px;
+    background-position: 4.7em 0.68em;  /* 4.5em 0.68em */
 }
 
 .pesquisar button{
@@ -90,25 +96,25 @@ body{
 }
 
 .imagem-perfil{
-    width: 30px;
-    height: 30px;
-    border-radius: 100px;
+    width: 1.875em;
+    height: 1.875em;
+    border-radius: 6.25em;
 }
 
-/* Fim do header */
+/* Header Final */
 
 /* Perfil de usuário */
 
 .perfil{
     width: 100%;
-    height: 250px;
+    height: 15.625;
     /* background-color: rgba(0, 0, 0, 0.548); */
     color: #000;
 }
 
 .content{
     width: 95%;
-    max-width: 1200px;
+    max-width: 75em;
     height: 100%;
     margin: auto;
     /* background-color: #ccc; */
@@ -120,8 +126,8 @@ body{
 }
 
 .dados-perfil{
-    width: 646px;
-    height: 190px;
+    width: 57.9375em;
+    height: 11.875em;
     /* background-color: yellow; */
     display: flex;
     justify-content: space-between;
@@ -136,22 +142,22 @@ body{
 }
 
 .foto{
-    width: 30%;
+    width: 32%;
     height: 90%;
     /* background-color: rgba(0, 0, 255, 0.582); */
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 
 .foto img{
-    width: 140px;
-    height: 140px;
-    border-radius: 100px;
+    max-width: 8.75em;
+    height: 8.75em;
+    border-radius: 6.25em;
 }
 
 .dados{
-    width: 65%;
+    width: 58%;
     height: 90%;
     /* background-color: chartreuse; */
     display: flex;
@@ -160,7 +166,7 @@ body{
 }
 
 .estatisticas{
-    width: 100%;
+    width: 80%;
     height: 20%;
     /* background-color: rgba(204, 204, 204, 0.548); */
     display: flex;
@@ -169,7 +175,7 @@ body{
 }
 
 .nome-sair{
-    width: 100%;
+    width: 80%;
     height: 20%;
     /* background-color: rgba(204, 204, 204, 0.596); */
     padding-bottom: 1em;
@@ -179,23 +185,25 @@ body{
 }
 
 .dados h1{
-    font-size: 24px;
+    font-size: 1.5em;
     font-weight:400;
     padding-top: 7px;
 }
 
 .estatisticas p{
-    font-size: 16px;
+    font-size: 1em;
 }
 
 .nome-sair h2{
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1em;
 }
 
 .nome-sair a{
-    font-size: 14px;
+    font-size: 0.875em;
+    font-family: var(--font);
     color: #2686cc;
+    font-weight: 600;
 }
 
 .nome-sair a:hover{
@@ -214,8 +222,8 @@ body{
 /* Início publicações */
 
 .publicacao{
-    width: 934px;
-    height: 404px;
+    width: 58.375em;
+    height: 25.25em;
     /* background-color: #2686cc; */
     margin: auto;
     margin-bottom: 3em;
@@ -305,9 +313,9 @@ body{
 
 
 .usuario img{
-    max-width: 70px;
-    height: 70px;
-    border-radius: 100px;
+    max-width: 4.375em;
+    height: 4.375em;
+    border-radius: 6.25em;
 }
 
 .curtida{
@@ -337,7 +345,7 @@ body{
 .comentarios-recentes{
     /* background-color: violet; */
     width: 100%;
-    height: 150px;
+    height: 9.375em;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -357,7 +365,7 @@ body{
     color: #000;
     font-size: 13px;
     font-weight: 600;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--font);
     padding-right: 2em;
     text-decoration: none;
 }
@@ -371,12 +379,9 @@ body{
 }
 
 .comentario img{
-    width: 15px;
+    max-width: 15px;
     height: 13px;
 }
 
 
 /* Fim publicações */
-
-
-/* Footer */
