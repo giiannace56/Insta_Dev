@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    --font:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -23,8 +28,9 @@ body{
 
 .content-header{
     width: 100%;
-    max-width: 1920px;
+    max-width: 75em;
     height: 100%;
+    margin: auto;
     /* background-color: #ccc; */
     display: flex;
     justify-content: space-between;
@@ -32,24 +38,29 @@ body{
 
 .logo{
     width: 33%;
+    height: 100%;
     /* background-color: cadetblue; */
-    display: flex; 
-    margin-top:10px;
+    display: flex;
+    align-items: center;
 }
-.imgp{
-    margin-left: 492px;
+
+.logo img{
+    max-width: 4.875em;
+    height: 1.6875em;
 }
+
 .pesquisar{
+    width: 33%;
     height: 100%;
     /* background-color: chartreuse; */
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 .pesquisa{
-    width: 215px;
-    height: 28px;
+    width: 16em;
+    height: 2.15em;
     text-align: center;
     border: solid 1px #ccc;
     border-radius: 2px;
@@ -60,7 +71,7 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-image: url('../img/Vector.svg');
     background-repeat: no-repeat;
-    background-position: 63px 9px;
+    background-position: 4.7em 0.68em;  /* 4.5em 0.68em */
 }
 
 .pesquisar button{
@@ -68,86 +79,284 @@ body{
 }
 
 .navegacao{
-    width: 34%;
+    width: 22%;
+    height: 100%;
     display: flex;
 }
 
 .navegacao ul{
-    width: 200px;
-    height: 55px;
+    width: 100%;
+    height: 100%;
     display: flex;
     list-style-type: none;
     align-items: center;
+    /* background-color: chocolate; */
     justify-content: space-between;
-    margin-right: 493px;
 }
 
 .imagem-perfil{
-    width: 30px;
-    height: 30px;
-    border-radius: 100px;
+    width: 1.875em;
+    height: 1.875em;
+    border-radius: 6.25em;
 }
 
-
-.edit-perfil{
-    height: 610px;
-    width: 100%;
-    
+/* Header Final */
 
 
+/* Edição de Perfil - Inicio */
+
+.editar-perfil{
+    margin-top: 2em;
 }
-.edit-div{
-    height: 100%;
-    width: 80%;
-    background-color: #ccc;
-    font-size: 13px;
 
-    
-}
 .content{
     width: 95%;
     max-width: 1200px;
     height: 100%;
-    margin:auto;
+    margin: auto;
+    background-color: #fff;
     display: flex;
-    justify-content: space-between;
-    
 }
-.nome-perfil h1{
-    color: black;
-    
+
+.texto-editar{
+    width: 35%;
+    height: 38.125em;
+    /* background-color: rgba(0, 255, 255, 0.411); */
+    border-right: solid 1px #F1F1F1;
 }
-.nome-perfil{
-    width: 40%;
-    height: 100%;
-    border-right:solid 1px black;
-}
-.editar{
+
+.texto-editar-perfil{
     width: 100%;
-    height: 100px;
-    background-color: yellow;
+    height: 3.75em;
+    border-left: solid 2px #000;
+    display: flex;
+    align-items: center;
+}
+
+.texto-editar-perfil h1{
+    font-size: 15px;
+    color: #000;
+    padding-left: 2em;
+    font-family: var(--font);
+    font-weight: 600;
+}
+
+.editar{
+    width: 65%;
+    height: 38.125em;
+    /* background-color: rgba(0, 0, 255, 0.418); */
+}
+
+.conteudo{
+    width: 70%;
+    height: 100%;
+    /* background-color: rgba(204, 204, 204, 0.664); */
+    margin: auto;
+}
+
+.alinhar-esquerda{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.perfil{
+    width: 100%;
+    height: 15%;
+    /* background-color: chocolate; */
+    color: black;
+    font-family: var(--font);
+}
+
+.perfil h2{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.perfil a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #2686CC;
+}
+
+.perfil img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-right: 1.5em;
+}
+
+.texto a:hover{
+    text-decoration: underline;
+}
+
+
+
+.nome{
+    width: 100%;
+    height: 23%;
+    /* background-color: blueviolet; */
+    font-family: var(--font);
+}
+
+.nome h2{
+    font-size: 0.875em;
+    color: black;
+    font-weight: 600;
+    margin: 0 1em;
+    margin-bottom: 6.3em;
+}
+
+.preencher-nome{
+    width: 65%;
+    height: 85%;
+    /* background-color: brown; */
+}
+
+.preencher-nome p{
+    font-size: 0.75em;
+    color: #909090;
+    padding-top: 1em;
+}
+
+.input-nome{
+    width: 27.23em;
+    height: 2.30em;
+    padding-left: 1em;
+    color: #000;
+    border: solid 1px #DCDCDC;
+    border-radius: 2px;
+    font-size: 13px;
+}
+
+
+
+.nome-usuario{
+    width: 100%;
+    height: 35%;
+    /* background-color: lightblue; */
+    font-family: var(--font);
+}
+
+.conteudo-usuario{
+    width: 85%;
+    height: 100%;
+    /* background-color: rgba(204, 204, 204, 0.664); */
+    margin: auto;
+}
+
+.nome-usuario h2{
+    font-size: 0.875em;
+    margin-right: 1em;
+    margin-bottom: 9.99em;
+    color: #000;
+    font-weight: 600;
+}
+
+.preencher-usuario{
+    width: 54%;
+    height: 80%;
+    /* background-color: lightcoral; */
+}
+
+.input-nome-usuario{
+    width: 27.23em;
+    height: 2.30em;
+    padding-left: 1em;
+    color: #000;
+    border: solid 1px #DCDCDC;
+    border-radius: 2px;
+    font-size: 0.812em;
+}
+
+.preencher-usuario p{
+    font-size: 0.75em;
+    margin-top: 1em;
+    color: #909090;
+}
+
+.email{
+    width: 100%;
+    height: 20%;
+    /* background-color: rgba(255, 255, 0, 0.76); */
+    font-family: var(--font);
+    color: #000;
+}
+
+.endereco-email{
+    width: 100%;
+    height: 50%;
+    /* background-color: ivory; */
+    display: flex;
+    align-items: center;
+    padding-bottom: 2em;
+}
+
+.endereco-email h2{
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 0.9em;
+}
+
+.input-email{
+    width: 27.23em;
+    height: 2.30em;
+    padding-left: 1em;
+    color: #000;
+    border: solid 1px #DCDCDC;
+    border-radius: 2px;
+    font-size: 13px;
+}
+
+.desativar-conta{
+    font-family: var(--font);
+    display: flex;
+    margin-top: 1em;
+}
+
+.desativar-conta a{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 4.1em;
+}
+
+.botao-desativar a{
+    color: #2686CC;
+    font-size: 12px;
+}
+
+.botao-desativar a:hover{
+    text-decoration: underline;
+}
+
+.botao-enviar{
+    width: 5.5em;
+    height: 2.30em;
+    /* background-color: #2686cc; */
+    font-size: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* padding-right: 350px; */
-    
+    margin-left: 5.5em;
 }
-.editar img{
-    height: 50px;
-    width: 50px;
-    border-radius: 50px;
-    margin-right: 20px ;
-   
+
+
+
+.botao-desativar{
+    display: flex;
+    align-items: center;
+    height: 2.30em;
+    /* background-color: #ccc; */
+    margin-left: 2.2em;
 }
-.text a{
-    text-decoration: none;
-}
-.text p{
-    font-size: 18px;
-    color: black;
-}
-.nome{
-    height: 200px;
-    width: 100%;
-    background-color:orange;
+
+.botao-alterar{
+    width: 5.5em;
+    height: 2.5em;
+    background-color: #2686CC;
+    color:#FFFFFF;
+    font-family: var(--font);
+    font-weight: 600;
+    font-size: 12px;
+    border: unset;
 }
