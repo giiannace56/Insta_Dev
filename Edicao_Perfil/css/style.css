@@ -1,9 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-:root{
-    --font:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
 *{
     padding: 0;
     margin: 0;
@@ -27,7 +22,7 @@ body{
 }
 
 .content-header{
-    width: 100%;
+    width: 95%;
     max-width: 75em;
     height: 100%;
     margin: auto;
