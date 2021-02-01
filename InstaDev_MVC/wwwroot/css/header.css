@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;;
+    color: #f1f1f1;
+    background-color: #e5e5e534;
+}
+
+/* Header - início */
+
+.header-top{
+    width: 100%;
+    height: 3.31em;
+    /* background-color: aqua; */
+    border-bottom: solid 1px #f1f1f1;
+    background-color: #fff;
+}
+
+.content-header{
+    width: 95%;
+    max-width: 75em;
+    height: 100%;
+    margin: auto;
+    /* background-color: #ccc; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 33%;
+    height: 100%;
+    /* background-color: cadetblue; */
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    max-width: 4.875em;
+    height: 1.6875em;
+}
+
+.pesquisar{
+    width: 33%;
+    height: 100%;
+    /* background-color: chartreuse; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pesquisa{
+    width: 16em;
+    height: 2.15em;
+    text-align: center;
+    border: solid 1px #ccc;
+    border-radius: 2px;
+    background-color: #FAFAFA;
+    color: #afafaf;
+    font-weight: 500;
+    margin-right: 5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('../img/Vector.svg');
+    background-repeat: no-repeat;
+    background-position: 4.7em 0.68em;  /* 4.5em 0.68em */
+}
+
+.pesquisar button{
+    display: none;
+}
+
+.navegacao{
+    width: 22%;
+    height: 100%;
+    display: flex;
+}
+
+.navegacao ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    /* background-color: chocolate; */
+    justify-content: space-between;
+}
+
+.imagem-perfil{
+    width: 1.875em;
+    height: 1.875em;
+    border-radius: 6.25em;
+}
+
+/* Header Final */

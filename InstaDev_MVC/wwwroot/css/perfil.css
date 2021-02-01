@@ -1,0 +1,387 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;;
+    color: #f1f1f1;
+    background-color: #e5e5e534;
+}
+
+/* Header - início */
+
+.header-top{
+    width: 100%;
+    height: 3.31em;
+    /* background-color: aqua; */
+    border-bottom: solid 1px #f1f1f1;
+    background-color: #fff;
+}
+
+.content-header{
+    width: 95%;
+    max-width: 75em;
+    height: 100%;
+    margin: auto;
+    /* background-color: #ccc; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 33%;
+    height: 100%;
+    /* background-color: cadetblue; */
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    max-width: 4.875em;
+    height: 1.6875em;
+}
+
+.pesquisar{
+    width: 33%;
+    height: 100%;
+    /* background-color: chartreuse; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pesquisa{
+    width: 16em;
+    height: 2.15em;
+    text-align: center;
+    border: solid 1px #ccc;
+    border-radius: 2px;
+    background-color: #FAFAFA;
+    color: #afafaf;
+    font-weight: 500;
+    margin-right: 5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('../img/Vector.svg');
+    background-repeat: no-repeat;
+    background-position: 4.7em 0.68em;  /* 4.5em 0.68em */
+}
+
+.pesquisar button{
+    display: none;
+}
+
+.navegacao{
+    width: 22%;
+    height: 100%;
+    display: flex;
+}
+
+.navegacao ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    /* background-color: chocolate; */
+    justify-content: space-between;
+}
+
+.imagem-perfil{
+    width: 1.875em;
+    height: 1.875em;
+    border-radius: 6.25em;
+}
+
+/* Header Final */
+
+/* Perfil de usuário */
+
+.perfil{
+    width: 100%;
+    height: 15.625;
+    /* background-color: rgba(0, 0, 0, 0.548); */
+    color: #000;
+}
+
+.content{
+    width: 95%;
+    max-width: 75em;
+    height: 100%;
+    margin: auto;
+    /* background-color: #ccc; */
+}
+
+.display-jc-center{
+    display: flex;
+    justify-content: center;
+}
+
+.dados-perfil{
+    width: 57.9375em;
+    height: 11.875em;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.3em;
+    border-bottom: solid 1px #dcdcdc;
+    margin-bottom: 2em;
+}
+
+.dados-perfil a{
+    text-decoration: none;
+    color: #000;
+}
+
+.foto{
+    width: 32%;
+    height: 90%;
+    /* background-color: rgba(0, 0, 255, 0.582); */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.foto img{
+    max-width: 8.75em;
+    height: 8.75em;
+    border-radius: 6.25em;
+}
+
+.dados{
+    width: 58%;
+    height: 90%;
+    /* background-color: chartreuse; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.estatisticas{
+    width: 80%;
+    height: 20%;
+    /* background-color: rgba(204, 204, 204, 0.548); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nome-sair{
+    width: 80%;
+    height: 20%;
+    /* background-color: rgba(204, 204, 204, 0.596); */
+    padding-bottom: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dados h1{
+    font-size: 1.5em;
+    font-weight:400;
+    padding-top: 7px;
+}
+
+.estatisticas p{
+    font-size: 1em;
+}
+
+.nome-sair h2{
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.nome-sair a{
+    font-size: 0.875em;
+    font-family: var(--font);
+    color: #2686cc;
+    font-weight: 600;
+}
+
+.nome-sair a:hover{
+    text-decoration: underline;
+}
+
+.linha{
+    width: 100%;
+    height: 3px;
+    /* background-color: #000; */
+
+}
+
+/* Fim do perfil de usuário */
+
+/* Início publicações */
+
+.publicacao{
+    width: 58.375em;
+    height: 25.25em;
+    /* background-color: #2686cc; */
+    margin: auto;
+    margin-bottom: 3em;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    margin-top: 1em;
+}
+
+.publicacoes h2{
+    color: #000;
+    font-weight: unset;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 2em;
+    margin-right: 30em;
+    /* background-color: #2686cc; */
+    text-align: center
+}
+
+.img-pub{
+    /* background-color: #ccc; */
+    width: 20%;
+    display: flex;
+    height: 15px;
+    margin-left: 25em;
+    margin-bottom: 2em;
+}
+
+.img-pub h2{
+    margin-left: 10px;
+}
+
+.imagem-pub{
+    width: 50%;
+    height: 100%;
+}
+
+.imagem-pub img{
+    max-width: 100%;
+    height: 100%;
+}
+
+.conteudo{
+    width: 45%;
+    height: 100%;
+    /* background-color: rgba(34, 139, 34, 0.527); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.conteudo a{
+    font-size: 13px;
+    text-decoration: none;
+    /* margin-top: 2em; */
+    color: #909090;
+}
+
+.conteudo a:hover{
+    text-decoration: underline;
+}
+
+.usuario{
+    width: 100%;
+    height: 20%;
+    /* background-color: fuchsia; */
+    display: flex;
+    align-items: center;
+    /* padding-top: 1em; */
+}
+
+.nome-endereco{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 1em;
+    color: #000;
+}
+
+.nome-endereco p:nth-child(1){
+    font-weight: bold;
+    padding-bottom: 0.4em;
+}
+
+
+.usuario img{
+    max-width: 4.375em;
+    height: 4.375em;
+    border-radius: 6.25em;
+}
+
+.curtida{
+    width: 100%;
+    height: 20%;
+    /* background-color: lightblue; */
+    display: flex;
+    align-items: flex-end;
+}
+
+.curtir p{
+    font-size: 13px;
+    color: #000;
+}
+
+.curtir a{
+    margin-right: 0.9em;
+}
+
+.comentarios{
+    width: 100%;
+    height: 45%;
+    /* background-color: rgba(204, 204, 204, 0.644); */
+    color: #000;
+}
+
+.comentarios-recentes{
+    /* background-color: violet; */
+    width: 100%;
+    height: 9.375em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 0.5em;
+}
+
+.comentario{
+    width: 100%;
+    height: 25%;
+    /* background-color: #2686cc; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comentario a{
+    color: #000;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: var(--font);
+    padding-right: 2em;
+    text-decoration: none;
+}
+
+.comentario a:hover{
+    text-decoration: underline;
+}
+
+.comentario p{
+    font-size: 13px;
+}
+
+.comentario img{
+    max-width: 15px;
+    height: 13px;
+}
+
+
+/* Fim publicações */
