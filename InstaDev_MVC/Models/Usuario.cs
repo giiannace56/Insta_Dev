@@ -2,7 +2,7 @@ using System;
 
 namespace InstaDev_MVC.Models
 {
-    public class Usuario
+    public class Usuario : EdicaoBase
     {
         public int IdUsuario { get; set; }
 
@@ -28,18 +28,37 @@ namespace InstaDev_MVC.Models
         {
 
         }
+
+        private const string PATH = "Database/Editar.csv";
+
+        //Arquivo csv abaixo
+        public Editar()
+        {
+            CreateFolderAndFile(PATH);
+        }
+
+        public string Prepare()
+        {
+            return $"{e.Nome};{e.NomeDeUsuario}; {e.Email}";
+        }
+
         public void EditarUsuario()
         {
+            List<string> linhas = ReadAllLinesCSV(PATH);
+
+
+            // Removemos a linha que tenha o código a ser alterado
+            linhas.RemoveAll(x => x.Split(";")[0] == IdUsuario.ToString());
 
         }
 
         public void DeletarUsuario()
         {
-
+        
         }
         public void ListarUsuario()
         {
-
+                
         }
         public void Logar()
         {
