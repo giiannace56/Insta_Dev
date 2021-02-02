@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace InstaDev_MVC.Models
 {
@@ -28,6 +29,12 @@ namespace InstaDev_MVC.Models
         {
 
         }
+
+        internal List<string> ReadAllLinesCSV(string v)
+        {
+            throw new NotImplementedException();
+        }
+
         public void EditarUsuario()
         {
 
