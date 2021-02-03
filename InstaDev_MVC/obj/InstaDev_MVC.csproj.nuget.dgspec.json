@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Meus Documentos\\Área de Trabalho\\Projeto_InstaDev\\InstaDev_MVC\\InstaDev_MVC.csproj": {}
+    "E:\\Meus Documentos\\Área de Trabalho\\InstaDEVS\\Projeto_InstaDev\\InstaDev_MVC\\InstaDev_MVC.csproj": {}
   },
   "projects": {
-    "E:\\Meus Documentos\\Área de Trabalho\\Projeto_InstaDev\\InstaDev_MVC\\InstaDev_MVC.csproj": {
+    "E:\\Meus Documentos\\Área de Trabalho\\InstaDEVS\\Projeto_InstaDev\\InstaDev_MVC\\InstaDev_MVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Meus Documentos\\Área de Trabalho\\Projeto_InstaDev\\InstaDev_MVC\\InstaDev_MVC.csproj",
+        "projectUniqueName": "E:\\Meus Documentos\\Área de Trabalho\\InstaDEVS\\Projeto_InstaDev\\InstaDev_MVC\\InstaDev_MVC.csproj",
         "projectName": "InstaDev_MVC",
-        "projectPath": "E:\\Meus Documentos\\Área de Trabalho\\Projeto_InstaDev\\InstaDev_MVC\\InstaDev_MVC.csproj",
+        "projectPath": "E:\\Meus Documentos\\Área de Trabalho\\InstaDEVS\\Projeto_InstaDev\\InstaDev_MVC\\InstaDev_MVC.csproj",
         "packagesPath": "C:\\Users\\eduzi\\.nuget\\packages\\",
-        "outputPath": "E:\\Meus Documentos\\Área de Trabalho\\Projeto_InstaDev\\InstaDev_MVC\\obj\\",
+        "outputPath": "E:\\Meus Documentos\\Área de Trabalho\\InstaDEVS\\Projeto_InstaDev\\InstaDev_MVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\eduzi\\AppData\\Roaming\\NuGet\\NuGet.Config"
