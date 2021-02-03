@@ -7,7 +7,7 @@ namespace InstaDev_MVC.Models
     {
         public void CreateFolderAndFile(string _path){
 
-            string folder   = _path.Split("/")[0];
+            string folder = _path.Split("/")[0];
 
             if(!Directory.Exists(folder))
             {
