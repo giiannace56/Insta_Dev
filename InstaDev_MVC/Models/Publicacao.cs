@@ -92,13 +92,5 @@ namespace InstaDev_MVC.Models
         {
             throw new NotImplementedException();
         }
-
-
-        // public int Like(){
-
-        // }
-
-
-
     }
 }
