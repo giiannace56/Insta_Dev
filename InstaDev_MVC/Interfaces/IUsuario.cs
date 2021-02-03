@@ -9,8 +9,6 @@ namespace InstaDev_MVC.Interfaces
 
          List<Usuario> ReadAll();
 
-         void Update(Usuario user);
 
-         void Delete(int id);
     }
 }

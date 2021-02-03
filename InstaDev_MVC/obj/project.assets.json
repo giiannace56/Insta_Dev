@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\Vitor Manoel\\.nuget\\packages\\": {}
+    "C:\\Users\\eduzi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Vitor Manoel\\Desktop\\PROJETO\\Projeto_InstaDev\\InstaDev_MVC\\InstaDev_MVC.csproj",
+      "projectUniqueName": "E:\\Meus Documentos\\Área de Trabalho\\Projeto_InstaDev\\InstaDev_MVC\\InstaDev_MVC.csproj",
       "projectName": "InstaDev_MVC",
-      "projectPath": "C:\\Users\\Vitor Manoel\\Desktop\\PROJETO\\Projeto_InstaDev\\InstaDev_MVC\\InstaDev_MVC.csproj",
-      "packagesPath": "C:\\Users\\Vitor Manoel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Vitor Manoel\\Desktop\\PROJETO\\Projeto_InstaDev\\InstaDev_MVC\\obj\\",
+      "projectPath": "E:\\Meus Documentos\\Área de Trabalho\\Projeto_InstaDev\\InstaDev_MVC\\InstaDev_MVC.csproj",
+      "packagesPath": "C:\\Users\\eduzi\\.nuget\\packages\\",
+      "outputPath": "E:\\Meus Documentos\\Área de Trabalho\\Projeto_InstaDev\\InstaDev_MVC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Vitor Manoel\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\eduzi\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
