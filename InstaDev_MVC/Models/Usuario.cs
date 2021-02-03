@@ -41,10 +41,27 @@ namespace InstaDev_MVC.Models
         {
 
         }
+
+        internal int IdGenerator()
+        {
+            throw new NotImplementedException();
+        }
+
         public void Logar()
         {
 
         }
+
+        internal void Create(Usuario novoUsuario)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal dynamic ReadAll()
+        {
+            throw new NotImplementedException();
+        }
+
         public void Seguir()
         {
 
