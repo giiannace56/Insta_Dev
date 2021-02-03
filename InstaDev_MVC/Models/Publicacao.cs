@@ -20,10 +20,7 @@ namespace InstaDev_MVC.Models
             CreateFolderAndFile(PATH);
         }
 
-        private void CreateFolderAndFile(string pATH)
-        {
-            throw new NotImplementedException();
-        }
+        
 
         public string PrepareCsv(Publicacao p)
         {
