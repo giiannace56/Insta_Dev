@@ -99,7 +99,19 @@ namespace InstaDev_MVC.Controllers
         //     return LocalRedirect("~/Feed/Comentar");
         // }
         
-    
+        [Route("Feed/{id}")]
+        public IActionResult Excluir(int id)
+        {
+            
+            Post.Delete(id);
+            ViewBag.POSTS = Post.ReadAll();
+            return LocalRedirect("~/Feed");
+        
+        }
+
+
+
+
     
     }
 }

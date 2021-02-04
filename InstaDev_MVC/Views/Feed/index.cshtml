@@ -91,18 +91,24 @@
     <form class="inputs-postar" method="POST" enctype="multipart/form-data" action='@Url.Action("Postar")'>
             
             
-            
-            <input type="text" class="descricao-input-img" value="Digite a descrição da imagem...">
+        <input name="Legenda" type="text" class="descricao-input-img" value="Digite a descrição da imagem...">
 
-            <input type="file" class="botao-img" value="Escolha a imagem">
+        <input type="file" class="botao-img" value="Escolha a imagem">
 
-            <button type="button" class="botao-postar" value="Postar">
+        @* <input type="button" class="botao-postar" value="Postar"> *@
 
-            
-            
-            
+        <button type="submit" name="IdPublicacao"> Postar </button>
+
         
+        @foreach (Publicacao p in ViewBag.POSTS) {
+
+        <a asp-area="" asp-controller="Feed" asp-action="Excluir" asp-route-id="@p.IdUsuario">Excluir</a>
+        
+        }
+    
+    
     </form>
+    
     
     </section>
 

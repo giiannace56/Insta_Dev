@@ -24,7 +24,7 @@ namespace InstaDev_MVC.Models
 
         public string PrepareCsv(Publicacao p)
         {
-            return $"{p.IdPublicacao};{p.IdUsuario};{p.Legenda};{p.Imagem};{p.Likes}";
+            return $"{p.IdPublicacao};{p.IdUsuario};{p.Legenda};{p.Imagem}";
         }
         
 
