@@ -14392,8 +14392,8 @@
   "RootNamespace": "InstaDev_MVC",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\Felipe\\OneDrive\\Área de Trabalho\\Projeto_InstaDev\\InstaDev_MVC\\Views\\Feed\\index.cshtml",
-      "TargetPath": "Views\\Feed\\index.cshtml",
+      "FilePath": "c:\\Users\\Felipe\\OneDrive\\Área de Trabalho\\Projeto_InstaDev\\InstaDev_MVC\\Views\\Feed\\Index.cshtml",
+      "TargetPath": "Views\\Feed\\Index.cshtml",
       "FileKind": "mvc"
     },
     {

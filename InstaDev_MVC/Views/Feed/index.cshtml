@@ -88,13 +88,22 @@
             </div>
         </div>
 
-        <div class="inputs-postar">
+    <form class="inputs-postar" method="POST" enctype="multipart/form-data" action='@Url.Action("Postar")'>
+            
+            
+            
             <input type="text" class="descricao-input-img" value="Digite a descrição da imagem...">
 
-            <input type="button" class="botao-img" value="Escolha a imagem">
+            <input type="file" class="botao-img" value="Escolha a imagem">
 
-            <input type="button" class="botao-postar" value="Postar"> <!-- estudar tag input -->
-        </div>
+            <button type="button" class="botao-postar" value="Postar">
+
+            
+            
+            
+        
+    </form>
+    
     </section>
 
     <!-- Fim da seção postar-->
