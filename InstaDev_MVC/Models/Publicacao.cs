@@ -20,10 +20,6 @@ namespace InstaDev_MVC.Models
             CreateFolderAndFile(PATH);
         }
 
-        private void CreateFolderAndFile(string pATH)
-        {
-            throw new NotImplementedException();
-        }
 
         public string PrepareCsv(Publicacao p)
         {
@@ -81,16 +77,6 @@ namespace InstaDev_MVC.Models
             linhas.RemoveAll( x => x.Split(";")[0] == IdPublicacao.ToString() );
 
             RewriteCSV(PATH, linhas);
-        }
-
-        private void RewriteCSV(string pATH, List<string> linhas)
-        {
-            throw new NotImplementedException();
-        }
-
-        private List<string> ReadAllLinesCSV(string pATH)
-        {
-            throw new NotImplementedException();
         }
 
 

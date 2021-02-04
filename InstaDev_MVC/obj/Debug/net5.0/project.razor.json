@@ -15608,11 +15608,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\FIC\\Desktop\\Projeto_InstaDev\\InstaDev_MVC\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\FIC\\Desktop\\Projeto_InstaDev\\InstaDev_MVC\\Views\\Cadastro\\Index.cshtml",
       "TargetPath": "Views\\Cadastro\\Index.cshtml",
       "FileKind": "mvc"
@@ -15628,8 +15623,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\FIC\\Desktop\\Projeto_InstaDev\\InstaDev_MVC\\Views\\Home\\Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FilePath": "c:\\Users\\FIC\\Desktop\\Projeto_InstaDev\\InstaDev_MVC\\Views\\Login\\Index.cshtml",
+      "TargetPath": "Views\\Login\\Index.cshtml",
       "FileKind": "mvc"
     },
     {

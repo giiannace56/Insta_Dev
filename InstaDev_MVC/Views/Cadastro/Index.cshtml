@@ -1,5 +1,5 @@
 @{
-    ViewData["Title"] = "Cadastro"; 
+    ViewData["Title"] = "Cadastrar"; 
 }
 <main>
         <section class="quadrado">
@@ -13,19 +13,18 @@
                     <input type="text" name= "Nome" placeholder="Nome completo" required>
                     <input type="text" name="Username" placeholder="Nome de usuário" required>
                     <input type="password" name="Senha" placeholder="Senha" required>
-                    <input type="submit" value="Cadastre-se">             
-                      
+                    <input type="submit" value="Cadastre-se">              
                 </form>
                 <p>Ao se cadastrar, você concorda com nossos Termos, Política de Dados e Política de Cookies. </p>
             </div>
         </section>
             <section class="quadrado2">
                 <h2>Tem uma conta? </h2>
-                <a href="#">Conecte-se</a>
+                <a asp-area="Ir para pagina de login" asp-controller="Login" asp-action="Index">Conecte-se</a>
             </section>
             <footer class="imagens">
                 <h3>Obtenha o aplicativo</h3>
                 <img src="img/ios.jpeg" alt="Baixar aplicativo pela app store">
-                <img src="img/google play.jpeg" alt="Baixar aplicativo pela google play">
+                <img src="img/google play.jpeg" alt="Baixar aplicativo pela google play">              
             </footer>
     </main>
