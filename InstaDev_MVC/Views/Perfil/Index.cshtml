@@ -12,13 +12,16 @@
         <section class="perfil">
             <div class="content display-jc-center">
                 <div class="dados-perfil">
-
+                @foreach (Usuario item in ViewBag.Usuario)
+                {
+                    
+                
                     <div class="foto">
                         <img src="/img/87271a98fb0eb1c82d0bf3b7ad39d2fa.jpg" alt="Imagem de perfil do usuário">
                     </div>
 
                     <div class="dados">
-                        <h1>yes_baby</h1>
+                        <h1>@item.Nome</h1>
 
                         <div class="estatisticas">
                             <a href="#">0 publicações</a>
@@ -27,12 +30,12 @@
                         </div>
 
                         <div class="nome-sair">
-                            <h2>Nome Usuário</h2>
+                            <h2>@item.Username</h2>
                             <a href="#">Editar Perfil</a>
                             <a href="#">Sair</a>
                         </div>
                     </div>
-
+                }
                 </div>
             </div>
         </section> 
@@ -99,6 +102,11 @@
                         </div>
                         <a href="#">Ver todos os 580 comentários </a>
                     </div>
+                </div>
+                <div class="comentar">
+                    <form>
+                        <input type="text" name="comentario" class="input-comentario" placeholder="Escreva um comentário">
+                    </form>
                 </div>
                 }
             </div>

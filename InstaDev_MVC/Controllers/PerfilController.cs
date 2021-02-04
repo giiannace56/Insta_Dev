@@ -7,8 +7,8 @@ namespace InstaDev_MVC.Controllers
     public class PerfilController : Controller
     {   
         Publicacao pub = new Publicacao();
+
         Usuario user = new Usuario();
-        
         
         [Route("Listar")]
         public IActionResult Index(){
@@ -17,7 +17,6 @@ namespace InstaDev_MVC.Controllers
             ViewBag.Publicacoes = pub.ReadAll();
             return View();
         }
-        
 
     }
 }
