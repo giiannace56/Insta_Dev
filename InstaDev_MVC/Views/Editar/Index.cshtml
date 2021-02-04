@@ -1,6 +1,6 @@
 @model Usuario
 @{
-    ViewData["Title"] = "Edicao";
+    ViewData["Title"] = "Edição";
 }
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -51,8 +51,9 @@
 
                             <div class="texto">
                                 <h2>yes_baby</h2>
-                                <a class="navbar-brand" asp-area="" asp-controller="" asp-action="Alterar">Alterar foto de perfil</a>
-                                <input type="file"> 
+                             <a class="navbar-brand" asp-area="Link para editar a foto de perfil" asp-controller="" asp-action="Alterar">Alterar foto de perfil</a>
+                                <input type="file" name="Foto" id="Foto"> 
+                                
                             </div>
 
                         </div>
@@ -101,11 +102,11 @@
                                 </div>
                                 <aside class="desativar-conta">
                                     <div class="botao-enviar">
-                                        <button type="submit" class="botao-alterar">Enviar</button> <a class="navbar-brand" asp-area="" asp-controller="Equipe" asp-action="Index">Equipes</a>
+                                        <button type="submit" class="botao-alterar">Enviar</button> 
 
                                     </div>
                                     <div class="botao-desativar">
-                                       <a class="navbar-brand" asp-area="" asp-controller="Editar" asp-action="Delete">Desativar minha conta definitivamente</a>
+                                       <a class="navbar-brand" asp-area="Link para deletar a conta" asp-controller="Editar" asp-action="Delete">Desativar minha conta definitivamente</a>
 
                                     </div>
                                 </aside>
