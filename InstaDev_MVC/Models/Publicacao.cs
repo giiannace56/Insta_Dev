@@ -140,27 +140,7 @@ namespace InstaDev_MVC.Models
         }
 
         
-        public Usuario BuscarUsuario(int id)
-        {
-
-            List<String> CSV = user.ReadAllLinesCSV("Database/Cadastro.csv");
-
-            var linhaBusca =
-            CSV.Find(
-                x =>
-                x.Split(";")[0] == id.ToString()
-            );
-
-            var userLine = linhaBusca.Split(";");
-            
-            Usuario userSearched = new Usuario();
-            
-            userSearched.Foto = userLine[6].ToString();
-            
-            userSearched.Username = userLine[3].ToString();
-            
-            return userSearched;
-        }
+       
 
 
         
