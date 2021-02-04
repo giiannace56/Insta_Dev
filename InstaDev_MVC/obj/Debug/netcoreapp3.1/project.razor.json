@@ -14412,11 +14412,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Felipe\\OneDrive\\Área de Trabalho\\Projeto_InstaDev\\InstaDev_MVC\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\Felipe\\OneDrive\\Área de Trabalho\\Projeto_InstaDev\\InstaDev_MVC\\Views\\Cadastro\\Index.cshtml",
       "TargetPath": "Views\\Cadastro\\Index.cshtml",
       "FileKind": "mvc"

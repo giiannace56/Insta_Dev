@@ -2,7 +2,7 @@ using System;
 
 namespace InstaDev_MVC.Models
 {
-    public class Usuario
+    public class Usuario : InstaDev_base
     {
         public int IdUsuario { get; set; }
 

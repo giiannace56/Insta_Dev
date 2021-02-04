@@ -2,7 +2,7 @@
     ViewData["Title"] = "Feed"; 
 }
 
-<main>
+
 
     <!-- Início da seção de profiles-->
 
@@ -58,8 +58,8 @@
             </div>
 
             <div class="container-text">
-                <p>yes_baby</p>
-                <p>Marcos Jeeves</p>
+                <p>@ViewBag.NomeUsuario</p>
+                <p>@ViewBag.NomeCompleto</p>
             </div>
 
         </div>
@@ -88,25 +88,19 @@
             </div>
         </div>
 
+    
+    
     <form class="inputs-postar" method="POST" enctype="multipart/form-data" action='@Url.Action("Postar")'>
             
             
-        <input name="Legenda" type="text" class="descricao-input-img" value="Digite a descrição da imagem...">
+    <input name="Legenda" type="text" class="descricao-input-img" placeholder="Digite a descrição da imagem...">
 
-        <input type="file" class="botao-img" value="Escolha a imagem">
+    <label for="arquivo">Escolha a Imagem</label>
+    <input type="file" name="Imagem" class="botao-img" value="Escolha a imagem">
 
-        @* <input type="button" class="botao-postar" value="Postar"> *@
-
-        <button type="submit" name="IdPublicacao"> Postar </button>
+    <button type="submit" class="btnpostar"> Postar </button>
 
         
-        @foreach (Publicacao p in ViewBag.POSTS) {
-
-        <a asp-area="" asp-controller="Feed" asp-action="Excluir" asp-route-id="@p.IdUsuario">Excluir</a>
-        
-        }
-    
-    
     </form>
     
     
@@ -116,17 +110,23 @@
 
     <!-- Início da seção posts-->
 
+    
+    @foreach (Publicacao p in ViewBag.POSTS)
+    {
+        
+    
+        
     <section class="box-post">
         <div class="header-post">
             <a href="#"><img src="img/gabigordo 2.png" alt="imagem do gabigordo"></a>
             <div class="header-texto">
-                <p> gabigordo </p>
-                <p> Flamengo, RJ</p>
+                <p> @p.NomeUsuario </p>
+                <p> @p.Legenda</p>
             </div>
         </div>
 
         <div class="img-post">
-            <img src="img/post-gabigordo 1.png" alt="imagem do time caricato do flamengo">
+            <img src=@p.Imagem alt="">
         </div>
 
         <div class="curtir-comentar">
@@ -143,21 +143,32 @@
 
         <p class="contador-curtidas">2077 curtidas</p>
 
+
+        @foreach (Comentario c in ViewBag.COMMENTS)
+        {
+            
+        
         <div class="area-comentarios">
             <div class="conteudo-comentarios">
                 <div class="nomes-usuarios">
-                    <p>gabigordo</p>
-                    <p>yes_baby</p>
-                    <p>king_pele</p>
+                    <p>@p.NomeUsuario</p>
+                    <p>@p.NomeUsuario</p>
+                    <p>@p.NomeUsuario</p>
                 </div>
 
+        
                 <div class="comentarios">
-                    <p> <a href="">#flamengo</a> , amo vocês mil milhões </p>
-                    <p> thank you</p>
-                    <p> Esses são bons de bola, entende?</p>
+                    <p>@c.Mensagem</p>
+                    <p>@c.Mensagem</p>
+                    <p>@c.Mensagem,</p>
                 </div>
             </div>
         </div>
+
+        }
+    
+    
     </section>
+
+    }
     <!--Fim da seção posts-->
-</main>

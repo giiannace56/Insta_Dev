@@ -12,10 +12,10 @@ namespace InstaDev_MVC.Controllers
     {
         
         Publicacao Post = new Publicacao();
-        Comentario Comment = new Comentario();
+        // Comentario Comment = new Comentario();
 
         
-        
+        [Route("Listar")]
         public IActionResult Index()
         {
             ViewBag.POSTS = Post.ReadAll();
@@ -29,10 +29,8 @@ namespace InstaDev_MVC.Controllers
         public IActionResult Postar(IFormCollection form)
         {
             
-            Publicacao post   = new Publicacao();
-            post.IdPublicacao = Int32.Parse(form["IdPublicacao"]);
-            post.IdUsuario = Int32.Parse(form["IdUsuario"]);
-            post.Legenda = form["Legenda"];
+            Publicacao newpost   = new Publicacao();
+            newpost.IdPublicacao = Post.GerarCodigo();
             
             
             if(form.Files.Count > 0)
@@ -55,27 +53,40 @@ namespace InstaDev_MVC.Controllers
                     file.CopyTo(stream);  
                 }
                 
-                post.Imagem   = file.FileName;                
+                newpost.Imagem   = file.FileName;                
             
             }
             
             else
             {
-                post.Imagem   = "padrao.png";
+                newpost.Imagem   = "padrao.png";
             }
             
             
+            newpost.Legenda = form["Legenda"];
             
-            post.Likes = Int32.Parse(form["IdPublicacao"]);
+            newpost.IdUsuario = Int32.Parse(form["IdUsuario"]);
             
-            Post.Create(post);            
+            Post.Create(newpost);
             
             ViewBag.POSTS = Post.ReadAll();
-
-            return LocalRedirect("~Feed/Publicar");
+            
+            return LocalRedirect("~/Feed");
         }
         
         
+        
+        [Route("{id}")]
+        public IActionResult Excluir(int id)
+        {
+            
+            Post.Delete(id);
+            ViewBag.POSTS = Post.ReadAll();
+            return LocalRedirect("~/Feed/Listar");
+        
+        }
+
+
         // [Route("Comentar")]
 
         // public IActionResult Index2()
@@ -98,16 +109,6 @@ namespace InstaDev_MVC.Controllers
 
         //     return LocalRedirect("~/Feed/Comentar");
         // }
-        
-        [Route("Feed/{id}")]
-        public IActionResult Excluir(int id)
-        {
-            
-            Post.Delete(id);
-            ViewBag.POSTS = Post.ReadAll();
-            return LocalRedirect("~/Feed");
-        
-        }
 
 
 
