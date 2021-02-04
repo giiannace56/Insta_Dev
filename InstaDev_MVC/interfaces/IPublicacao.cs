@@ -10,6 +10,6 @@ namespace InstaDev_MVC.Interfaces
             
         void Update(Publicacao p);
 
-        void Delete(int IdPublicacao);
+        void Delete(int id);
     }
 }

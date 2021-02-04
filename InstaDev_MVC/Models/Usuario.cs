@@ -6,7 +6,7 @@ using InstaDev_MVC.Interfaces;
 namespace InstaDev_MVC.Models
 {
     public class Usuario : InstaDev_base, IUsuario
-    public class Usuario : InstaDev_base
+    
     {
         public int IdUsuario { get; set; }
 

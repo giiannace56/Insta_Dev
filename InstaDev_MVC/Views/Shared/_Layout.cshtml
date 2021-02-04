@@ -1,7 +1,11 @@
 ﻿<!DOCTYPE html>
+
+
 @switch (@ViewData["Title"])
 {
+    
     case "Cadastrar":
+    
     <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
@@ -18,11 +22,14 @@
         @RenderSection("Scripts", required: false)
     </body>
     </html>
+    
     break;
     
 
+    
     case "Login":
-        <html lang="pt-br">
+    
+    <html lang="pt-br">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -37,27 +44,14 @@
         @RenderSection("Scripts", required: false)
     </body>
     </html>
+    
     break;
-    
-    
-}
-        <div class="container">
-            <main role="main" class="pb-3">
-                @RenderBody()
-            </main>
-        </div>
-<html lang="pt-br">
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - InstaDev_MVC</title>
-    <link rel="stylesheet" href="~/css/feed.css" />
-</head>
 
-<body>
+    default: 
     
     <header class="header-top">
+        
         <div class="content-header">
             <div class="logo">
                 <a href="#"><img src="~/img/Instadev.png" alt="Logo InstaDev"></a>
@@ -77,7 +71,31 @@
                 </ul>
             </nav>
         </div>
+
     </header>
+
+    break;
+    
+}
+        
+        
+        <div class="container">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - InstaDev_MVC</title>
+    <link rel="stylesheet" href="~/css/feed.css" />
+</head>
+
+<body>
     
     <div class="container">
         <main role="main" class="pb-3">
@@ -91,4 +109,5 @@
     @RenderSection("Scripts", required: false)
 
 </body>
+
 </html>
