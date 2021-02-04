@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\washi\\Desktop\\Teste\\Projeto_InstaDev\\InstaDev_MVC\\InstaDev_MVC.csproj",
+  "FilePath": "c:\\Users\\dev\\Desktop\\Novapasta\\Projeto_InstaDev\\InstaDev_MVC\\InstaDev_MVC.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "5.0",
@@ -15603,33 +15603,33 @@
   "RootNamespace": "InstaDev_MVC",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\washi\\Desktop\\Teste\\Projeto_InstaDev\\InstaDev_MVC\\Views\\_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\washi\\Desktop\\Teste\\Projeto_InstaDev\\InstaDev_MVC\\Views\\Editar\\Index.cshtml",
-      "TargetPath": "Views\\Editar\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\washi\\Desktop\\Teste\\Projeto_InstaDev\\InstaDev_MVC\\Views\\_ViewImports.cshtml",
+      "FilePath": "c:\\Users\\dev\\Desktop\\Novapasta\\Projeto_InstaDev\\InstaDev_MVC\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\washi\\Desktop\\Teste\\Projeto_InstaDev\\InstaDev_MVC\\Views\\Shared\\_Layout.cshtml",
+      "FilePath": "c:\\Users\\dev\\Desktop\\Novapasta\\Projeto_InstaDev\\InstaDev_MVC\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\dev\\Desktop\\Novapasta\\Projeto_InstaDev\\InstaDev_MVC\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\dev\\Desktop\\Novapasta\\Projeto_InstaDev\\InstaDev_MVC\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\washi\\Desktop\\Teste\\Projeto_InstaDev\\InstaDev_MVC\\Views\\Home\\Index.cshtml",
+      "FilePath": "c:\\Users\\dev\\Desktop\\Novapasta\\Projeto_InstaDev\\InstaDev_MVC\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\washi\\Desktop\\Teste\\Projeto_InstaDev\\InstaDev_MVC\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FilePath": "c:\\Users\\dev\\Desktop\\Novapasta\\Projeto_InstaDev\\InstaDev_MVC\\Views\\Editar\\Index.cshtml",
+      "TargetPath": "Views\\Editar\\Index.cshtml",
       "FileKind": "mvc"
     }
   ],

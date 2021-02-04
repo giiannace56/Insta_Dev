@@ -28,6 +28,7 @@ namespace fake.Controllers
         {
            Usuario alterarUsuario = new Usuario();
            
+         
            alterarUsuario.Nome     = (form["Nome"]);
            alterarUsuario.Foto     = (form["Foto"]);
            alterarUsuario.Username = (form["Username"]); 
@@ -40,7 +41,7 @@ namespace fake.Controllers
            return LocalRedirect("~/Editar");
         }
 
-        [Route("Deletar/{id}")]
+        [Route("Excluir/{id}")]
         public IActionResult Delete(int id)
         {
             usuarioModel.DeleteUsuario(id);
@@ -62,13 +63,13 @@ namespace fake.Controllers
             {
                 // Upload Início
                 var file    = form.Files[0];
-                var folder  = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img/Usuarios");
+                var folder  = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Imagem/Usuarios");
 
                 if(!Directory.Exists(folder)){
                     Directory.CreateDirectory(folder);
                 }
                 
-                var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img/", folder, file.FileName);
+                var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Imagem/", folder, file.FileName);
                 using (var stream = new FileStream(path, FileMode.Create))  
                 {  
                     file.CopyTo(stream);  
@@ -82,9 +83,9 @@ namespace fake.Controllers
             // Upload Final
 
             usuarioModel.CadastrarUsuario(novoUsuario);
-
             ViewBag.Usuarios = usuarioModel.ReadAll();
-            return LocalRedirect("~/");
+            
+            return LocalRedirect("~/Editar");
 
         }
     }

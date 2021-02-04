@@ -28,8 +28,8 @@ namespace InstaDev_MVC.Models
 
         public void CadastrarUsuario(Usuario e)
         {
-            string[] linha = { Prepare(e) };
-            File.AppendAllLines(PATH, linha);
+            string[] linhas = {Prepare(e)};
+            File.AppendAllLines(PATH, linhas);
         }
         public void MostrarUsuario()
         {
@@ -45,7 +45,7 @@ namespace InstaDev_MVC.Models
 
         private string Prepare(Usuario e)
         {
-            return $"{e.Nome};{e.Username}; {e.Email}; {e.Foto}";
+            return $"{e.Nome};{e.Username}; {e.Email}; {e.Foto};";
         }
 
         public List<Usuario> ReadAll()
@@ -54,16 +54,16 @@ namespace InstaDev_MVC.Models
             // Ler todas as linhas
             string[] linhas = File.ReadAllLines(PATH);
 
-            // Percorrer as linhas e  equipes adicionar na lista decada elemento
+            // Percorrer as linhas e usuario adicionar na lista decada elemento
             foreach (var item in linhas)
             {
                 string[] linha = item.Split(";");
 
-                // Criamos o objeto equipe
+                // Criamos o objeto usuario
                 
                 Usuario user = new Usuario();
 
-                // Alimentamos o objeto equipe
+                // Alimentamos o objeto usuario
                 user.Nome       = linha[0];
                 user.Username   = linha[1];
                 user.Email      = linha[2];
@@ -73,6 +73,7 @@ namespace InstaDev_MVC.Models
                 usuarios.Add(user);
                 
             }  
+
             return usuarios;
         }
             public void EditarUsuario(Usuario e)
