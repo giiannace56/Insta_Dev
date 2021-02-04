@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.IO;
 
 namespace InstaDev_MVC.Models
@@ -18,6 +19,42 @@ namespace InstaDev_MVC.Models
                 File.Create(path).Close();
             }
         }
+
+        
+        
+        public List<string> ReadAllLinesCSV(string PATH){
+            
+            List<string> linhas = new List<string>();
+            
+            using(StreamReader file = new StreamReader(PATH))
+            {
+                string linha;
+                while((linha = file.ReadLine()) != null)
+                {
+                    linhas.Add(linha);
+                }
+            
+            }
+            
+            return linhas;
+        }
+        
+
+
+        
+        public void RewriteCSV(string PATH, List<string> linhas)
+        {
+            using(StreamWriter output = new StreamWriter(PATH))
+            {
+                foreach (var item in linhas)
+                {
+                    output.Write(item + "\n");
+                }
+            }
+        }
+        
+        
+        
 
 
 

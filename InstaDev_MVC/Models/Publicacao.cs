@@ -24,7 +24,7 @@ namespace InstaDev_MVC.Models
 
         public string PrepareCsv(Publicacao p)
         {
-            return $"{p.IdPublicacao};{p.Imagem};{p.Legenda};{p.IdUsuario};{p.Likes}";
+            return $"{p.IdPublicacao};{p.IdUsuario};{p.Legenda};{p.Imagem};{p.Likes}";
         }
         
 
@@ -80,14 +80,19 @@ namespace InstaDev_MVC.Models
             RewriteCSV(PATH, linhas);
         }
 
-        private void RewriteCSV(string pATH, List<string> linhas)
-        {
-            throw new NotImplementedException();
-        }
 
-        private List<string> ReadAllLinesCSV(string pATH)
+
+        public int Curtir()
         {
-            throw new NotImplementedException();
+
+
+
+            return 0;
+
         }
+        
+    
+    
+    
     }
 }

@@ -1,11 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DrNpHlKWY/I+ERPVBZYKdwKIlpk+wFcb3tH7vrKAI4r5TxLi71ei6IDMzr/jJob+6n5e7D0iBhoiF1DX9EtLOw==",
+  "dgSpecHash": "krMTT+wj4pIc9wvpZ0YR/xjuvsei6aVFs7RY2r7Bfj7aDtmOiL8rUVuiC+cVFThHLi1uiE9Aq5KZyKxZF91mNA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Fic\\Desktop\\Projeto_InstaDev\\InstaDev_MVC\\InstaDev_MVC.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Fic\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
-    "C:\\Users\\Fic\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.11\\microsoft.netcore.app.host.win-x64.3.1.11.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\Felipe\\OneDrive\\Área de Trabalho\\Projeto_InstaDev\\InstaDev_MVC\\InstaDev_MVC.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
