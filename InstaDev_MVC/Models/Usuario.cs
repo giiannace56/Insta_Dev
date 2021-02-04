@@ -22,7 +22,7 @@ namespace InstaDev_MVC.Models
         Random idRandom = new Random();
 
          private string PrepararLinha(Usuario user){
-            return $"{user.IdUsuario};{user.Email};{user.Nome};{user.Username};{user.Senha}";
+            return $"{user.Email};{user.Nome};{user.Username};{user.Senha};{user.IdUsuario}";
         }
 
         public int IdGenerator(){
@@ -59,6 +59,7 @@ namespace InstaDev_MVC.Models
                 usuario.Nome        = linha[1];
                 usuario.Username    = linha[2];
                 usuario.Senha       = linha[3];
+                usuario.IdUsuario   = int.Parse(linha[4]);
 
                 usuarios.Add(usuario);
             }

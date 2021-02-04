@@ -9,15 +9,15 @@
                     </h1>
                 <form method="POST" action='@Url.Action("Logar")' class="cadastro">
                     <div class="login">
-                        <input type="email" id="login-email" placeholder="Email" class="input">
+                        <input type="email" name="Email" id="login-email" placeholder="Email" class="input">
                     </div>
 
                     <div class="login">
-                        <input type="password" id="login-senha" placeholder="Senha" class="input">
+                        <input type="password" name="Senha" id="login-senha" placeholder="Senha" class="input">
                     </div>
                     <button type="submit" class="btn-login">Entrar</button>
-                </form>
                     <div class="erro">@TempData.Peek("Mensagem")</div>         
+                </form>
                 <div class="ou">
                     <div class="linha"></div>
                     <p>OU</p>

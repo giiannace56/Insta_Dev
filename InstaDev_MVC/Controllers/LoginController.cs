@@ -1,18 +1,21 @@
+using System;
 using System.Collections.Generic;
 using InstaDev_MVC.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 
 namespace InstaDev_MVC.Controllers
 {
-    public class HomeController : Controller
-    {   
+    
+    public class LoginController : Controller
+    {
+        [TempData]
       public string Mensagem { get; set; }
 
-
+        
         Usuario UsuarioModel = new Usuario();
-        public IActionResult Privacy()
+       
+        public IActionResult Index()
         {
             return View();
         }
@@ -26,29 +29,26 @@ namespace InstaDev_MVC.Controllers
             var logado =
             csv.Find(
                 x =>
-                x.Split(";")[2] == form["Email"] &&
+                x.Split(";")[0] == form["Email"] &&
                 x.Split(";")[3] == form["Senha"]
             );
 
+            Console.WriteLine($"Usuario - {logado}");
+            
 
             // Redirecionamos o usuário logado caso encontrado
             if (logado != null)
             {
-                HttpContext.Session.SetString("_Username", logado.Split(";")[1]);
+                HttpContext.Session.SetString("_Username", logado.Split(";")[2]);
 
                 return LocalRedirect("~/");
             }
 
-           
-
-
             Mensagem = "Dados incorretos, tente novamente...";
-            return LocalRedirect("~/Home");
+            return LocalRedirect("~/");
+            
+
         }
 
-        public IActionResult Index()
-        {
-            return View();
-        }
     }
 }
