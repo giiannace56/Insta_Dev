@@ -5,24 +5,27 @@ namespace InstaDev_MVC.Models
 {
     public abstract class InstaDev_base
     {
-        public void CreateFolderAndFile(string _path){
+        
+        public void CreateFolderAndFile(string path){
 
-            string folder   = _path.Split("/")[0];
+            string folder   = path.Split("/")[0];
+            
 
-            if(!Directory.Exists(folder))
-            {
+            if(!Directory.Exists(folder)){
                 Directory.CreateDirectory(folder);
             }
 
-            if(!File.Exists(_path))
-            {
-                File.Create(_path).Close();
+            if(!File.Exists(path)){
+                File.Create(path).Close();
             }
         }
 
+        
+        
         public List<string> ReadAllLinesCSV(string PATH){
             
             List<string> linhas = new List<string>();
+            
             using(StreamReader file = new StreamReader(PATH))
             {
                 string linha;
@@ -30,10 +33,15 @@ namespace InstaDev_MVC.Models
                 {
                     linhas.Add(linha);
                 }
+            
             }
+            
             return linhas;
         }
+        
 
+
+        
         public void RewriteCSV(string PATH, List<string> linhas)
         {
             using(StreamWriter output = new StreamWriter(PATH))
@@ -44,5 +52,14 @@ namespace InstaDev_MVC.Models
                 }
             }
         }
+        
+        
+        
+
+
+
+        
+
+
     }
 }

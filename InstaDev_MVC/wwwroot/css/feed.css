@@ -395,3 +395,13 @@ body{
     color: #2686cc;
     text-decoration: none;
 }
+
+.btnpostar{
+    
+    background-color: rgba(38, 134, 204, 1);
+    border: rgb(80, 122, 151);
+    color: white;
+    width: 140px;
+    height: 27px;
+    border-radius: 5px;
+}

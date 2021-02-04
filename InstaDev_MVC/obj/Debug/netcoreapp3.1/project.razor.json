@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "FilePath": "c:\\Users\\FIC\\Desktop\\Projeto_InstaDev\\InstaDev_MVC\\InstaDev_MVC.csproj",
+=======
+  "FilePath": "c:\\Users\\Felipe\\OneDrive\\Área de Trabalho\\Projeto_InstaDev\\InstaDev_MVC\\InstaDev_MVC.csproj",
+>>>>>>> Feed
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -15602,12 +15606,17 @@
         }
       }
     ],
+<<<<<<< HEAD
     "CSharpLanguageVersion": 900
 >>>>>>> Cadastro
+=======
+    "CSharpLanguageVersion": 800
+>>>>>>> Feed
   },
   "RootNamespace": "InstaDev_MVC",
   "Documents": [
     {
+<<<<<<< HEAD
       "FilePath": "c:\\Users\\FIC\\Desktop\\Projeto_InstaDev\\InstaDev_MVC\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
@@ -15648,6 +15657,40 @@
 >>>>>>> Cadastro
       "FilePath": "c:\\Users\\FIC\\Desktop\\Projeto_InstaDev\\InstaDev_MVC\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+=======
+      "FilePath": "c:\\Users\\Felipe\\OneDrive\\Área de Trabalho\\Projeto_InstaDev\\InstaDev_MVC\\Views\\Feed\\Index.cshtml",
+      "TargetPath": "Views\\Feed\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Felipe\\OneDrive\\Área de Trabalho\\Projeto_InstaDev\\InstaDev_MVC\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Felipe\\OneDrive\\Área de Trabalho\\Projeto_InstaDev\\InstaDev_MVC\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Felipe\\OneDrive\\Área de Trabalho\\Projeto_InstaDev\\InstaDev_MVC\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Felipe\\OneDrive\\Área de Trabalho\\Projeto_InstaDev\\InstaDev_MVC\\Views\\Cadastro\\Index.cshtml",
+      "TargetPath": "Views\\Cadastro\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Felipe\\OneDrive\\Área de Trabalho\\Projeto_InstaDev\\InstaDev_MVC\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Felipe\\OneDrive\\Área de Trabalho\\Projeto_InstaDev\\InstaDev_MVC\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+>>>>>>> Feed
       "FileKind": "mvc"
     }
   ],
