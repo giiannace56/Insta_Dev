@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\Vitor Manoel\\Desktop\\PROJETO_INTTADEV\\Projeto_InstaDev\\InstaDev_MVC\\InstaDev_MVC.csproj": {}
   },
   "projects": {
@@ -15,15 +16,38 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Vitor Manoel\\AppData\\Roaming\\NuGet\\NuGet.Config"
+=======
+    "C:\\Users\\FIC\\Desktop\\Projeto_InstaDev\\InstaDev_MVC\\InstaDev_MVC.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\FIC\\Desktop\\Projeto_InstaDev\\InstaDev_MVC\\InstaDev_MVC.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\FIC\\Desktop\\Projeto_InstaDev\\InstaDev_MVC\\InstaDev_MVC.csproj",
+        "projectName": "InstaDev_MVC",
+        "projectPath": "C:\\Users\\FIC\\Desktop\\Projeto_InstaDev\\InstaDev_MVC\\InstaDev_MVC.csproj",
+        "packagesPath": "C:\\Users\\FIC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\FIC\\Desktop\\Projeto_InstaDev\\InstaDev_MVC\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+<<<<<<< HEAD
+          "C:\\Users\\FIC\\AppData\\Roaming\\NuGet\\NuGet.Config"
+=======
+          "C:\\Users\\FIC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+>>>>>>> Feed
+>>>>>>> e400b38cfbdf1976f1f8126dbed8d0ff21056c83
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
+          "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {}
           }
         },
@@ -34,7 +58,8 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
+        "net5.0": {
+          "targetAlias": "net5.0",
           "imports": [
             "net461",
             "net462",
@@ -53,7 +78,11 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.404\\RuntimeIdentifierGraph.json"
+<<<<<<< HEAD
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+>>>>>>> Feed
         }
       }
     }

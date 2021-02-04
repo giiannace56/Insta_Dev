@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 E:\Meus Documentos\Área de Trabalho\Projeto_InstaDev\InstaDev_MVC\bin\Debug\netcoreapp3.1\appsettings.Development.json
 E:\Meus Documentos\Área de Trabalho\Projeto_InstaDev\InstaDev_MVC\bin\Debug\netcoreapp3.1\appsettings.json
 E:\Meus Documentos\Área de Trabalho\Projeto_InstaDev\InstaDev_MVC\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
@@ -35,6 +36,7 @@ E:\Meus Documentos\Área de Trabalho\Projeto_InstaDev\InstaDev_MVC\obj\Debug\net
 E:\Meus Documentos\Área de Trabalho\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.csproj.CopyComplete
 E:\Meus Documentos\Área de Trabalho\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\Razor\Views\Cadastro\Index.cshtml.g.cs
 E:\Meus Documentos\Área de Trabalho\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+<<<<<<< HEAD
 C:\Users\Vitor Manoel\Desktop\Perfil_ProjetoInstaDev\Projeto_InstaDev\InstaDev_MVC\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\Vitor Manoel\Desktop\Perfil_ProjetoInstaDev\Projeto_InstaDev\InstaDev_MVC\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\Vitor Manoel\Desktop\Perfil_ProjetoInstaDev\Projeto_InstaDev\InstaDev_MVC\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
@@ -111,3 +113,152 @@ C:\Users\Vitor Manoel\Desktop\PROJETO_INTTADEV\Projeto_InstaDev\InstaDev_MVC\obj
 C:\Users\Vitor Manoel\Desktop\PROJETO_INTTADEV\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.pdb
 C:\Users\Vitor Manoel\Desktop\PROJETO_INTTADEV\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.genruntimeconfig.cache
 C:\Users\Vitor Manoel\Desktop\PROJETO_INTTADEV\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.csproj.CopyComplete
+=======
+E:\Meus Documentos\Área de Trabalho\InstaDEVS\Projeto_InstaDev\InstaDev_MVC\bin\Debug\netcoreapp3.1\appsettings.Development.json
+E:\Meus Documentos\Área de Trabalho\InstaDEVS\Projeto_InstaDev\InstaDev_MVC\bin\Debug\netcoreapp3.1\appsettings.json
+E:\Meus Documentos\Área de Trabalho\InstaDEVS\Projeto_InstaDev\InstaDev_MVC\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+E:\Meus Documentos\Área de Trabalho\InstaDEVS\Projeto_InstaDev\InstaDev_MVC\bin\Debug\netcoreapp3.1\InstaDev_MVC.exe
+E:\Meus Documentos\Área de Trabalho\InstaDEVS\Projeto_InstaDev\InstaDev_MVC\bin\Debug\netcoreapp3.1\InstaDev_MVC.deps.json
+E:\Meus Documentos\Área de Trabalho\InstaDEVS\Projeto_InstaDev\InstaDev_MVC\bin\Debug\netcoreapp3.1\InstaDev_MVC.runtimeconfig.json
+E:\Meus Documentos\Área de Trabalho\InstaDEVS\Projeto_InstaDev\InstaDev_MVC\bin\Debug\netcoreapp3.1\InstaDev_MVC.runtimeconfig.dev.json
+E:\Meus Documentos\Área de Trabalho\InstaDEVS\Projeto_InstaDev\InstaDev_MVC\bin\Debug\netcoreapp3.1\InstaDev_MVC.dll
+E:\Meus Documentos\Área de Trabalho\InstaDEVS\Projeto_InstaDev\InstaDev_MVC\bin\Debug\netcoreapp3.1\InstaDev_MVC.pdb
+E:\Meus Documentos\Área de Trabalho\InstaDEVS\Projeto_InstaDev\InstaDev_MVC\bin\Debug\netcoreapp3.1\InstaDev_MVC.Views.dll
+E:\Meus Documentos\Área de Trabalho\InstaDEVS\Projeto_InstaDev\InstaDev_MVC\bin\Debug\netcoreapp3.1\InstaDev_MVC.Views.pdb
+E:\Meus Documentos\Área de Trabalho\InstaDEVS\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.csprojAssemblyReference.cache
+E:\Meus Documentos\Área de Trabalho\InstaDEVS\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.AssemblyInfoInputs.cache
+E:\Meus Documentos\Área de Trabalho\InstaDEVS\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.AssemblyInfo.cs
+E:\Meus Documentos\Área de Trabalho\InstaDEVS\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.csproj.CoreCompileInputs.cache
+E:\Meus Documentos\Área de Trabalho\InstaDEVS\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.MvcApplicationPartsAssemblyInfo.cache
+E:\Meus Documentos\Área de Trabalho\InstaDEVS\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.RazorAssemblyInfo.cache
+E:\Meus Documentos\Área de Trabalho\InstaDEVS\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.RazorAssemblyInfo.cs
+E:\Meus Documentos\Área de Trabalho\InstaDEVS\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.TagHelpers.input.cache
+E:\Meus Documentos\Área de Trabalho\InstaDEVS\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.TagHelpers.output.cache
+E:\Meus Documentos\Área de Trabalho\InstaDEVS\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.RazorCoreGenerate.cache
+E:\Meus Documentos\Área de Trabalho\InstaDEVS\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\Razor\Views\Cadastro\Index.cshtml.g.cs
+E:\Meus Documentos\Área de Trabalho\InstaDEVS\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+E:\Meus Documentos\Área de Trabalho\InstaDEVS\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+E:\Meus Documentos\Área de Trabalho\InstaDEVS\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+E:\Meus Documentos\Área de Trabalho\InstaDEVS\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+E:\Meus Documentos\Área de Trabalho\InstaDEVS\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.RazorTargetAssemblyInfo.cache
+E:\Meus Documentos\Área de Trabalho\InstaDEVS\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.RazorTargetAssemblyInfo.cs
+E:\Meus Documentos\Área de Trabalho\InstaDEVS\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.Views.pdb
+E:\Meus Documentos\Área de Trabalho\InstaDEVS\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\staticwebassets\InstaDev_MVC.StaticWebAssets.Manifest.cache
+E:\Meus Documentos\Área de Trabalho\InstaDEVS\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\staticwebassets\InstaDev_MVC.StaticWebAssets.xml
+E:\Meus Documentos\Área de Trabalho\InstaDEVS\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.dll
+E:\Meus Documentos\Área de Trabalho\InstaDEVS\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.pdb
+E:\Meus Documentos\Área de Trabalho\InstaDEVS\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.genruntimeconfig.cache
+E:\Meus Documentos\Área de Trabalho\InstaDEVS\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.csproj.CopyComplete
+E:\Meus Documentos\Área de Trabalho\InstaDEVS\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+E:\Meus Documentos\Área de Trabalho\InstaDEVS\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\FIC\Desktop\Projeto_InstaDev\InstaDev_MVC\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\FIC\Desktop\Projeto_InstaDev\InstaDev_MVC\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\FIC\Desktop\Projeto_InstaDev\InstaDev_MVC\bin\Debug\netcoreapp3.1\InstaDev_MVC.exe
+C:\Users\FIC\Desktop\Projeto_InstaDev\InstaDev_MVC\bin\Debug\netcoreapp3.1\InstaDev_MVC.deps.json
+C:\Users\FIC\Desktop\Projeto_InstaDev\InstaDev_MVC\bin\Debug\netcoreapp3.1\InstaDev_MVC.runtimeconfig.json
+C:\Users\FIC\Desktop\Projeto_InstaDev\InstaDev_MVC\bin\Debug\netcoreapp3.1\InstaDev_MVC.runtimeconfig.dev.json
+C:\Users\FIC\Desktop\Projeto_InstaDev\InstaDev_MVC\bin\Debug\netcoreapp3.1\InstaDev_MVC.dll
+C:\Users\FIC\Desktop\Projeto_InstaDev\InstaDev_MVC\bin\Debug\netcoreapp3.1\InstaDev_MVC.pdb
+C:\Users\FIC\Desktop\Projeto_InstaDev\InstaDev_MVC\bin\Debug\netcoreapp3.1\InstaDev_MVC.Views.dll
+C:\Users\FIC\Desktop\Projeto_InstaDev\InstaDev_MVC\bin\Debug\netcoreapp3.1\InstaDev_MVC.Views.pdb
+C:\Users\FIC\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.csprojAssemblyReference.cache
+C:\Users\FIC\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.AssemblyInfoInputs.cache
+C:\Users\FIC\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.AssemblyInfo.cs
+C:\Users\FIC\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.csproj.CoreCompileInputs.cache
+C:\Users\FIC\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\FIC\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.RazorAssemblyInfo.cache
+C:\Users\FIC\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.RazorAssemblyInfo.cs
+C:\Users\FIC\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\staticwebassets\InstaDev_MVC.StaticWebAssets.Manifest.cache
+C:\Users\FIC\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\staticwebassets\InstaDev_MVC.StaticWebAssets.xml
+C:\Users\FIC\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\scopedcss\bundle\InstaDev_MVC.styles.css
+C:\Users\FIC\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.TagHelpers.input.cache
+C:\Users\FIC\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.TagHelpers.output.cache
+C:\Users\FIC\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.RazorCoreGenerate.cache
+C:\Users\FIC\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\Razor\Views\Cadastro\Index.cshtml.g.cs
+C:\Users\FIC\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\FIC\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\FIC\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\FIC\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\FIC\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\FIC\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\FIC\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.RazorTargetAssemblyInfo.cache
+C:\Users\FIC\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.RazorTargetAssemblyInfo.cs
+C:\Users\FIC\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.Views.pdb
+C:\Users\FIC\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.dll
+C:\Users\FIC\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.pdb
+C:\Users\FIC\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.genruntimeconfig.cache
+C:\Users\FIC\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.csproj.CopyComplete
+=======
+C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\bin\Debug\netcoreapp3.1\InstaDev_MVC.exe
+C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\bin\Debug\netcoreapp3.1\InstaDev_MVC.deps.json
+C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\bin\Debug\netcoreapp3.1\InstaDev_MVC.runtimeconfig.json
+C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\bin\Debug\netcoreapp3.1\InstaDev_MVC.runtimeconfig.dev.json
+C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\bin\Debug\netcoreapp3.1\InstaDev_MVC.dll
+C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\bin\Debug\netcoreapp3.1\InstaDev_MVC.pdb
+C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\bin\Debug\netcoreapp3.1\InstaDev_MVC.Views.dll
+C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\bin\Debug\netcoreapp3.1\InstaDev_MVC.Views.pdb
+C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.csprojAssemblyReference.cache
+C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.AssemblyInfoInputs.cache
+C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.AssemblyInfo.cs
+C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.RazorAssemblyInfo.cache
+C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.RazorAssemblyInfo.cs
+C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\staticwebassets\InstaDev_MVC.StaticWebAssets.Manifest.cache
+C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\staticwebassets\InstaDev_MVC.StaticWebAssets.xml
+C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.TagHelpers.input.cache
+C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.TagHelpers.output.cache
+C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.RazorCoreGenerate.cache
+C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\Razor\Views\Cadastro\Index.cshtml.g.cs
+C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\Razor\Views\Feed\index.cshtml.g.cs
+C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.RazorTargetAssemblyInfo.cache
+C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.RazorTargetAssemblyInfo.cs
+C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.Views.pdb
+C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.dll
+C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.pdb
+C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.csproj.CopyComplete
+C:\Users\Felipe\OneDrive\Área de Trabalho\Projeto_InstaDev\InstaDev_MVC\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\Felipe\OneDrive\Área de Trabalho\Projeto_InstaDev\InstaDev_MVC\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Felipe\OneDrive\Área de Trabalho\Projeto_InstaDev\InstaDev_MVC\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\Felipe\OneDrive\Área de Trabalho\Projeto_InstaDev\InstaDev_MVC\bin\Debug\netcoreapp3.1\InstaDev_MVC.exe
+C:\Users\Felipe\OneDrive\Área de Trabalho\Projeto_InstaDev\InstaDev_MVC\bin\Debug\netcoreapp3.1\InstaDev_MVC.deps.json
+C:\Users\Felipe\OneDrive\Área de Trabalho\Projeto_InstaDev\InstaDev_MVC\bin\Debug\netcoreapp3.1\InstaDev_MVC.runtimeconfig.json
+C:\Users\Felipe\OneDrive\Área de Trabalho\Projeto_InstaDev\InstaDev_MVC\bin\Debug\netcoreapp3.1\InstaDev_MVC.runtimeconfig.dev.json
+C:\Users\Felipe\OneDrive\Área de Trabalho\Projeto_InstaDev\InstaDev_MVC\bin\Debug\netcoreapp3.1\InstaDev_MVC.dll
+C:\Users\Felipe\OneDrive\Área de Trabalho\Projeto_InstaDev\InstaDev_MVC\bin\Debug\netcoreapp3.1\InstaDev_MVC.pdb
+C:\Users\Felipe\OneDrive\Área de Trabalho\Projeto_InstaDev\InstaDev_MVC\bin\Debug\netcoreapp3.1\InstaDev_MVC.Views.dll
+C:\Users\Felipe\OneDrive\Área de Trabalho\Projeto_InstaDev\InstaDev_MVC\bin\Debug\netcoreapp3.1\InstaDev_MVC.Views.pdb
+C:\Users\Felipe\OneDrive\Área de Trabalho\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.csprojAssemblyReference.cache
+C:\Users\Felipe\OneDrive\Área de Trabalho\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.AssemblyInfoInputs.cache
+C:\Users\Felipe\OneDrive\Área de Trabalho\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.AssemblyInfo.cs
+C:\Users\Felipe\OneDrive\Área de Trabalho\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.csproj.CoreCompileInputs.cache
+C:\Users\Felipe\OneDrive\Área de Trabalho\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Felipe\OneDrive\Área de Trabalho\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.RazorAssemblyInfo.cache
+C:\Users\Felipe\OneDrive\Área de Trabalho\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.RazorAssemblyInfo.cs
+C:\Users\Felipe\OneDrive\Área de Trabalho\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.TagHelpers.input.cache
+C:\Users\Felipe\OneDrive\Área de Trabalho\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.TagHelpers.output.cache
+C:\Users\Felipe\OneDrive\Área de Trabalho\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.RazorCoreGenerate.cache
+C:\Users\Felipe\OneDrive\Área de Trabalho\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\Razor\Views\Cadastro\Index.cshtml.g.cs
+C:\Users\Felipe\OneDrive\Área de Trabalho\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\Razor\Views\Feed\index.cshtml.g.cs
+C:\Users\Felipe\OneDrive\Área de Trabalho\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Felipe\OneDrive\Área de Trabalho\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Felipe\OneDrive\Área de Trabalho\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\Felipe\OneDrive\Área de Trabalho\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\Felipe\OneDrive\Área de Trabalho\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.RazorTargetAssemblyInfo.cache
+C:\Users\Felipe\OneDrive\Área de Trabalho\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.RazorTargetAssemblyInfo.cs
+C:\Users\Felipe\OneDrive\Área de Trabalho\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.Views.pdb
+C:\Users\Felipe\OneDrive\Área de Trabalho\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\staticwebassets\InstaDev_MVC.StaticWebAssets.Manifest.cache
+C:\Users\Felipe\OneDrive\Área de Trabalho\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\staticwebassets\InstaDev_MVC.StaticWebAssets.xml
+C:\Users\Felipe\OneDrive\Área de Trabalho\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.dll
+C:\Users\Felipe\OneDrive\Área de Trabalho\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.pdb
+C:\Users\Felipe\OneDrive\Área de Trabalho\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.genruntimeconfig.cache
+C:\Users\Felipe\OneDrive\Área de Trabalho\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.csproj.CopyComplete
+C:\Users\FIC\Desktop\Projeto_InstaDev\InstaDev_MVC\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+>>>>>>> Feed
+>>>>>>> e400b38cfbdf1976f1f8126dbed8d0ff21056c83
