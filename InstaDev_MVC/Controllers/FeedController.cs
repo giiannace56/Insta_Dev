@@ -14,8 +14,6 @@ namespace InstaDev_MVC.Controllers
         Publicacao Post = new Publicacao();
         // Comentario Comment = new Comentario();
 
-        
-        [Route("Listar")]
         public IActionResult Index()
         {
             ViewBag.POSTS = Post.ReadAll();
@@ -45,7 +43,7 @@ namespace InstaDev_MVC.Controllers
                 }
                 
         
-        var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img_publicacao", folder, file.FileName);
+                var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img_publicacao", folder, file.FileName);
                 
                 
                 using (var stream = new FileStream(path, FileMode.Create))  
@@ -65,7 +63,7 @@ namespace InstaDev_MVC.Controllers
             
             newpost.Legenda = form["Legenda"];
             
-            newpost.IdUsuario = Int32.Parse(form["IdUsuario"]);
+            newpost.IdUsuario = 1019343930;
             
             Post.Create(newpost);
             

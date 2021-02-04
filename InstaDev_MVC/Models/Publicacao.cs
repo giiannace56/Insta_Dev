@@ -87,7 +87,7 @@ namespace InstaDev_MVC.Models
                 );
 
                 var usuarioLinha = linhaBusca.Split(";");
-                Publicacao.FotoUsuario = usuarioLinha[6].ToString();
+                // Publicacao.FotoUsuario = usuarioLinha[6].ToString();
                 Publicacao.NomeUsuario = usuarioLinha[3].ToString();
                 Publicacao.NomeCompleto = usuarioLinha[2].ToString();
 

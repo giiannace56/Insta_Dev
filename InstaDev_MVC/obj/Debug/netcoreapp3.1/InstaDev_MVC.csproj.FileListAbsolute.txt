@@ -11,20 +11,17 @@ C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\bin\Debug\netcoreapp3.1\Insta
 C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.csprojAssemblyReference.cache
 C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.AssemblyInfoInputs.cache
 C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.AssemblyInfo.cs
-C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.csproj.CoreCompileInputs.cache
 C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.RazorAssemblyInfo.cache
 C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.RazorAssemblyInfo.cs
 C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\staticwebassets\InstaDev_MVC.StaticWebAssets.Manifest.cache
 C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\staticwebassets\InstaDev_MVC.StaticWebAssets.xml
-C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\scopedcss\bundle\InstaDev_MVC.styles.css
 C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.TagHelpers.input.cache
 C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.TagHelpers.output.cache
 C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.RazorCoreGenerate.cache
 C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\Razor\Views\Cadastro\Index.cshtml.g.cs
 C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\Razor\Views\Feed\index.cshtml.g.cs
 C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
-C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
@@ -34,7 +31,6 @@ C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\Insta
 C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.Views.pdb
 C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.dll
 C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.pdb
-C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.genruntimeconfig.cache
 C:\Users\Fic\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.csproj.CopyComplete
 C:\Users\Felipe\OneDrive\Área de Trabalho\Projeto_InstaDev\InstaDev_MVC\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\Felipe\OneDrive\Área de Trabalho\Projeto_InstaDev\InstaDev_MVC\bin\Debug\netcoreapp3.1\appsettings.json
@@ -72,3 +68,4 @@ C:\Users\Felipe\OneDrive\Área de Trabalho\Projeto_InstaDev\InstaDev_MVC\obj\Deb
 C:\Users\Felipe\OneDrive\Área de Trabalho\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.pdb
 C:\Users\Felipe\OneDrive\Área de Trabalho\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.genruntimeconfig.cache
 C:\Users\Felipe\OneDrive\Área de Trabalho\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.csproj.CopyComplete
+C:\Users\FIC\Desktop\Projeto_InstaDev\InstaDev_MVC\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
