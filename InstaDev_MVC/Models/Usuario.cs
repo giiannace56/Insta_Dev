@@ -18,6 +18,7 @@ namespace InstaDev_MVC.Models
         
         public string Senha { get; set; }
 
+        
         private const string PATH = "Database/Usuario.csv";
 
         Random idRandom = new Random();

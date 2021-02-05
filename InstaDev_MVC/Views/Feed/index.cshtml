@@ -84,8 +84,7 @@
             
     <input name="Legenda" type="text" class="descricao-input-img" placeholder="Digite a descrição da imagem...">
 
-    <label for="arquivo">Escolha a Imagem</label>
-    <input type="file" name="Imagem" class="botao-img" value="Escolha a imagem">
+    <input type="file" name="Imagem" class="botao-img" placeholder="Escolha a imagem">
 
     <button type="submit" class="btnpostar"> Postar </button>
 
@@ -116,35 +115,68 @@
 
         <div class="img-post">
             <img src= "~/img_publicacao/@p.Imagem"/>
+            <p class="img-description">@p.Legenda</p>
         </div>
 
+        
+        
+        @* @foreach (Comentario c in ViewBag.COMMENTS)
+        {
+            
+            Usuario user = new Usuario(); *@
+        
+        
+        @* <form class="inputs-postar" method="POST"  action='@Url.Action("Comentar")'> *@
+
         <div class="curtir-comentar">
+            
             <div class="icones">
-                <a href="#"><img src="~/img/Vector-2.png" alt="imagem de um coração"></a>
-                <a href="#"><img src="~/img/Vector-1.png" alt="imagem de um balão de conversa"></a>
+            
+            <a href="#"><img src="~/img/Vector-2.png" alt="imagem de um coração"></a>
+<button class="btn-comentar" type="submit"><img src="~/img/balao.png" alt="imagem de um balão de conversa"></button>
+            
             </div>
+
 
             <div class="input-comentar">
                 <input type="text" class="comentar-post" value="Comentar...">
+                
                 <hr class="linha" size="1" width="220">
             </div>
+        
         </div>
 
         <p class="contador-curtidas">2077 curtidas</p>
         
+
+        
         <div class="area-comentarios">
+            
             <div class="conteudo-comentarios">
-                <div class="nomes-usuarios">
                 
+                <div class="nomes-usuarios">
+                    @* <p>@user.Username</p> *@
                 </div>
 
         
                 <div class="comentarios">
-                
+                    @* <p>@c.Mensagem</p> *@
                 </div>
+            
             </div>
-        </div>    
+        
+        </div>
+
+
+        @* </form> *@
+
+
+        @* }   *@
+
+               
+    
     
     </section>
 
+    
     }

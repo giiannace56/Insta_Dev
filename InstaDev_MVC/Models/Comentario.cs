@@ -20,7 +20,8 @@ namespace InstaDev_MVC.Models
         public int IdPublicacao { get; set; }
 
 
-
+        
+        
         public const string path = "Database/Comentario.csv";
 
         
@@ -92,6 +93,7 @@ namespace InstaDev_MVC.Models
                 Comentario Comentario = new Comentario();
                 Comentario.IdComentario = Int32.Parse(atributos[0]);
                 Comentario.IdUsuario = Int32.Parse(atributos[1]);
+                Comentario.Mensagem = atributos[2];
                 
                 ListaComentarios.Add(Comentario);
             }
