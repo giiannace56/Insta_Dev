@@ -18,6 +18,7 @@ namespace InstaDev_MVC.Controllers
             
             ViewBag.Usuario = user.ReadAll();
             ViewBag.Publicacoes = pub.ReadAll();
+            ViewBag.Comentarios = comentario.ListarComentarios();
             // ViewBag.Comentarios = comentario.ListarComentarios();
             return View();
         }
@@ -36,6 +37,13 @@ namespace InstaDev_MVC.Controllers
             // ViewBag.Comentarios = comentario.ListarComentarios();
 
             return LocalRedirect("~/Perfil/Listar");
+        }
+
+        [Route("Logout")]
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Remove("_UserName");
+            return LocalRedirect("~/Login");
         }
 
     }
