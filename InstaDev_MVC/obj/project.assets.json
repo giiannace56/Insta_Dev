@@ -8,24 +8,31 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\washi\\.nuget\\packages\\": {}
+    "C:\\Users\\FIC\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\washi\\Desktop\\Novapasta\\Projeto_InstaDev\\InstaDev_MVC\\InstaDev_MVC.csproj",
+      "projectUniqueName": "C:\\Users\\FIC\\Desktop\\Novapasta\\Projeto_InstaDev\\InstaDev_MVC\\InstaDev_MVC.csproj",
       "projectName": "InstaDev_MVC",
-      "projectPath": "C:\\Users\\washi\\Desktop\\Novapasta\\Projeto_InstaDev\\InstaDev_MVC\\InstaDev_MVC.csproj",
-      "packagesPath": "C:\\Users\\washi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\washi\\Desktop\\Novapasta\\Projeto_InstaDev\\InstaDev_MVC\\obj\\",
+      "projectPath": "C:\\Users\\FIC\\Desktop\\Novapasta\\Projeto_InstaDev\\InstaDev_MVC\\InstaDev_MVC.csproj",
+      "packagesPath": "C:\\Users\\FIC\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\FIC\\Desktop\\Novapasta\\Projeto_InstaDev\\InstaDev_MVC\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\washi\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\FIC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
