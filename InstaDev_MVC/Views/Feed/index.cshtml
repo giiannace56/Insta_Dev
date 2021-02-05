@@ -1,182 +1,176 @@
 @model Publicacao
 
 @{
-    ViewData["Title"] = "Feed"; 
+    ViewData["Title"] = "Feed";
 }
 
-    <!-- Início da seção de profiles-->
 
-    <section class="box-profiles">
+<section class="box-profiles">
 
-        <div class="box-friends">
+    <div class="box-friends">
 
-            <div class="container-friend">
-                <a href="#"><img src="~/img/vin-diesel 1.png" alt="imagem do vin diesel"></a>
-                <p>vin_diesel</p>
-            </div>
+        <div class="container-friend">
+            <a href="#"><img src="~/img/vin-diesel 1.png" alt="imagem do vin diesel"></a>
+            <p>vin_diesel</p>
+        </div>
 
-            <div class="container-friend">
-                <a href="#"><img src="~/img/gabigordo 1.png" alt="imagem do gabigordo"></a>
-                <p>gabigordo</p>
-            </div>
+        <div class="container-friend">
+            <a href="#"><img src="~/img/gabigordo 1.png" alt="imagem do gabigordo"></a>
+            <p>gabigordo</p>
+        </div>
 
-            <div class="container-friend">
-                <a href="#"><img src="~/img/will-baiano 1.png" alt="imagem do will baiano"></a>
-                <p>will_baiano</p>
-            </div>
+        <div class="container-friend">
+            <a href="#"><img src="~/img/will-baiano 1.png" alt="imagem do will baiano"></a>
+            <p>will_baiano</p>
+        </div>
 
-            <div class="container-friend">
-                <a href="#"><img src="~/img/tony_stark 1.png" alt="imagem do adriano stark"></a>
-                <p>adriano_stark</p>
-            </div>
+        <div class="container-friend">
+            <a href="#"><img src="~/img/tony_stark 1.png" alt="imagem do adriano stark"></a>
+            <p>adriano_stark</p>
+        </div>
 
-            <div class="container-friend">
-                <a href="#"><img src="~/img/pele 1.png" alt="imagem do king pelé"></a>
-                <p>king_pele</p>
-            </div>
+        <div class="container-friend">
+            <a href="#"><img src="~/img/pele 1.png" alt="imagem do king pelé"></a>
+            <p>king_pele</p>
+        </div>
 
-            <div class="container-friend">
-                <a href="#"><img src="~/img/samuel-rosa-bebê 1.png" alt="imagem do samuel rosa bebê"></a>
-                <p>samuel_rosa</p>
-            </div>
+        <div class="container-friend">
+            <a href="#"><img src="~/img/samuel-rosa-bebê 1.png" alt="imagem do samuel rosa bebê"></a>
+            <p>samuel_rosa</p>
+        </div>
 
-            <div class="container-friend">
-                <a href="#"><img src="~/img/chaves_metal 1.png" alt="imagem do chaves metal"></a>
-                <p>chaves_metal</p>
-            </div>
+        <div class="container-friend">
+            <a href="#"><img src="~/img/chaves_metal 1.png" alt="imagem do chaves metal"></a>
+            <p>chaves_metal</p>
+        </div>
+
+    </div>
+
+
+    <div class="container-user">
+
+        <div class="container-img">
+            <a href="#"><img src="~/img/thank-you 2.png" alt="imagem de perfil do marcos jeeves"></a>
+        </div>
+
+        <div class="container-text">
 
         </div>
 
+    </div>
 
-        <div class="container-user">
+</section>
 
-            <div class="container-img">
-                <a href="#"><img src="~/img/thank-you 2.png" alt="imagem de perfil do marcos jeeves"></a>
-            </div>
 
-            <div class="container-text">
 
-            </div>
-
+<section class="box-postar">
+    <div class="titulo-postar">
+        <div class="titulo-postar-img">
+            <a href="#"><img src="~/img/thank-you 3.png" alt="imagem do marcos jeeves"></a>
         </div>
 
-    </section>
-
-    <!-- Final da seção de profiles-->
-
-    <!-- Início da seção de postar-->
-
-    <section class="box-postar">
-        <div class="titulo-postar">
-            <div class="titulo-postar-img">
-                <a href="#"><img src="~/img/thank-you 3.png" alt="imagem do marcos jeeves"></a>
-            </div>
-
-            <div class="titulo-postar-texto">
-                <p> Postar </p>
-            </div>
+        <div class="titulo-postar-texto">
+            <p> Postar </p>
         </div>
+    </div>
 
-    
-    
+
+
     <form class="inputs-postar" method="POST" enctype="multipart/form-data" action='@Url.Action("Postar")'>
-            
-            
+
+    
     <input name="Legenda" type="text" class="descricao-input-img" placeholder="Digite a descrição da imagem...">
 
     <input type="file" name="Imagem" class="botao-img" placeholder="Escolha a imagem">
 
     <button type="submit" class="btnpostar"> Postar </button>
 
-        
+
     </form>
-    
-    
-    </section>
 
-    <!-- Fim da seção postar-->
 
-    <!-- Início da seção posts-->        
-    
-    @foreach (Publicacao p in ViewBag.POSTS) {
+</section>
 
-    
+
+
+@foreach (Publicacao p in ViewBag.POSTS)
+{
+
+
     <section class="box-post">
-   
 
 
-        <div class="header-post">
-            <a href="#"><img src="~/img/gabigordo 2.png" alt="imagem do gabigordo"></a>
-            <div class="header-texto">
-            </div>
+
+    <div class="header-post">
+        <a href="#"><img src="~/img/gabigordo 2.png" alt="imagem do usuari"></a>
+        <div class="header-texto">
         </div>
+    </div>
 
-            
 
-        <div class="img-post">
-            <img src= "~/img_publicacao/@p.Imagem"/>
-            <p class="img-description">@p.Legenda</p>
-        </div>
+
+    <div class="img-post">
+        <img src="~/img_publicacao/@p.Imagem" />
+        <p class="img-description">@p.Legenda</p>
+    </div>
+
+
+
+    
+    <div class="curtir-comentar">
 
         
-        
-        @* @foreach (Comentario c in ViewBag.COMMENTS)
+        <form method="POST" action='@Url.Action("Comentar")'>
+
+        <div class="icones">
+
+            <a href="#"><img src="~/img/Vector-2.png" alt="imagem de um coração"></a>
+            <button class="btn-comentar" type="submit"><img src="~/img/balao.png" alt="imagem de um balão"></button>
+        </div>
+
+
+        <div class="input-comentar">
+            <input type="text" name="Mensagem" class="comentar-post" placeholder="Comentar...">
+            <hr class="linha" size="1" width="220">
+        </div>
+
+        </form>
+
+    </div>
+
+    <p class="contador-curtidas">2077 curtidas</p>
+
+
+
+    <div class="area-comentarios">
+
+
+        @foreach (Comentario c in ViewBag.COMMENTS)
         {
             
-            Usuario user = new Usuario(); *@
-        
-        
-        @* <form class="inputs-postar" method="POST"  action='@Url.Action("Comentar")'> *@
+            
+        <div class="conteudo-comentarios">
 
-        <div class="curtir-comentar">
-            
-            <div class="icones">
-            
-            <a href="#"><img src="~/img/Vector-2.png" alt="imagem de um coração"></a>
-<button class="btn-comentar" type="submit"><img src="~/img/balao.png" alt="imagem de um balão de conversa"></button>
-            
+            <div class="nomes-usuarios">
+                <p>@c.NomeComentario</p>
             </div>
 
-
-            <div class="input-comentar">
-                <input type="text" class="comentar-post" value="Comentar...">
-                
-                <hr class="linha" size="1" width="220">
+            <div class="comentarios">
+                <p>@c.Mensagem</p>
             </div>
-        
+
         </div>
 
-        <p class="contador-curtidas">2077 curtidas</p>
-        
-
-        
-        <div class="area-comentarios">
-            
-            <div class="conteudo-comentarios">
-                
-                <div class="nomes-usuarios">
-                    @* <p>@user.Username</p> *@
-                </div>
-
-        
-                <div class="comentarios">
-                    @* <p>@c.Mensagem</p> *@
-                </div>
-            
-            </div>
-        
-        </div>
-
-
-        @* </form> *@
-
-
-        @* }   *@
-
-               
+        }
     
     
+    </div>
+
+
+
+
+
     </section>
 
-    
-    }
+
+}

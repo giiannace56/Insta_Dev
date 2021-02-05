@@ -17,6 +17,9 @@ namespace InstaDev_MVC.Models
         public int IdUsuario { get; set; }
 
 
+        public string NomeComentario { get; set; }
+        
+        
         public int IdPublicacao { get; set; }
 
 
@@ -34,7 +37,7 @@ namespace InstaDev_MVC.Models
         
         public string PrepareCsv(Comentario c)
         {
-            return $"{c.IdUsuario};{c.Mensagem}";
+            return $"{c.IdUsuario};{NomeComentario};{c.Mensagem}";
         }
 
 
