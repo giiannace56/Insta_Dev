@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\dev\\.nuget\\packages\\": {}
+    "C:\\Users\\washi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dev\\Desktop\\Novapasta\\Projeto_InstaDev\\InstaDev_MVC\\InstaDev_MVC.csproj",
+      "projectUniqueName": "C:\\Users\\washi\\Desktop\\Novapasta\\Projeto_InstaDev\\InstaDev_MVC\\InstaDev_MVC.csproj",
       "projectName": "InstaDev_MVC",
-      "projectPath": "C:\\Users\\dev\\Desktop\\Novapasta\\Projeto_InstaDev\\InstaDev_MVC\\InstaDev_MVC.csproj",
-      "packagesPath": "C:\\Users\\dev\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dev\\Desktop\\Novapasta\\Projeto_InstaDev\\InstaDev_MVC\\obj\\",
+      "projectPath": "C:\\Users\\washi\\Desktop\\Novapasta\\Projeto_InstaDev\\InstaDev_MVC\\InstaDev_MVC.csproj",
+      "packagesPath": "C:\\Users\\washi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\washi\\Desktop\\Novapasta\\Projeto_InstaDev\\InstaDev_MVC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\dev\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\washi\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -61,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }
