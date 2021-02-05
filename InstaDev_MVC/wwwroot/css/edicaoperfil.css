@@ -158,6 +158,7 @@ body{
 .perfil{
     width: 100%;
     height: 15%;
+    margin-top: 1em;
     /* background-color: chocolate; */
     color: black;
     font-family: var(--font);
@@ -166,6 +167,7 @@ body{
 .perfil h2{
     font-size: 18px;
     font-weight: 600;
+    margin-left: 4px;
 }
 
 .perfil a{
@@ -177,9 +179,11 @@ body{
 .perfil img{
     width: 50px;
     height: 50px;
+    margin-bottom: 10px;
     border-radius: 50px;
     margin-right: 1.5em;
 }
+
 
 .texto a:hover{
     text-decoration: underline;
@@ -361,22 +365,27 @@ body{
     width: 0.1px;
     height: 0.1px;
     position: absolute;
-}
+} 
+
 
 .file-input label {
     display: block;
     position: relative;
-    width: 200px;
-    height: 50px;
-    border-radius: 25px;
-    
-    
+    width: 150px;
+    height: 35px;
+    border-radius: 20px;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    color: blue;
+    color: #2686CC;
     font-weight: bold;
     cursor: pointer;
     transition: transform .2s ease-out;
 }
-  
+.texto h2{
+    padding-top: 10px;
+}
+.Yes-baby{
+    margin-bottom: 10px;
+}
