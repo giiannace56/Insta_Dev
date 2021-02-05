@@ -226,11 +226,11 @@ body{
     height: 25.25em;
     /* background-color: #2686cc; */
     margin: auto;
-    margin-bottom: 3em;
+    margin-bottom: 1em;
     display: flex;
     justify-content: space-between;
     background-color: #fff;
-    margin-top: 1em;
+    margin-top: 3em;
 }
 
 .publicacoes h2{
@@ -256,6 +256,7 @@ body{
 
 .img-pub h2{
     margin-left: 10px;
+    font-weight: 500;
 }
 
 .imagem-pub{
@@ -383,5 +384,18 @@ body{
     height: 13px;
 }
 
+.comentar{
+    width: 934px;
+    height:50px;
+    /* background-color: #ccc; */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.input-comentario{
+    width: 500px;
+    height: 30px;
+}
 
 /* Fim publicações */

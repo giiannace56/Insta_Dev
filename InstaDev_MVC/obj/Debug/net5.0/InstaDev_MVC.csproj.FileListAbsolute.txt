@@ -37,3 +37,4 @@ C:\Users\FIC\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\net5.0\InstaDev_MVC
 C:\Users\FIC\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\net5.0\InstaDev_MVC.genruntimeconfig.cache
 C:\Users\FIC\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\net5.0\InstaDev_MVC.csproj.CopyComplete
 C:\Users\FIC\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\net5.0\Razor\Views\Login\Index.cshtml.g.cs
+C:\Users\Vitor Manoel\Desktop\Projeto_InstaDev-Perfil\Projeto_InstaDev\InstaDev_MVC\obj\Debug\net5.0\InstaDev_MVC.pdb

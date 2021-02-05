@@ -92,7 +92,6 @@ namespace InstaDev_MVC.Models
                 Comentario Comentario = new Comentario();
                 Comentario.IdComentario = Int32.Parse(atributos[0]);
                 Comentario.IdUsuario = Int32.Parse(atributos[1]);
-                
                 ListaComentarios.Add(Comentario);
             }
 

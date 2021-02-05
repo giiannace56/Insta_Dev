@@ -47,7 +47,7 @@
 
         <section class="publicacoes"> 
             <div class="content">
-                <div class="/img-pub">
+                <div class="img-pub">
                     <img src="/img/image 1.svg" alt="">
                     <h2>Publicações</h2>
                 </div>
@@ -55,7 +55,7 @@
                 @foreach (Publicacao item in ViewBag.Publicacoes){
                 <div class="publicacao">
                     <div class="imagem-pub">
-                            <img src="/Imagem/Publicacao/@item.Imagem" alt="" >
+                            <img src="~/img/img_publicacao/@item.Imagem" alt="" >
                     </div>
                     
                     <div class="conteudo">
@@ -63,7 +63,10 @@
                             <img src="/img/87271a98fb0eb1c82d0bf3b7ad39d2fa.jpg" alt="">
 
                             <div class="nome-endereco">
-                                <p>Nome Usuário</p>
+                                @foreach (Usuario u in ViewBag.Usuario)
+                                {
+                                    <p>@u.Nome</p>
+                                }
                                 <p>Rio de Janeiro, Brasil</p>
                             </div>
                         </div>
@@ -104,8 +107,9 @@
                     </div>
                 </div>
                 <div class="comentar">
-                    <form>
+                    <form method="POST" action='@Url.Action("Comentar")' enctype="multipart/form-data">
                         <input type="text" name="comentario" class="input-comentario" placeholder="Escreva um comentário">
+                        <button type="submit" style="display: none;"></button>
                     </form>
                 </div>
                 }

@@ -133,36 +133,16 @@ namespace InstaDev_MVC.Models
         }
 
 
-<<<<<<< HEAD
         // public int Like(){
             
         // }
 
 
 
-=======
-<<<<<<< HEAD
-        // public int Like(){
-
-        // }
-
-=======
-
-        public int Curtir()
-        {
-            return 7;
-        }
-
-        
-       
->>>>>>> Feed
 
 
         
         
     
-    
-    
->>>>>>> e400b38cfbdf1976f1f8126dbed8d0ff21056c83
     }
 }
