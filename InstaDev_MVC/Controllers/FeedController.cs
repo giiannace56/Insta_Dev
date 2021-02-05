@@ -12,11 +12,14 @@ namespace InstaDev_MVC.Controllers
     {
         
         Publicacao Post = new Publicacao();
-        // Comentario Comment = new Comentario();
+        Comentario Comment = new Comentario();
 
+        
+        [Route("Listar")]
         public IActionResult Index()
         {
             ViewBag.POSTS = Post.ReadAll();
+            ViewBag.COMMENTS = Comment.ListarComentarios();
             return View();
         }
         
@@ -85,8 +88,9 @@ namespace InstaDev_MVC.Controllers
         }
 
 
+        
+        
         // [Route("Comentar")]
-
         // public IActionResult Index2()
         // {
         //     ViewBag.COMMENTS = Comment.ListarComentarios();
@@ -95,18 +99,18 @@ namespace InstaDev_MVC.Controllers
         
         
         
-        // public IActionResult Comentar(IFormCollection form)
-        // {
-        //     Comentario comment = new Comentario();
-        //     comment.IdUsuario = Int32.Parse(form["IdUsuario"]);
-        //     comment.IdComentario = Int32.Parse(form["IdComentario"]);
-        //     comment.Mensagem = form["Mensagem"];
+        public IActionResult Comentar(IFormCollection form)
+        {
+            Comentario comment = new Comentario();
+            comment.IdUsuario = Int32.Parse(form["IdUsuario"]);
+            comment.IdComentario = Int32.Parse(form["IdComentario"]);
+            comment.Mensagem = form["Mensagem"];
             
-        //     Comment.CriarComentario(comment);            
-        //     ViewBag.COMMENTS = Comment.ListarComentarios();
+            Comment.CriarComentario(comment);            
+            ViewBag.COMMENTS = Comment.ListarComentarios();
 
-        //     return LocalRedirect("~/Feed/Comentar");
-        // }
+            return LocalRedirect("~/Feed/Listar");
+        }
 
 
 

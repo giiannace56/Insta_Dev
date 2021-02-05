@@ -2,7 +2,12 @@
   "runtimeOptions": {
     "additionalProbingPaths": [
       "C:\\Users\\FIC\\.dotnet\\store\\|arch|\\|tfm|",
+<<<<<<< HEAD
       "C:\\Users\\FIC\\.nuget\\packages"
+=======
+      "C:\\Users\\FIC\\.nuget\\packages",
+      "C:\\Microsoft\\Xamarin\\NuGet"
+>>>>>>> Edição-perfil
     ]
   }
 }

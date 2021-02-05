@@ -17,10 +17,14 @@ namespace InstaDev_MVC.Models
         public int IdUsuario { get; set; }
 
 
+        public string NomeComentario { get; set; }
+        
+        
         public int IdPublicacao { get; set; }
 
 
-
+        
+        
         public const string path = "Database/Comentario.csv";
 
         
@@ -33,7 +37,7 @@ namespace InstaDev_MVC.Models
         
         public string PrepareCsv(Comentario c)
         {
-            return $"{c.IdUsuario};{c.Mensagem}";
+            return $"{c.IdUsuario};{NomeComentario};{c.Mensagem}";
         }
 
 
@@ -90,9 +94,10 @@ namespace InstaDev_MVC.Models
                 string[] atributos = item.Split(";");
 
                 Comentario Comentario = new Comentario();
-                // Comentario.IdComentario = Int32.Parse(atributos[0]);
-                Comentario.IdUsuario = Int32.Parse(atributos[0]);
-                Comentario.Mensagem = atributos[1];
+                Comentario.IdComentario = Int32.Parse(atributos[0]);
+                Comentario.IdUsuario = Int32.Parse(atributos[1]);
+                Comentario.Mensagem = atributos[2];
+                
                 ListaComentarios.Add(Comentario);
             }
 
