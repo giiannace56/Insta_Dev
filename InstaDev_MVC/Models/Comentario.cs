@@ -34,10 +34,27 @@ namespace InstaDev_MVC.Models
         }
 
 
+        public int GerarCodigo()
+        {
+            var comments = ListarComentarios();
+
+            if (comments.Count == 0)
+            {
+                return 1;
+            }
+
+            var code = comments[comments.Count - 1].IdComentario;
+
+            code++;
+
+            return code;
+        }
+
+
         
         public string PrepareCsv(Comentario c)
         {
-            return $"{c.IdUsuario};{NomeComentario};{c.Mensagem}";
+            return $"{c.IdComentario};{c.Mensagem}";
         }
 
 
@@ -95,8 +112,7 @@ namespace InstaDev_MVC.Models
 
                 Comentario Comentario = new Comentario();
                 Comentario.IdComentario = Int32.Parse(atributos[0]);
-                Comentario.IdUsuario = Int32.Parse(atributos[1]);
-                Comentario.Mensagem = atributos[2];
+                Comentario.Mensagem = atributos[1];
                 
                 ListaComentarios.Add(Comentario);
             }

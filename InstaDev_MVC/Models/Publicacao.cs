@@ -76,18 +76,17 @@ namespace InstaDev_MVC.Models
                 Publicacao.Imagem = atributos[1];
                 Publicacao.Legenda = atributos[2];
                 Publicacao.IdUsuario = Int32.Parse(atributos[3]);
-                // Publicacao.Likes = int.Parse(atributos[4]);
+                
 
-                List<String> CSV = user.ReadAllLinesCSV("Database/Cadastro.csv");
+                List<String> CSV = user.ReadAllLinesCSV("Database/Usuario.csv");
                 
                 var linhaBusca =
+                
                 CSV.Find (
-                    x =>
-                    x.Split(";")[0] == atributos[3]
+                    x => x.Split(";")[4] == atributos[3]
                 );
 
                 var usuarioLinha = linhaBusca.Split(";");
-                // Publicacao.FotoUsuario = usuarioLinha[6].ToString();
                 Publicacao.NomeUsuario = usuarioLinha[3].ToString();
                 Publicacao.NomeCompleto = usuarioLinha[2].ToString();
 
@@ -100,6 +99,7 @@ namespace InstaDev_MVC.Models
         }
 
 
+        
         public List<Publicacao> LerPublicacoes(int id)
         {
             List<Publicacao> posts = ReadAll();
@@ -133,9 +133,7 @@ namespace InstaDev_MVC.Models
         }
 
 
-        // public int Like(){
-
-        // }
+        
 
 
 

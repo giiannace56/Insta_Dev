@@ -50,7 +50,7 @@
     <div class="container-user">
 
         <div class="container-img">
-            <a href="#"><img src="~/img/thank-you 2.png" alt="imagem de perfil do marcos jeeves"></a>
+            <a asp-controller="Perfil" asp-action="Index"><img src="~/img/thank-you 2.png" alt="imagem de perfil do marcos jeeves"></a>
         </div>
 
         <div class="container-text">
@@ -102,7 +102,7 @@
 
 
     <div class="header-post">
-        <a href="#"><img src="~/img/gabigordo 2.png" alt="imagem do usuari"></a>
+        <a href="#"><img src="~/img/gabigordo 2.png" alt="imagem do usuario"></a>
         <div class="header-texto">
         </div>
     </div>
@@ -148,11 +148,12 @@
         @foreach (Comentario c in ViewBag.COMMENTS)
         {
             
+            Usuario u = new Usuario();
             
         <div class="conteudo-comentarios">
 
             <div class="nomes-usuarios">
-                <p>@c.NomeComentario</p>
+                <p>@u.Username</p>
             </div>
 
             <div class="comentarios">
