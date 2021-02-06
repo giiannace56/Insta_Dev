@@ -67,6 +67,7 @@ namespace InstaDev_MVC.Models
 
             string[] linhas = File.ReadAllLines(PATH); 
 
+            
             foreach (var item in linhas)
             {
                 string[] atributos = item.Split(";");
@@ -78,17 +79,13 @@ namespace InstaDev_MVC.Models
                 Publicacao.IdUsuario = Int32.Parse(atributos[3]);
                 
 
-                List<String> CSV = user.ReadAllLinesCSV("Database/Usuario.csv");
+                // List<String> CSV = user.ReadAllLinesCSV("Database/Usuario.csv");
                 
-                var linhaBusca =
-                
-                CSV.Find (
-                    x => x.Split(";")[4] == atributos[3]
-                );
+                // var linhaBusca = CSV.Find (x => x.Split(";")[4] == atributos[3]);
 
-                var usuarioLinha = linhaBusca.Split(";");
-                Publicacao.NomeUsuario = usuarioLinha[3].ToString();
-                Publicacao.NomeCompleto = usuarioLinha[2].ToString();
+                // var usuarioLinha = linhaBusca.Split(";");
+                // Publicacao.NomeUsuario = usuarioLinha[3].ToString();
+                // Publicacao.NomeCompleto = usuarioLinha[2].ToString();    // checar pq da erro aqui!
 
                 ListaPublicacoes.Add(Publicacao);
             }

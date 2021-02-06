@@ -67,7 +67,7 @@ namespace InstaDev_MVC.Controllers
             
             newpost.Legenda = form["Legenda"];
             
-            newpost.IdUsuario = 151185625;
+            newpost.IdUsuario = 948985665;
             
             Post.Create(newpost);
             

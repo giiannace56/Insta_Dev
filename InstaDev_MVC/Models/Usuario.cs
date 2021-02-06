@@ -21,6 +21,7 @@ namespace InstaDev_MVC.Models
         
         private const string PATH = "Database/Usuario.csv";
 
+        
         Random idRandom = new Random();
 
          private string PrepararLinha(Usuario user){
@@ -67,5 +68,7 @@ namespace InstaDev_MVC.Models
             }
             return usuarios;
         }
+    
+    
     }
 }

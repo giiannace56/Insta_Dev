@@ -16,6 +16,7 @@
 
         <div class="container-friend">
             <a href="#"><img src="~/img/gabigordo 1.png" alt="imagem do gabigordo"></a>
+
             <p>gabigordo</p>
         </div>
 
@@ -50,7 +51,7 @@
     <div class="container-user">
 
         <div class="container-img">
-            <a asp-controller="Perfil" asp-action="Index"><img src="~/img/thank-you 2.png" alt="imagem de perfil do marcos jeeves"></a>
+            <a><img src="~/img/thank-you 2.png" alt="imagem de perfil do marcos jeeves"></a>
         </div>
 
         <div class="container-text">
@@ -64,7 +65,9 @@
 
 
 <section class="box-postar">
+
     <div class="titulo-postar">
+
         <div class="titulo-postar-img">
             <a href="#"><img src="~/img/thank-you 3.png" alt="imagem do marcos jeeves"></a>
         </div>
@@ -72,24 +75,36 @@
         <div class="titulo-postar-texto">
             <p> Postar </p>
         </div>
+
     </div>
 
 
 
     <form class="inputs-postar" method="POST" enctype="multipart/form-data" action='@Url.Action("Postar")'>
 
-    
-    <input name="Legenda" type="text" class="descricao-input-img" placeholder="Digite a descrição da imagem...">
 
-    <input type="file" name="Imagem" class="botao-img" placeholder="Escolha a imagem">
+        <input name="Legenda" type="text" class="descricao-input-img" placeholder="Digite a descrição da imagem...">
 
-    <button type="submit" class="btnpostar"> Postar </button>
+
+        <label for="selecionar-imagem" class="botao-img">
+            <p>Escolha a imagem</p>
+        </label>
+
+        <input type="file" name="Imagem" class="input-img" id="selecionar-imagem">
+
+
+        <button type="submit" class="btnpostar"> Postar </button>
 
 
     </form>
 
 
 </section>
+
+
+
+
+@* INÍCIO DO POST *@
 
 
 
@@ -100,77 +115,70 @@
     <section class="box-post">
 
 
-
-    <div class="header-post">
-        <a href="#"><img src="~/img/gabigordo 2.png" alt="imagem do usuario"></a>
-        <div class="header-texto">
-        </div>
-    </div>
-
-
-
-    <div class="img-post">
-        <img src="~/img_publicacao/@p.Imagem" />
-        <p class="img-description">@p.Legenda</p>
-    </div>
-
-
-
-    
-    <div class="curtir-comentar">
-
-        
-        <form method="POST" action='@Url.Action("Comentar")'>
-
-        <div class="icones">
-
-            <a href="#"><img src="~/img/Vector-2.png" alt="imagem de um coração"></a>
-            <button class="btncomentar" type="submit"><img src="~/img/balao.png" alt="imagem de um balão"></button>
+        <div class="header-post">
+            <a href="#"><img src="~/img/gabigordo 2.png" alt="imagem do usuario"></a>
+            <div class="header-texto">
+            </div>
         </div>
 
 
-        <div class="input-comentar">
-            <input type="text" name="Mensagem" class="comentar-post" placeholder="Comentar...">
-            <hr class="linha" size="1" width="220">
+
+        <div class="img-post">
+            <img src="~/img_publicacao/@p.Imagem" />
+            <p class="img-description">@p.Legenda</p>
         </div>
 
-        </form>
-
-    </div>
-
-    @* <p class="contador-curtidas">2077 curtidas</p> *@
 
 
+        <div class="curtir-comentar">
 
-    <div class="area-comentarios">
+            <form class="comment-form" method="POST" action='@Url.Action("Comentar")'>
+
+                
+                <div class="icones">
+                    
+                    
+                    <a asp-area="" asp-controller="" asp-action="">
+                        <img src="~/img/lixeira.png" alt="imagem de uma lixeira">
+                    </a>
+
+                    <button class="btncomentar" type="submit">
+                        <img src="~/img/balao.png" alt="imagem de balao">
+                    </button>
+
+                
+                </div>
+
+
+                <div class="input-comentar">
+                    <input type="text" name="Mensagem" class="comentar-post" placeholder="Comentar...">
+                    <hr class="linha" size="1" width="220">
+                </div>
+
+            
+            </form>
+
+        </div>
+
+
+        @* <p class="contador-curtidas">2077 curtidas</p> *@
 
 
         @foreach (Comentario c in ViewBag.COMMENTS)
         {
             
-            Usuario u = new Usuario();
+            Usuario user = new Usuario();
+        
+        
+        <div class="comments">
+
+            <p class="mensagem-texto">@c.Mensagem</p>
             
-        <div class="conteudo-comentarios">
-
-            <div class="nomes-usuarios">
-                <p>@u.Username</p>
-            </div>
-
-            <div class="comentarios">
-                <p>@c.Mensagem</p>
-            </div>
-
         </div>
 
-        }
+        } 
     
     
-    </div>
-
-
-
-
-
     </section>
 
 
