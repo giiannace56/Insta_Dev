@@ -90,9 +90,9 @@ namespace InstaDev_MVC.Models
                 ListaPublicacoes.Add(Publicacao);
             }
 
-            ListaPublicacoes.Reverse();
-
+            
             return ListaPublicacoes;
+        
         }
 
 
@@ -102,8 +102,7 @@ namespace InstaDev_MVC.Models
             List<Publicacao> posts = ReadAll();
 
             posts = posts.FindAll(post => post.IdPublicacao == id);
-            posts.Reverse();
-
+            
             return posts;
         }
 
@@ -124,7 +123,7 @@ namespace InstaDev_MVC.Models
         {
             List<string> linhas = ReadAllLinesCSV(PATH);
 
-            linhas.RemoveAll( x => x.Split(";")[0] == id.ToString() );
+            linhas.RemoveAll( x => x.Split(";")[0] == IdPublicacao.ToString() );
 
             RewriteCSV(PATH, linhas);
         }

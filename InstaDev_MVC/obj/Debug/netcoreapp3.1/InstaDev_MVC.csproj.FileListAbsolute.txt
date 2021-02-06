@@ -385,3 +385,5 @@ C:\Users\Vitor Manoel\Desktop\ProfileToDevelop\Projeto_InstaDev\InstaDev_MVC\obj
 C:\Users\Vitor Manoel\Desktop\ProfileToDevelop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\staticwebassets\InstaDev_MVC.StaticWebAssets.xml
 C:\Users\Vitor Manoel\Desktop\ProfileToDevelop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.genruntimeconfig.cache
 C:\Users\Vitor Manoel\Desktop\ProfileToDevelop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.csproj.CopyComplete
+C:\Users\Felipe\OneDrive\Área de Trabalho\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\Razor\Views\Editar\Index.cshtml.g.cs
+C:\Users\Felipe\OneDrive\Área de Trabalho\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\Razor\Views\Perfil\Index.cshtml.g.cs

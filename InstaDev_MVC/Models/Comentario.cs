@@ -17,8 +17,6 @@ namespace InstaDev_MVC.Models
         public int IdUsuario { get; set; }
 
 
-        public string NomeComentario { get; set; }
-        
         
         public int IdPublicacao { get; set; }
 
