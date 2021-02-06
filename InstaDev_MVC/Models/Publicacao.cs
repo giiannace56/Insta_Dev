@@ -134,15 +134,13 @@ namespace InstaDev_MVC.Models
 
 
         // public int Like(){
-
+            
         // }
 
 
 
         
         
-    
-    
     
     }
 }

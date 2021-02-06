@@ -26,7 +26,7 @@ namespace InstaDev_MVC.Controllers
 
             novoUsuario.IdUsuario = usuarioModel.IdGenerator();
             
-            usuarioModel.Create(novoUsuario);
+            usuarioModel.CadastrarUsuario(novoUsuario);
             ViewBag.Cadastrar = usuarioModel.ReadAll();
 
             return LocalRedirect("~/Cadastrar");

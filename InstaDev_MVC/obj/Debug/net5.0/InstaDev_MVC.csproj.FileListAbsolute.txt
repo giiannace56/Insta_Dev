@@ -38,6 +38,9 @@ C:\Users\FIC\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\net5.0\InstaDev_MVC
 C:\Users\FIC\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\net5.0\InstaDev_MVC.genruntimeconfig.cache
 C:\Users\FIC\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\net5.0\InstaDev_MVC.csproj.CopyComplete
 C:\Users\FIC\Desktop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\net5.0\Razor\Views\Login\Index.cshtml.g.cs
+<<<<<<< HEAD
+C:\Users\Vitor Manoel\Desktop\Projeto_InstaDev-Perfil\Projeto_InstaDev\InstaDev_MVC\obj\Debug\net5.0\InstaDev_MVC.pdb
+=======
 C:\Users\Felipe\OneDrive\Área de Trabalho\Projeto_InstaDev\InstaDev_MVC\obj\Debug\net5.0\InstaDev_MVC.pdb
 =======
 C:\Users\fic\Desktop\Novapasta\Projeto_InstaDev\InstaDev_MVC\bin\Debug\net5.0\appsettings.Development.json
@@ -197,3 +200,4 @@ C:\Users\washi\Desktop\Novapasta\Projeto_InstaDev\InstaDev_MVC\obj\Debug\net5.0\
 C:\Users\washi\Desktop\Novapasta\Projeto_InstaDev\InstaDev_MVC\obj\Debug\net5.0\InstaDev_MVC.genruntimeconfig.cache
 C:\Users\washi\Desktop\Novapasta\Projeto_InstaDev\InstaDev_MVC\obj\Debug\net5.0\InstaDev_MVC.csproj.CopyComplete
 >>>>>>> Edição-perfil
+>>>>>>> 9e01144ba9ccd2c6f48b845bc65ccf979c97751e

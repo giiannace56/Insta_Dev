@@ -8,13 +8,14 @@ namespace fake.Controllers
 {
     [Route("Editar")]
     public class EditarController : Controller
-    {
+    {   
+
         public IActionResult Index()
         {
             return View();
         }
-
         Usuario usuarioModel = new Usuario();
+
 
         [Route("Usuario")]
         public IActionResult Usuario()

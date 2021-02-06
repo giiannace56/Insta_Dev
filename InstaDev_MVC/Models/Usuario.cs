@@ -6,7 +6,7 @@ using fake.Interfaces;
 
 namespace InstaDev_MVC.Models 
 {
-    public class Usuario : InstaDev_base , IEdicao
+    public class Usuario : InstaDev_base, IEdicao
     {
         public int IdUsuario { get; set; }
 
@@ -14,6 +14,8 @@ namespace InstaDev_MVC.Models
 
         public string Email { get; set; }
 
+        public string Foto { get; set; }
+        
         
 
         public string Username { get; set; }
@@ -31,7 +33,9 @@ namespace InstaDev_MVC.Models
 
         public int IdGenerator(){
             
-            Random idRandom = new Random();}
+            Random idRandom = new Random();
+            return idRandom.Next();
+        }
         public void CadastrarUsuario(Usuario e)
         {
             string[] linhas = {Prepare(e)};
@@ -41,11 +45,11 @@ namespace InstaDev_MVC.Models
         {
             
         }
-        private const string PATH = "Database/Editar.csv";
+        private const string PATHedit = "Database/Editar.csv";
 
         public Usuario()
         {
-            CreateFolderAndFile(PATH);
+            CreateFolderAndFile(PATHedit);
 
         }            
 
@@ -54,34 +58,6 @@ namespace InstaDev_MVC.Models
             return $"{e.Nome};{e.Username}; {e.Email}; {e.Foto};";
         }
 
-        public List<Usuario> ReadAll()
-        {
-            List<Usuario> usuarios = new List<Usuario>();
-            // Ler todas as linhas
-            string[] linhas = File.ReadAllLines(PATH);
-
-            // Percorrer as linhas e usuario adicionar na lista decada elemento
-            foreach (var item in linhas)
-            {
-                string[] linha = item.Split(";");
-
-                // Criamos o objeto usuario
-                
-                Usuario user = new Usuario();
-
-                // Alimentamos o objeto usuario
-                user.Nome       = linha[0];
-                user.Username   = linha[1];
-                user.Email      = linha[2];
-                user.Foto       = linha[3];
-
-                // Adicionamos o usuário na lista de usuarios
-                usuarios.Add(user);
-                
-            }  
-
-            return usuarios;
-        }
             public void EditarUsuario(Usuario e)
 
         {
@@ -93,16 +69,9 @@ namespace InstaDev_MVC.Models
 
             RewriteCSV(PATH, linhas);
 
-            return idRandom.Next();
+            idRandom.Next();
         }
 
-        public Usuario(){
-        
-            CreateFolderAndFile(PATH);
-        
-        }
-
-        public void Create(Usuario userC);
         public void DeleteUsuario(int id)
         {
             List<string> linhas = ReadAllLinesCSV(PATH);
@@ -116,8 +85,8 @@ namespace InstaDev_MVC.Models
         {
                 
         }
-        public void Logar()
-        {
+        public void Logar(Usuario userC)
+        {   
             string[] linha = { PrepararLinha (userC) };
             File.AppendAllLines(PATH, linha);
         }
