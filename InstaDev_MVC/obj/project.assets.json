@@ -8,31 +8,28 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\FIC\\.nuget\\packages\\": {}
+    "C:\\Users\\Vitor Manoel\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\FIC\\Desktop\\Projeto\\Projeto_InstaDev\\InstaDev_MVC\\InstaDev_MVC.csproj",
+      "projectUniqueName": "C:\\Users\\Vitor Manoel\\Desktop\\ProfileToDevelop\\Projeto_InstaDev\\InstaDev_MVC\\InstaDev_MVC.csproj",
       "projectName": "InstaDev_MVC",
-      "projectPath": "C:\\Users\\FIC\\Desktop\\Projeto\\Projeto_InstaDev\\InstaDev_MVC\\InstaDev_MVC.csproj",
-      "packagesPath": "C:\\Users\\FIC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\FIC\\Desktop\\Projeto\\Projeto_InstaDev\\InstaDev_MVC\\obj\\",
+      "projectPath": "C:\\Users\\Vitor Manoel\\Desktop\\ProfileToDevelop\\Projeto_InstaDev\\InstaDev_MVC\\InstaDev_MVC.csproj",
+      "packagesPath": "C:\\Users\\Vitor Manoel\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Vitor Manoel\\Desktop\\ProfileToDevelop\\Projeto_InstaDev\\InstaDev_MVC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\FIC\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Vitor Manoel\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -44,7 +41,6 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "targetAlias": "netcoreapp3.1",
         "imports": [
           "net461",
           "net462",
@@ -55,16 +51,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[3.1.10, 3.1.10]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[3.1.11, 3.1.11]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -73,16 +59,8 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.404\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema ao ler o arquivo de cache C:\\Users\\FIC\\Desktop\\Projeto\\Projeto_InstaDev\\InstaDev_MVC\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

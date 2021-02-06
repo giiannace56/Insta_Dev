@@ -18,7 +18,7 @@ namespace InstaDev_MVC.Controllers
             
             ViewBag.Usuario = user.ReadAll();
             ViewBag.Publicacoes = pub.ReadAll();
-            ViewBag.Comentarios = comentario.ListarComentarios();
+            // ViewBag.Comentarios = comentario.ListarComentarios();
             // ViewBag.Comentarios = comentario.ListarComentarios();
             return View();
         }

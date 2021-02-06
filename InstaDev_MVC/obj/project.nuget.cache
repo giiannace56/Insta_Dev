@@ -1,18 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZikuEkx7owkOi4vo8ExwvA+9wpv2an8dt8zLE7hbwUTKhwb/Rp+8xqkj08AU4/RfVYiF6Eo4p4YA6yg3VOmqzA==",
+  "dgSpecHash": "vZC7s1BVzGiZar8Po/DfwO1sZUNhpXe05FZ76TBRcyhkX4kp9aFK/KjzbWUBsAfF3zzfLO41jo/QP2NEbdacvg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\FIC\\Desktop\\Projeto\\Projeto_InstaDev\\InstaDev_MVC\\InstaDev_MVC.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\FIC\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
-    "C:\\Users\\FIC\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.11\\microsoft.netcore.app.host.win-x64.3.1.11.nupkg.sha512"
-  ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema ao ler o arquivo de cache C:\\Users\\FIC\\Desktop\\Projeto\\Projeto_InstaDev\\InstaDev_MVC\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "projectFilePath": "C:\\Users\\Vitor Manoel\\Desktop\\ProfileToDevelop\\Projeto_InstaDev\\InstaDev_MVC\\InstaDev_MVC.csproj",
+  "expectedPackageFiles": [],
+  "logs": []
 }
