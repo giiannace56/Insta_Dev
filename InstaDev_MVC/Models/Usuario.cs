@@ -16,8 +16,6 @@ namespace InstaDev_MVC.Models
 
         public string Foto { get; set; }
         
-        
-
         public string Username { get; set; }
         
         public string Senha { get; set; }
@@ -28,7 +26,7 @@ namespace InstaDev_MVC.Models
         
         Random idRandom = new Random();
 
-         private string PrepararLinha(Usuario user){
+        private string PrepararLinha(Usuario user){
             return $"{user.Email};{user.Nome};{user.Username};{user.Senha};{user.IdUsuario}";
         }
 
@@ -39,13 +37,10 @@ namespace InstaDev_MVC.Models
         }
         public void CadastrarUsuario(Usuario e)
         {
-            string[] linhas = {Prepare(e)};
+            string[] linhas = {PrepararLinha(e)};
             File.AppendAllLines(PATH, linhas);
         }
-        public void MostrarUsuario()
-        {
-            
-        }
+        
         private const string PATHedit = "Database/Editar.csv";
 
         public Usuario()
@@ -59,7 +54,8 @@ namespace InstaDev_MVC.Models
             return $"{e.Nome};{e.Username}; {e.Email}; {e.Foto};";
         }
 
-            public void EditarUsuario(Usuario e)
+        
+        public void EditarUsuario(Usuario e)
 
         {
             List<string> linhas = ReadAllLinesCSV(PATH);
@@ -82,16 +78,14 @@ namespace InstaDev_MVC.Models
             // Reescreve o csv com as alterações
             RewriteCSV(PATH, linhas);
         }
-        public void ListarUsuario()
-        {
-                
-        }
+        
         public void Logar(Usuario userC)
         {   
             string[] linha = { PrepararLinha (userC) };
             File.AppendAllLines(PATH, linha);
         }
 
+        
         public List<Usuario> ReadAll()
         {
             List<Usuario> usuarios = new List<Usuario>();
@@ -111,6 +105,7 @@ namespace InstaDev_MVC.Models
 
                 usuarios.Add(usuario);
             }
+            
             return usuarios;
         }
     
