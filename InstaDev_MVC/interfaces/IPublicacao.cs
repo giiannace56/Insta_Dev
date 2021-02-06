@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using InstaDev_MVC.Models;
+
 namespace InstaDev_MVC.Interfaces
 {
     public interface IPublicacao
@@ -10,6 +11,6 @@ namespace InstaDev_MVC.Interfaces
             
         void Update(Publicacao p);
 
-        void Delete(int id);
+        void Delete(int IdPublicacao);
     }
 }

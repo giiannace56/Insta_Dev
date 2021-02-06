@@ -1,3 +1,7 @@
+@model Usuario
+@{
+    ViewData["Title"] = "Edição";
+}
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -40,21 +44,28 @@
                 </div>
 
                 <aside class="editar">
-
+                    <form method="POST" action='@Url.Action("Alterar")' enctype="multipart/form-data">
                     <div class="perfil">
                         <div class="conteudo alinhar-esquerda">
-                            <img src="img/thank-you 2.png" alt="">
+                            <div class="Yes-baby"> 
+                            <img src="img/thank-you 2.png" alt="" >
+
+                            </div>
 
                             <div class="texto">
-                                <h2>yes_baby</h2>
-                                <a class="navbar-brand" asp-area="" asp-controller="" asp-action="Alterar">Alterar foto de perfil</a>
-                                <input type="file"> 
+                                <h2>yes_baby</h2>                           
+                               
+                                <div class="file-input">
+                                    <input type="file" name="Foto" id="Foto" class="file">
+                                    <label class="alterar" for="Foto">Alterar foto do perfil</label>
+                                </div>                              
+                                
                             </div>
 
                         </div>
                     </div>
 
-                    <form method="POST" action='@Url.Action("Alterar")' enctype="multipart/form-data">
+                    
                         <div class="nome">
                             <div class="conteudo alinhar-esquerda">
                                 <h2>Nome</h2>
