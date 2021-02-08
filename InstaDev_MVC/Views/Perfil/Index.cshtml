@@ -55,6 +55,7 @@
                 </div>
                 
                 @foreach (Publicacao item in ViewBag.Publicacoes){
+                
                 <div class="publicacao">
                     <div class="imagem-pub">
                             <img src="~/img_publicacao/@item.Imagem" alt="" >
@@ -91,18 +92,21 @@
                                     @foreach (Usuario user in ViewBag.Usuario)
                                     {
                                         <p><a href="#"> @user.Nome </a> @item.Legenda </p>
+                                        break;
                                     }
                                     <a href="#"><img src="/img/Vector.png" alt=""></a>
                                 </div>
                                 
                                 @foreach(Comentario coment in ViewBag.Comentarios){
-                                <div class="comentario">
                                     @foreach (Usuario usu in ViewBag.Usuario)
                                     {   
-                                        <p><a href="#">@usu.Username</a>@coment.Mensagem </p>
-                                        <a href="#"><img src="/img/Vector.png" alt=""></a>
+                                        <div class="comentario">
+                                            <p><a href="#">@usu.Username</a>@coment.Mensagem </p>
+                                            <a href="#"><img src="/img/Vector.png" alt=""></a>                                        
+                                        </div>
+                                        break;
                                     }
-                                </div>
+                                        
                                 }
                             </div>
                             
