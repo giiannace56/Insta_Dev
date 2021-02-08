@@ -149,7 +149,6 @@ E:\Meus Documentos\Área de Trabalho\InstaDEVS\Projeto_InstaDev\InstaDev_MVC\obj
 E:\Meus Documentos\Área de Trabalho\InstaDEVS\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.genruntimeconfig.cache
 E:\Meus Documentos\Área de Trabalho\InstaDEVS\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.csproj.CopyComplete
 E:\Meus Documentos\Área de Trabalho\InstaDEVS\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
-E:\Meus Documentos\Área de Trabalho\InstaDEVS\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\FIC\Desktop\Projeto_InstaDev\InstaDev_MVC\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\FIC\Desktop\Projeto_InstaDev\InstaDev_MVC\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\FIC\Desktop\Projeto_InstaDev\InstaDev_MVC\bin\Debug\netcoreapp3.1\InstaDev_MVC.exe
@@ -387,3 +386,7 @@ C:\Users\Vitor Manoel\Desktop\ProfileToDevelop\Projeto_InstaDev\InstaDev_MVC\obj
 C:\Users\Vitor Manoel\Desktop\ProfileToDevelop\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\InstaDev_MVC.csproj.CopyComplete
 C:\Users\Felipe\OneDrive\Área de Trabalho\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\Razor\Views\Editar\Index.cshtml.g.cs
 C:\Users\Felipe\OneDrive\Área de Trabalho\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\Razor\Views\Perfil\Index.cshtml.g.cs
+E:\Meus Documentos\Área de Trabalho\InstaDEVS\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\Razor\Views\Editar\Index.cshtml.g.cs
+E:\Meus Documentos\Área de Trabalho\InstaDEVS\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\Razor\Views\Feed\index.cshtml.g.cs
+E:\Meus Documentos\Área de Trabalho\InstaDEVS\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\Razor\Views\Login\Index.cshtml.g.cs
+E:\Meus Documentos\Área de Trabalho\InstaDEVS\Projeto_InstaDev\InstaDev_MVC\obj\Debug\netcoreapp3.1\Razor\Views\Perfil\Index.cshtml.g.cs
