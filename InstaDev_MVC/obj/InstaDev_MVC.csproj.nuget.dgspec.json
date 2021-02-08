@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Vitor Manoel\\Desktop\\ProfileToDevelop\\Projeto_InstaDev\\InstaDev_MVC\\InstaDev_MVC.csproj": {}
+    "C:\\Users\\Vitor Manoel\\Desktop\\Perfil\\Projeto_InstaDev\\InstaDev_MVC\\InstaDev_MVC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Vitor Manoel\\Desktop\\ProfileToDevelop\\Projeto_InstaDev\\InstaDev_MVC\\InstaDev_MVC.csproj": {
+    "C:\\Users\\Vitor Manoel\\Desktop\\Perfil\\Projeto_InstaDev\\InstaDev_MVC\\InstaDev_MVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vitor Manoel\\Desktop\\ProfileToDevelop\\Projeto_InstaDev\\InstaDev_MVC\\InstaDev_MVC.csproj",
+        "projectUniqueName": "C:\\Users\\Vitor Manoel\\Desktop\\Perfil\\Projeto_InstaDev\\InstaDev_MVC\\InstaDev_MVC.csproj",
         "projectName": "InstaDev_MVC",
-        "projectPath": "C:\\Users\\Vitor Manoel\\Desktop\\ProfileToDevelop\\Projeto_InstaDev\\InstaDev_MVC\\InstaDev_MVC.csproj",
+        "projectPath": "C:\\Users\\Vitor Manoel\\Desktop\\Perfil\\Projeto_InstaDev\\InstaDev_MVC\\InstaDev_MVC.csproj",
         "packagesPath": "C:\\Users\\Vitor Manoel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vitor Manoel\\Desktop\\ProfileToDevelop\\Projeto_InstaDev\\InstaDev_MVC\\obj\\",
+        "outputPath": "C:\\Users\\Vitor Manoel\\Desktop\\Perfil\\Projeto_InstaDev\\InstaDev_MVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Vitor Manoel\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -14,12 +14,16 @@ namespace InstaDev_MVC.Controllers
         Publicacao Post = new Publicacao();
         Comentario Comment = new Comentario();
 
+        Usuario user = new Usuario();
+
         
         [Route("Listar")]
         public IActionResult Index()
         {
+            ViewBag.USER = HttpContext.Session.GetString("_Username");
             ViewBag.POSTS = Post.ReadAll();
             ViewBag.COMMENTS = Comment.ListarComentarios();
+            ViewBag.FOTO = user.Foto;
             return View();
         }
         
@@ -31,6 +35,7 @@ namespace InstaDev_MVC.Controllers
         {
             
             Publicacao newpost   = new Publicacao();
+            
             newpost.IdPublicacao = Post.GerarCodigo();
             
             
@@ -46,7 +51,7 @@ namespace InstaDev_MVC.Controllers
                 }
                 
         
-                var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img_publicacao", folder, file.FileName);
+        var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img_publicacao", folder, file.FileName);
                 
                 
                 using (var stream = new FileStream(path, FileMode.Create))  
@@ -66,7 +71,7 @@ namespace InstaDev_MVC.Controllers
             
             newpost.Legenda = form["Legenda"];
             
-            newpost.IdUsuario = 1019343930;
+            newpost.IdUsuario = 948985665;
             
             Post.Create(newpost);
             
@@ -78,7 +83,7 @@ namespace InstaDev_MVC.Controllers
         
         
         [Route("{id}")]
-        public IActionResult Excluir(int id)
+        public IActionResult Delete(int id)
         {
             
             Post.Delete(id);
@@ -102,8 +107,7 @@ namespace InstaDev_MVC.Controllers
         public IActionResult Comentar(IFormCollection form)
         {
             Comentario comment = new Comentario();
-            comment.IdUsuario = Int32.Parse(form["IdUsuario"]);
-            comment.IdComentario = Int32.Parse(form["IdComentario"]);
+            comment.IdComentario = comment.GerarCodigo();
             comment.Mensagem = form["Mensagem"];
             
             Comment.CriarComentario(comment);            

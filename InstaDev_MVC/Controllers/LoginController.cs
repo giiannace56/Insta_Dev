@@ -25,7 +25,7 @@ namespace InstaDev_MVC.Controllers
         {
             List<string> csv = UsuarioModel.ReadAllLinesCSV("Database/Usuario.csv");
 
-            // Verificamos se as informações passadas existe na lista de string
+            
             var logado =
             csv.Find(
                 x =>
@@ -36,12 +36,12 @@ namespace InstaDev_MVC.Controllers
             Console.WriteLine($"Usuario - {logado}");
             
 
-            // Redirecionamos o usuário logado caso encontrado
+            
             if (logado != null)
             {
                 HttpContext.Session.SetString("_Username", logado.Split(";")[2]);
 
-                return LocalRedirect("~/");
+                return LocalRedirect("~/Feed/Listar");
             }
 
             Mensagem = "Dados incorretos, tente novamente...";

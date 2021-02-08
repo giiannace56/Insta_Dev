@@ -67,6 +67,7 @@ namespace InstaDev_MVC.Models
 
             string[] linhas = File.ReadAllLines(PATH); 
 
+            
             foreach (var item in linhas)
             {
                 string[] atributos = item.Split(";");
@@ -76,37 +77,32 @@ namespace InstaDev_MVC.Models
                 Publicacao.Imagem = atributos[1];
                 Publicacao.Legenda = atributos[2];
                 Publicacao.IdUsuario = Int32.Parse(atributos[3]);
-                // Publicacao.Likes = int.Parse(atributos[4]);
-
-                List<String> CSV = user.ReadAllLinesCSV("Database/Cadastro.csv");
                 
-                var linhaBusca =
-                CSV.Find (
-                    x =>
-                    x.Split(";")[0] == atributos[3]
-                );
 
-                var usuarioLinha = linhaBusca.Split(";");
-                // Publicacao.FotoUsuario = usuarioLinha[6].ToString();
-                Publicacao.NomeUsuario = usuarioLinha[3].ToString();
-                Publicacao.NomeCompleto = usuarioLinha[2].ToString();
+                // List<String> CSV = user.ReadAllLinesCSV("Database/Usuario.csv");
+                
+                // var linhaBusca = CSV.Find (x => x.Split(";")[4] == atributos[3]);
+
+                // var usuarioLinha = linhaBusca.Split(";");
+                // Publicacao.NomeUsuario = usuarioLinha[3].ToString();
+                // Publicacao.NomeCompleto = usuarioLinha[2].ToString();    // checar pq da erro aqui!
 
                 ListaPublicacoes.Add(Publicacao);
             }
 
-            ListaPublicacoes.Reverse();
-
+            
             return ListaPublicacoes;
+        
         }
 
 
+        
         public List<Publicacao> LerPublicacoes(int id)
         {
             List<Publicacao> posts = ReadAll();
 
             posts = posts.FindAll(post => post.IdPublicacao == id);
-            posts.Reverse();
-
+            
             return posts;
         }
 
@@ -133,9 +129,20 @@ namespace InstaDev_MVC.Models
         }
 
 
-        // public int Like(){
-            
-        // }
+        public int ContarPublicacoes(){
+
+            int contador = 0;
+
+            using (StreamReader stream = new StreamReader(PATH))
+            {   
+                string linha;
+                while( (linha = stream.ReadLine()) != null ){
+                    contador++;
+                }
+            }
+
+            return contador;
+        }
 
 
 

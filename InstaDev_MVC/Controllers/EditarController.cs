@@ -39,7 +39,7 @@ namespace fake.Controllers
 
            ViewBag.Usuarios = usuarioModel.ReadAll();
 
-           return LocalRedirect("~/Editar");
+           return LocalRedirect("~/Feed/Listar");
         }
 
         [Route("Excluir/{id}")]
@@ -49,7 +49,7 @@ namespace fake.Controllers
 
             ViewBag.Usuarios = usuarioModel.ReadAll();            
 
-            return LocalRedirect("~/");
+            return LocalRedirect("~/Login");
         }
 
 
@@ -60,6 +60,7 @@ namespace fake.Controllers
             novoUsuario.IdUsuario = Int32.Parse(form["IdUsuario"]);
             novoUsuario.Foto      = form["Foto"];
 
+            
             if(form.Files.Count > 0)
             {
                 // Upload Início
@@ -79,7 +80,7 @@ namespace fake.Controllers
             }
             else
             {
-                novoUsuario.Foto   = "padrao.png";
+                novoUsuario.Foto   = "fotopadrao.jpg";
             }
             // Upload Final
 

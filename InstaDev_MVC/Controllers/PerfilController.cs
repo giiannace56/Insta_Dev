@@ -9,7 +9,6 @@ namespace InstaDev_MVC.Controllers
     public class PerfilController : Controller
     {   
         Publicacao pub = new Publicacao();
-
         Comentario comentario = new Comentario();
         Usuario user = new Usuario();
         
@@ -18,8 +17,9 @@ namespace InstaDev_MVC.Controllers
             
             ViewBag.Usuario = user.ReadAll();
             ViewBag.Publicacoes = pub.ReadAll();
-            // ViewBag.Comentarios = comentario.ListarComentarios();
-            // ViewBag.Comentarios = comentario.ListarComentarios();
+            ViewBag.Foto = user.Foto;
+            ViewBag.Comentarios = comentario.ListarComentarios();
+            ViewBag.NumeroDePublicacoes = pub.ContarPublicacoes();
             return View();
         }
 
@@ -45,6 +45,7 @@ namespace InstaDev_MVC.Controllers
             HttpContext.Session.Remove("_UserName");
             return LocalRedirect("~/Login");
         }
+
 
     }
 }

@@ -28,6 +28,7 @@ namespace InstaDev_MVC.Models
             using(StreamReader file = new StreamReader(PATH))
             {
                 string linha;
+                
                 while((linha = file.ReadLine()) != null)
                 {
                     linhas.Add(linha);

@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\Vitor Manoel\\Desktop\\ProfileToDevelop\\Projeto_InstaDev\\InstaDev_MVC\\InstaDev_MVC.csproj",
+  "FilePath": "c:\\Users\\Vitor Manoel\\Desktop\\Perfil\\Projeto_InstaDev\\InstaDev_MVC\\InstaDev_MVC.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -14392,53 +14392,53 @@
   "RootNamespace": "InstaDev_MVC",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\Vitor Manoel\\Desktop\\ProfileToDevelop\\Projeto_InstaDev\\InstaDev_MVC\\Views\\Shared\\_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Vitor Manoel\\Desktop\\ProfileToDevelop\\Projeto_InstaDev\\InstaDev_MVC\\Views\\Home\\Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Vitor Manoel\\Desktop\\ProfileToDevelop\\Projeto_InstaDev\\InstaDev_MVC\\Views\\Editar\\Index.cshtml",
+      "FilePath": "c:\\Users\\Vitor Manoel\\Desktop\\Perfil\\Projeto_InstaDev\\InstaDev_MVC\\Views\\Editar\\Index.cshtml",
       "TargetPath": "Views\\Editar\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Vitor Manoel\\Desktop\\ProfileToDevelop\\Projeto_InstaDev\\InstaDev_MVC\\Views\\Login\\Index.cshtml",
-      "TargetPath": "Views\\Login\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Vitor Manoel\\Desktop\\ProfileToDevelop\\Projeto_InstaDev\\InstaDev_MVC\\Views\\_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Vitor Manoel\\Desktop\\ProfileToDevelop\\Projeto_InstaDev\\InstaDev_MVC\\Views\\Cadastro\\Index.cshtml",
-      "TargetPath": "Views\\Cadastro\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Vitor Manoel\\Desktop\\ProfileToDevelop\\Projeto_InstaDev\\InstaDev_MVC\\Views\\Feed\\index.cshtml",
-      "TargetPath": "Views\\Feed\\index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Vitor Manoel\\Desktop\\ProfileToDevelop\\Projeto_InstaDev\\InstaDev_MVC\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FilePath": "c:\\Users\\Vitor Manoel\\Desktop\\Perfil\\Projeto_InstaDev\\InstaDev_MVC\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Vitor Manoel\\Desktop\\ProfileToDevelop\\Projeto_InstaDev\\InstaDev_MVC\\Views\\_ViewStart.cshtml",
+      "FilePath": "c:\\Users\\Vitor Manoel\\Desktop\\Perfil\\Projeto_InstaDev\\InstaDev_MVC\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Vitor Manoel\\Desktop\\Perfil\\Projeto_InstaDev\\InstaDev_MVC\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Vitor Manoel\\Desktop\\ProfileToDevelop\\Projeto_InstaDev\\InstaDev_MVC\\Views\\Perfil\\Index.cshtml",
+      "FilePath": "c:\\Users\\Vitor Manoel\\Desktop\\Perfil\\Projeto_InstaDev\\InstaDev_MVC\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Vitor Manoel\\Desktop\\Perfil\\Projeto_InstaDev\\InstaDev_MVC\\Views\\Feed\\index.cshtml",
+      "TargetPath": "Views\\Feed\\index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Vitor Manoel\\Desktop\\Perfil\\Projeto_InstaDev\\InstaDev_MVC\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Vitor Manoel\\Desktop\\Perfil\\Projeto_InstaDev\\InstaDev_MVC\\Views\\Perfil\\Index.cshtml",
       "TargetPath": "Views\\Perfil\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Vitor Manoel\\Desktop\\Perfil\\Projeto_InstaDev\\InstaDev_MVC\\Views\\Login\\Index.cshtml",
+      "TargetPath": "Views\\Login\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Vitor Manoel\\Desktop\\Perfil\\Projeto_InstaDev\\InstaDev_MVC\\Views\\Cadastro\\Index.cshtml",
+      "TargetPath": "Views\\Cadastro\\Index.cshtml",
       "FileKind": "mvc"
     }
   ],

@@ -1,6 +1,9 @@
 ﻿<!DOCTYPE html>
 
 
+<!DOCTYPE html>
+@model Usuario
+
 @switch (@ViewData["Title"])
 {
     
@@ -54,7 +57,7 @@
         
         <div class="content-header">
             <div class="logo">
-                <a href="#"><img src="~/img/Instadev.png" alt="Logo InstaDev"></a>
+                <a asp-controller="Feed" asp-action="Index"><img src="~/img/Instadev.svg" alt="Logo InstaDev"></a>
             </div>
             <form class="pesquisar">
                 <input type="text" name="pesquisa" placeholder="Pesquisar" class="pesquisa">
@@ -62,11 +65,11 @@
             </form>
             <nav class="navegacao">
                 <ul>
-                    <li><a href="#"><img src="~/img/Vector-1.png" alt="imagem de uma casa"></a></li>
+                    <li><a asp-controller="Feed" asp-action="Index"><img src="~/img/Vector-1.png" alt="imagem de uma casa"></a></li>
                     <li><a href="#"><img src="~/img/plane 1.png" alt="imagem de um avião de papel"></a></li>
                     <li><a href="#"><img src="~/img/compass 1.png" alt="imagem de uma bússola"></a></li>
                     <li><a href="#"><img src="~/img/Vector.png" alt="imagem de um coração"></a></li>
-                    <li><a href="#"><img src="~/img/thank-you 1.png" alt="imagem de perfil do usuário"
+                    <li><a asp-controller="Perfil" asp-action="Index"><img src="/img/@ViewBag.Foto" alt="imagem de perfil do usuário"
                     class="imagem-perfil"></a></li>
                 </ul>
             </nav>
@@ -103,10 +106,6 @@
         </main>
     </div>
 
-<<<<<<< HEAD
-=======
-    
->>>>>>> Edição-perfil
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

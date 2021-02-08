@@ -17,20 +17,20 @@
                     
                 
                     <div class="foto">
-                        <img src="/img/87271a98fb0eb1c82d0bf3b7ad39d2fa.jpg" alt="Imagem de perfil do usuário">
+                        <img src="/img/@ViewBag.Foto" alt="Imagem de perfil do usuário">
                     </div>
 
                     <div class="dados">
-                        <h1>@item.Nome</h1>
+                        <h1>@item.Username</h1>
 
                         <div class="estatisticas">
-                            <a href="#">1 publicações</a>
+                            <a href="#">@ViewBag.NumeroDePublicacoes publicações</a>
                             <a href="#">1 seguindo</a>
                             <a href="#">1 seguidores</a>
                         </div>
 
                         <div class="nome-sair">
-                            <h2>@item.Username</h2>
+                            <h2>@item.Nome</h2>
                             
                             <a asp-controller="Editar" asp-action="Index">Editar Perfil</a>
                             <a asp-area="Link para deslogar o usuário" asp-controller="Perfil" asp-action="Logout">Sair</a>
@@ -63,7 +63,7 @@
                     <div class="conteudo">
                         <div class="usuario">
                             
-                            <img src="/img/87271a98fb0eb1c82d0bf3b7ad39d2fa.jpg" alt="">
+                            <img src="/img/@ViewBag.Foto" alt="">
 
                             <div class="nome-endereco">
                                 @foreach (Usuario u in ViewBag.Usuario)
@@ -77,9 +77,9 @@
 
                         <div class="curtida">
                             <div class="curtir">
-                                <a href="#"><img src="/img/Vector.png" alt=""></a>
+                                <a><img src="/img/Vector.png" alt=""></a>
                                 <a href="#"><img src="/img/Vector2.svg" alt=""></a>
-                                <p>0 curtidas </p>
+                                <p>@ViewBag.Likes curtidas </p>
                             </div>
                         </div>
 
@@ -95,12 +95,15 @@
                                     <a href="#"><img src="/img/Vector.png" alt=""></a>
                                 </div>
                                 
-                                @* @foreach(Comentario coment in ViewBag.Comentarios){ *@
+                                @foreach(Comentario coment in ViewBag.Comentarios){
                                 <div class="comentario">
-                                    <p><a href="#">Nome</a> </p>
-                                    <a href="#"><img src="/img/Vector.png" alt=""></a>
+                                    @foreach (Usuario usu in ViewBag.Usuario)
+                                    {   
+                                        <p><a href="#">@usu.Username</a>@coment.Mensagem </p>
+                                        <a href="#"><img src="/img/Vector.png" alt=""></a>
+                                    }
                                 </div>
-                                @* } *@
+                                }
                             </div>
                             
                         </div>                    
