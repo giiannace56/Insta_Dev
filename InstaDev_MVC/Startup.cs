@@ -27,7 +27,7 @@ namespace InstaDev_MVC
 
             services.AddSession(options =>
             {
-            options.IdleTimeout = TimeSpan.FromHours(2);
+            options.IdleTimeout = TimeSpan.FromDays(1);
             options.Cookie.HttpOnly = true;
             options.Cookie.IsEssential = true;
             });

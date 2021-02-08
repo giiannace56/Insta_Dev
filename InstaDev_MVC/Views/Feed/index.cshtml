@@ -52,11 +52,11 @@
     <div class="container-user">
 
         <div class="container-img">
-            <a asp-controller="Perfil" asp-action="Index"><img class="foto-perfil" width="50" height="50" src="~/img/@ViewBag.Foto"></a>
+            <a asp-controller="Perfil" asp-action="Index"><img class="foto-perfil" border-radius="300px" width="50" height="50" src="~/img/@ViewBag.Foto"></a>
         </div>
 
         <div class="container-text">
-
+            <p>@ViewBag.USER</p>
         </div>
 
     </div>
@@ -70,7 +70,7 @@
     <div class="titulo-postar">
 
         <div class="titulo-postar-img">
-        <a asp-controller="Perfil" asp-action="Index"><img class="foto-perfil" width="50" height="50" class="img-login" src="~/img/Foto" alt="imagem do user logado"></a>
+        <a asp-controller="Perfil" asp-action="Index"><img  width="50" height="50" src="~/img/@ViewBag.Foto" alt="imagem do user logado"></a>
         </div>
                 
 
@@ -126,7 +126,7 @@
 
 
         <div class="img-post">
-            <img class="img-do-post" src="~/img_publicacao/@p.Imagem" width="500" height="320" />
+            <img class="img-do-post" src="~/img_publicacao/@p.Imagem" width="400" height="320" />
             <p class="img-description">@p.Legenda</p>
         </div>
 
@@ -141,9 +141,9 @@
                 <div class="icones">
             
                         
-    <a asp-area="ícone para excluir post" asp-controller="Feed" asp-action="Delete" asp-route-id="@p.IdPublicacao">
-                        <img src="~/img/lixeira.png" alt="imagem de uma lixeira">
-                    </a>
+            <a asp-area="ícone para excluir a publicação" asp-controller="Feed" asp-action="Delete" asp-route-id="@p.IdPublicacao">
+                <img src="~/img/lixeira.png" alt="imagem de uma lixeira">
+            </a>
 
             
             <button class="btncomentar" type="submit">
@@ -169,20 +169,23 @@
             
             Usuario user = new Usuario();
         
-        
-        <div class="comments">
+            
+            <div class="comments">
 
             
-            <p class="titulo-texto">@ViewBag.USER</p>
-            <p class="mensagem-texto">@c.Mensagem</p>
+                <p class="titulo-texto"> @ViewBag.USER </p>
+                <p class="mensagem-texto"> @c.Mensagem  </p>
             
-        </div>
-
+            </div>
+            
         } 
+    
+    
+    
     </section>
 }
         
-        @* <p class="contador-curtidas">2077 curtidas</p> *@
+        
 
 
     

@@ -53,20 +53,26 @@
     <header class="header-top">
         
         <div class="content-header">
+            
             <div class="logo">
-                <a href="#"><img src="~/img/Instadev.png" alt="Logo InstaDev"></a>
+            <a asp-area="link para Login" asp-controller="Login" asp-action="Index"><img src="~/img/Instadev.png" alt="Logo InstaDev"></a>
             </div>
+            
             <form class="pesquisar">
                 <input type="text" name="pesquisa" placeholder="Pesquisar" class="pesquisa">
                 <button type="submit"></button>
             </form>
             <nav class="navegacao">
                 <ul>
-                    <li><a href="#"><img src="~/img/Vector-1.png" alt="imagem de uma casa"></a></li>
+                    
+                    <li><a asp-area="link para Feed" asp-controller="Feed" asp-action="Index"><img src="~/img/Vector-1.png" alt="imagem de uma casa"></a></li>
+                    
                     <li><a href="#"><img src="~/img/plane 1.png" alt="imagem de um avião de papel"></a></li>
                     <li><a href="#"><img src="~/img/compass 1.png" alt="imagem de uma bússola"></a></li>
                     <li><a href="#"><img src="~/img/Vector.png" alt="imagem de um coração"></a></li>
-                    <li><a asp-controller="Perfil" asp-action="Index"><img src="~/img/@ViewBag.Foto" width="40" height="40" alt="imagem do user logado"></a></li>
+                    
+                    <li><a asp-controller="Perfil" asp-action="Index"><img src="~/img/@ViewBag.Foto" width="40" height="40"></a></li>
+                
                 </ul>
             </nav>
         </div>

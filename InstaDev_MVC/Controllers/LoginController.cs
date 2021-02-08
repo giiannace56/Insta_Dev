@@ -39,7 +39,7 @@ namespace InstaDev_MVC.Controllers
             
             if (logado != null)
             {
-                HttpContext.Session.SetString("_Username", logado.Split(";")[2]);
+                HttpContext.Session.SetString("_UserName", logado.Split(";")[2]);
 
                 return LocalRedirect("~/Feed/Listar");
             }

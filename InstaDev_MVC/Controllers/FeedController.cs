@@ -20,7 +20,7 @@ namespace InstaDev_MVC.Controllers
         [Route("Listar")]
         public IActionResult Index()
         {
-            ViewBag.USER = HttpContext.Session.GetString("_Username");
+            ViewBag.USER = HttpContext.Session.GetString("_UserName");
             ViewBag.POSTS = Post.ReadAll();
             ViewBag.COMMENTS = Comment.ListarComentarios();
             ViewBag.FOTO = user.Foto;
@@ -92,17 +92,6 @@ namespace InstaDev_MVC.Controllers
         
         }
 
-
-        
-        
-        // [Route("Comentar")]
-        // public IActionResult Index2()
-        // {
-        //     ViewBag.COMMENTS = Comment.ListarComentarios();
-        //     return View();
-        // }
-        
-        
         
         public IActionResult Comentar(IFormCollection form)
         {
