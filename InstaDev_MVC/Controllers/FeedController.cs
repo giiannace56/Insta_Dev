@@ -77,7 +77,7 @@ namespace InstaDev_MVC.Controllers
             
             ViewBag.POSTS = Post.ReadAll();
             
-            return LocalRedirect("~/Feed");
+            return LocalRedirect("~/Feed/Listar");
         }
         
         
@@ -87,6 +87,7 @@ namespace InstaDev_MVC.Controllers
         {
             
             Post.Delete(id);
+            Comment.DeletarComentarioPost(id);
             ViewBag.POSTS = Post.ReadAll();
             return LocalRedirect("~/Feed/Listar");
         
@@ -109,6 +110,8 @@ namespace InstaDev_MVC.Controllers
             Comentario comment = new Comentario();
             comment.IdComentario = comment.GerarCodigo();
             comment.Mensagem = form["Mensagem"];
+            comment.IdPublicacao = int.Parse(form["idPublicacao"]);
+            
             
             Comment.CriarComentario(comment);            
             ViewBag.COMMENTS = Comment.ListarComentarios();

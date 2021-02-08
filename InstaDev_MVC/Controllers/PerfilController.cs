@@ -30,8 +30,9 @@ namespace InstaDev_MVC.Controllers
 
             Comentario coment = new Comentario();
             coment.Mensagem = form["comentario"];
-            coment.IdComentario = 1;
+            coment.IdComentario = int.Parse(form["idComentario"]);
             coment.IdPublicacao = 2;
+
 
             comentario.CriarComentario(coment);
             // ViewBag.Comentarios = comentario.ListarComentarios();
