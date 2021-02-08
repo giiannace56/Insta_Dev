@@ -1,0 +1,191 @@
+@using InstaDev_MVC.Models
+@model Publicacao
+
+@{
+    ViewData["Title"] = "Feed";
+}
+
+
+<section class="box-profiles">
+
+    <div class="box-friends">
+
+        <div class="container-friend">
+            <a href="#"><img src="~/img/vin-diesel 1.png" alt="imagem do vin diesel"></a>
+            <p>vin_diesel</p>
+        </div>
+
+        <div class="container-friend">
+            <a href="#"><img src="~/img/gabigordo 1.png" alt="imagem do gabigordo"></a>
+
+            <p>gabigordo</p>
+        </div>
+
+        <div class="container-friend">
+            <a href="#"><img src="~/img/will-baiano 1.png" alt="imagem do will baiano"></a>
+            <p>will_baiano</p>
+        </div>
+
+        <div class="container-friend">
+            <a href="#"><img src="~/img/tony_stark 1.png" alt="imagem do adriano stark"></a>
+            <p>adriano_stark</p>
+        </div>
+
+        <div class="container-friend">
+            <a href="#"><img src="~/img/pele 1.png" alt="imagem do king pelé"></a>
+            <p>king_pele</p>
+        </div>
+
+        <div class="container-friend">
+            <a href="#"><img src="~/img/samuel-rosa-bebê 1.png" alt="imagem do samuel rosa bebê"></a>
+            <p>samuel_rosa</p>
+        </div>
+
+        <div class="container-friend">
+            <a href="#"><img src="~/img/chaves_metal 1.png" alt="imagem do chaves metal"></a>
+            <p>chaves_metal</p>
+        </div>
+
+    </div>
+
+
+    <div class="container-user">
+
+        <div class="container-img">
+            <a asp-controller="Perfil" asp-action="Index"><img class="foto-perfil" width="50" height="50" src="~/img/@ViewBag.Foto"></a>
+        </div>
+
+        <div class="container-text">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="box-postar">
+
+    <div class="titulo-postar">
+
+        <div class="titulo-postar-img">
+        <a asp-controller="Perfil" asp-action="Index"><img class="foto-perfil" width="50" height="50" class="img-login" src="~/img/Foto" alt="imagem do user logado"></a>
+        </div>
+                
+
+        <div class="titulo-postar-texto">
+            <p> Postar </p>
+        </div>
+
+    </div>
+
+
+
+    <form class="inputs-postar" method="POST" enctype="multipart/form-data" action='@Url.Action("Postar")'>
+
+
+        <input name="Legenda" type="text" class="descricao-input-img" placeholder="Digite a descrição da imagem...">
+
+
+        <label for="selecionar-imagem" class="botao-img">
+            <p>Escolha a imagem</p>
+        </label>
+
+        <input type="file" name="Imagem" class="input-img" id="selecionar-imagem">
+
+
+        <button type="submit" class="btnpostar"> Postar </button>
+
+
+    </form>
+
+
+</section>
+
+
+
+
+@* INÍCIO DO POST *@
+
+
+
+@foreach (Publicacao p in ViewBag.POSTS)
+{
+
+    
+    <section class="box-post">
+
+
+        <div class="header-post">
+            <a asp-controller="Perfil" asp-action="Index"><img class = "foto-perfil" width="45" height="45" src="~/img/@ViewBag.Foto"></a>
+            <div class="header-texto">
+            </div>
+        </div>
+
+
+
+        <div class="img-post">
+            <img class="img-do-post" src="~/img_publicacao/@p.Imagem" width="500" height="320" />
+            <p class="img-description">@p.Legenda</p>
+        </div>
+
+
+
+        <div class="curtir-comentar">
+
+            <form class="comment-form" method="POST" action='@Url.Action("Comentar")'>
+
+                
+                    
+                <div class="icones">
+            
+                        
+    <a asp-area="ícone para excluir post" asp-controller="Feed" asp-action="Delete" asp-route-id="@p.IdPublicacao">
+                        <img src="~/img/lixeira.png" alt="imagem de uma lixeira">
+                    </a>
+
+            
+            <button class="btncomentar" type="submit">
+                <img src="~/img/balao.png" alt="imagem de balao">
+            </button>
+
+                
+                </div>
+
+
+                <div class="input-comentar">
+                    <input type="text" name="Mensagem" class="comentar-post" placeholder="Comentar...">
+                    <hr class="linha" size="1" width="220">
+                </div>
+
+            
+            </form>
+
+        </div>
+
+        @foreach (Comentario c in ViewBag.COMMENTS)
+        {
+            
+            Usuario user = new Usuario();
+        
+        
+        <div class="comments">
+
+            
+            <p class="titulo-texto">@ViewBag.USER</p>
+            <p class="mensagem-texto">@c.Mensagem</p>
+            
+        </div>
+
+        } 
+    </section>
+}
+        
+        @* <p class="contador-curtidas">2077 curtidas</p> *@
+
+
+    
+    
+
+

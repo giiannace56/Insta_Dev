@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <header class="header-top">
+        <div class="content-header">
+            <div class="logo">
+                <a href="#"><img src="img/Instadev.svg" alt="Logo InstaDev"></a>
+            </div>
+            <form  class="pesquisar">
+                <input type="text" name="pesquisa" placeholder="Pesquisar" class="pesquisa">
+                <button type="submit"></button>
+            </form>
+            <nav class="navegacao">
+                <ul>
+                    <li><a href="#"><img src="img/Vector-1.png" alt="Imagem de uma casa"></a></li>
+                    <li><a href="#"><img src="img/plane 1.png" alt="Imagem de um avião de papel"></a></li>
+                    <li><a href="#"><img src="img/compass 1.png" alt="Imagem de uma bússola"></a></li>
+                    <li><a href="#"><img src="img/Vector.png" alt="Imagem de um coração"></a></li>
+                    <li><a href="#"><img src="img/thank-you 2.png" alt="Imagem de perfil do usuário" class="imagem-perfil"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="editar-perfil">
+            <div class="content">
+
+                <div class="texto-editar" >
+                    <div class="texto-editar-perfil">
+                        <h1>Editar Perfil</h1>
+                    </div>
+                </div>
+
+                <aside class="editar">
+
+                    <div class="perfil">
+                        <div class="conteudo alinhar-esquerda">
+                            <img src="img/thank-you 2.png" alt="">
+
+                            <div class="texto">
+                                <h2>yes_baby</h2>
+                                <a class="navbar-brand" asp-area="" asp-controller="" asp-action="Alterar">Alterar foto de perfil</a>
+                                <input type="file"> 
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <form method="POST" action='@Url.Action("Alterar")' enctype="multipart/form-data">
+                        <div class="nome">
+                            <div class="conteudo alinhar-esquerda">
+                                <h2>Nome</h2>
+                                <div class="preencher-nome">
+                                    <input type="text" class="input-nome" placeholder="Marcos Jeeves" name="Nome">
+                                    <div>
+                                        <p>Ajude as pessoas a descobrir sua conta usando o nome pelo qual você é conhecido: seu nome completo, apelido ou nome comercial.</p>
+                                        <p>Você pode alterar o seu nome apenas duas vezes a cada 14 dias.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="nome-usuario">
+                            <div class="conteudo-usuario alinhar-esquerda">
+                                <h2>Nome de Usuário</h2>
+                                <div class="preencher-usuario">
+                                    
+                                        <input name="Username" type="text" class="input-nome-usuario" placeholder="yes_baby">
+                                        <div>
+                                            <p>Na maioria dos casos, você poderá alterar seu nome de usuário novamente para nascimento_tr por mais 14 dias.</p>
+                                            <p>Informações pessoais </p>
+                                            <p>Forneça suas informações pessoais, mesmo se a conta for usada para uma empresa, um animal de estimação ou outra coisa. Elas não farão parte do seu perfil público.</p>
+                                        </div>
+                                    
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="email">
+                            <div class="conteudo">
+                                <div class="endereco-email">
+                                    <h2>E-mail</h2>
+                                    
+                                        <input name="Email" type="email" class="input-email" placeholder="yes_baby@gmail.com">
+                                    
+                                </div>
+                                <aside class="desativar-conta">
+                                    <div class="botao-enviar">
+                                        <button type="submit" class="botao-alterar">Enviar</button> 
+
+                                    </div>
+                                    <div class="botao-desativar">
+                                       <a class="navbar-brand" asp-area="Link para deletar a conta" asp-controller="Editar" asp-action="Delete">Desativar minha conta definitivamente</a>
+
+                                    </div>
+                                </aside>
+                            </div>
+                        </div>
+                    </form>
+
+                </aside>
+
+            </div>
+        </section>
+
+    </main>
+
+
+</body>
+</html>

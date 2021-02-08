@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;;
+    color: #f1f1f1;
+    background-color: #e5e5e534;
+}
+
+/* Header - início */
+
+.header-top{
+    width: 100%;
+    height: 3.31em;
+    /* background-color: aqua; */
+    border-bottom: solid 1px #f1f1f1;
+    background-color: #fff;
+}
+
+.content-header{
+    width: 95%;
+    max-width: 75em;
+    height: 100%;
+    margin: auto;
+    /* background-color: #ccc; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 33%;
+    height: 100%;
+    /* background-color: cadetblue; */
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    max-width: 4.875em;
+    height: 1.6875em;
+}
+
+.pesquisar{
+    width: 33%;
+    height: 100%;
+    /* background-color: chartreuse; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pesquisa{
+    width: 16em;
+    height: 2.15em;
+    text-align: center;
+    border: solid 1px #ccc;
+    border-radius: 2px;
+    background-color: #FAFAFA;
+    color: #afafaf;
+    font-weight: 500;
+    margin-right: 5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('../img/Vector.svg');
+    background-repeat: no-repeat;
+    background-position: 4.7em 0.68em;  /* 4.5em 0.68em */
+}
+
+.pesquisar button{
+    display: none;
+}
+
+.navegacao{
+    width: 22%;
+    height: 100%;
+    display: flex;
+}
+
+.navegacao ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    /* background-color: chocolate; */
+    justify-content: space-between;
+}
+
+.imagem-perfil{
+    width: 1.875em;
+    height: 1.875em;
+    border-radius: 6.25em;
+}
+
+/* Fim do header */
+
+/* Início da seção de profiles */
+
+.box-profiles {
+    /* background-color: blue; */
+    width: 934px;
+    height: 113px;
+    margin-top: 24px;
+    margin-left: 25.46%;
+    display: flex;
+}
+
+.box-friends {
+    background: #FFFFFF;
+    border: 1px solid #F1F1F1;
+    box-sizing: border-box;
+    height: 100%;
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container-friend {
+    /* background-color: orange; */
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-friend p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    color: black;
+}
+
+.container-user {
+    /* background-color: lightsalmon; */
+    height: 100%;
+    width: 35%;
+    display: flex;
+}
+
+.container-img {
+    /* background-color: maroon; */
+    width: 62px;
+    height: 62px;
+    margin-top: 19px;
+    margin-left: 32px;
+}
+
+.container-text {
+    /* background-color: purple; */
+    width: 209px;
+    height: 44px;
+    margin-top: 28px;
+    margin-left: 21px;
+}
+
+.container-text p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+}
+
+.container-text p:nth-child(2) {
+    color: #b6b6b6;
+}
+
+/* Início da seção de postar */
+
+.box-postar {
+    background: #ffffff;
+    box-sizing: border-box;
+    border: solid 1px #f1f1f1;
+    width: 38.12em;
+    height: 10.37em;
+    margin-top: 2.37em;
+    margin-left: 25.46%;
+    margin-right: 42.76%;
+}
+
+.titulo-postar {
+    /* background-color: lightskyblue; */
+    width: 10.87em;
+    height: 2.62em;
+    margin-top: 1.31em;
+    margin-left: 1.62em;
+    display: flex;
+}
+
+.titulo-postar p {
+    padding-top: 0.4em;
+    padding-left: 0.8em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.12em;
+    font-weight: 600;
+    color: black;
+}
+
+.inputs-postar {
+    /* background-color: rgba(76, 0, 130, 0.418); */
+    width: 34.25em;
+    height: 1.68em;
+    margin-top: 1.5em;
+    margin-left: 1.68em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.descricao-input-img {
+    width: 231px;
+    /* 231px = 14,4375em mas se colocar esse valor o input box fica menor?????? WTF */
+    height: 27px;
+    background: #FAFAFA;
+    border: 1px solid #EAEAEA;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: unset;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.75em;
+    font-weight: 600;
+    color: #ababab;
+    text-align: center;
+}
+
+
+.input-img {
+
+    display: none;
+}
+
+
+.botao-img {
+
+    background-color:#d1d1d1;
+    width: 157px;
+    height: 27px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+
+.botao-img p {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.75em;
+    font-weight: 600;
+    color:#7d7d7d;
+
+}
+
+
+/* Fim da seção postar */
+
+
+
+
+/* INÍCIO DO POST  */
+
+
+.box-post {
+    background: #FFFFFF;
+    border: 1px solid #F1F1F1;
+    box-sizing: border-box;
+    width: 38.13em;
+    height: 38.13em;
+    margin-top: 2.375em;
+    margin-left: 25.46%;
+    margin-right: 42.76%;
+}
+
+.comments{
+
+    /* background-color:lightgreen; */
+    width: 95%;
+    height:auto;
+    max-height: 21px;
+    margin-left: 5%;
+    display:flex;
+}
+
+
+.mensagem-texto{
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    font-weight: 450;
+    line-height: 30px;
+    color: black;
+
+}
+
+
+.header-post {
+    width: 100%;
+    height: 4.06em;
+    display: flex;
+}
+
+.header-post img {
+    margin-top: 0.8125em;
+    margin-left: 1em;
+}
+
+.header-texto {
+    /* background-color: springgreen; */
+    width: 7.12em;
+    height: 2.25em;
+    margin-top: 0.8125em;
+    margin-left: 0.8125em;
+}
+
+.header-texto p:nth-child(1) {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 0.8125em;
+    color: black;
+}
+
+.header-texto p:nth-child(2) {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.8125em;
+    color: black;
+    padding-top: 0.125em;
+}
+
+.img-post {
+    width: 100%;
+    height: 21.43em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+.img-post p{
+
+    color:black;
+    text-align: center;
+    font-size: 12px;
+
+}
+
+
+.curtir-comentar {
+    /* background-color: lightpink; */
+    width: 100%;
+    height: 4.68em;
+}
+
+
+.icones{
+
+    /* background-color: greenyellow; */
+    height: 21px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+
+.icones img{
+
+    width: 25px;
+    height:25px;
+    padding: 0 1px;
+}
+
+
+.contador-curtidas {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.875em;
+    color: black;
+    margin-left: 1.375em;
+    position: absolute;
+    top: 880px;
+}
+
+.icones {
+    /* background-color: rgba(128, 0, 128, 0.39); */
+    width: 4.25em;
+    height: 1.375em;
+    margin-top: 0.875em;
+    margin-left: 1.375em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-comentar {
+    margin-top: 1.0625em;
+    margin-left: 1.6em;
+}
+
+.linha {
+    margin-top: 3px;
+    color: #dcdcdc;
+}
+
+.comentar-post {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.75em;
+    color: #afafaf;
+    border: unset;
+}
+
+
+
+.btnpostar{
+    
+    background-color: rgba(38, 134, 204, 1);
+    border: rgb(80, 122, 151);
+    color: white;
+    width: 140px;
+    height: 27px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btncomentar {
+
+    border: solid 1px white;
+    cursor: pointer;
+    background-color: white;
+
+}
+
+
+.btncomentar img {
+
+    margin-bottom: 20px;
+}
+
+.foto-perfil{
+    border-radius: 100px;
+}
+
+.titulo-texto{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    font-weight: 450;
+    line-height: 30px;
+    color: black;
+    font-weight: bold;
+    margin-right: 3px;
+}
+
+
+
+
+
