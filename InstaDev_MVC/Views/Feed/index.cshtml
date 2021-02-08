@@ -51,7 +51,7 @@
     <div class="container-user">
 
         <div class="container-img">
-            <a><img src="~/img/thank-you 2.png" alt="imagem de perfil do marcos jeeves"></a>
+            <a asp-controller="Perfil" asp-action="Index"><img width="50" height="50" src="~/img/@ViewBag.Foto"></a>
         </div>
 
         <div class="container-text">
@@ -69,7 +69,7 @@
     <div class="titulo-postar">
 
         <div class="titulo-postar-img">
-            <a href="#"><img src="~/img/thank-you 3.png" alt="imagem do marcos jeeves"></a>
+            <a asp-controller="Perfil" asp-action="Index"><img border-radius="300" width="50" height="50" class="img-login" src="~/img/@ViewBag.Foto" alt="imagem do user logado"></a>
         </div>
 
         <div class="titulo-postar-texto">
@@ -111,12 +111,12 @@
 @foreach (Publicacao p in ViewBag.POSTS)
 {
 
-
+    
     <section class="box-post">
 
 
         <div class="header-post">
-            <a href="#"><img src="~/img/gabigordo 2.png" alt="imagem do usuario"></a>
+            <a asp-controller="Perfil" asp-action="Index"><img width="25" height="25" src="~/img/@ViewBag.Foto"></a>
             <div class="header-texto">
             </div>
         </div>
@@ -124,7 +124,7 @@
 
 
         <div class="img-post">
-            <img src="~/img_publicacao/@p.Imagem" />
+            <img class="img-do-post" src="~/img_publicacao/@p.Imagem" width="500" height="320" />
             <p class="img-description">@p.Legenda</p>
         </div>
 
@@ -135,16 +135,18 @@
             <form class="comment-form" method="POST" action='@Url.Action("Comentar")'>
 
                 
+                    
                 <div class="icones">
-                    
-                    
-                    <a asp-area="ícone para excluir post" asp-controller="Feed" asp-action="Excluir">
+            
+                        
+    <a asp-area="ícone para excluir post" asp-controller="Feed" asp-action="Delete" asp-route-id="@p.IdPublicacao">
                         <img src="~/img/lixeira.png" alt="imagem de uma lixeira">
                     </a>
 
-                    <button class="btncomentar" type="submit">
-                        <img src="~/img/balao.png" alt="imagem de balao">
-                    </button>
+            
+            <button class="btncomentar" type="submit">
+                <img src="~/img/balao.png" alt="imagem de balao">
+            </button>
 
                 
                 </div>
@@ -160,7 +162,9 @@
 
         </div>
 
-
+    </section>
+}
+        
         @* <p class="contador-curtidas">2077 curtidas</p> *@
 
 
@@ -179,7 +183,5 @@
         } 
     
     
-    </section>
 
 
-}

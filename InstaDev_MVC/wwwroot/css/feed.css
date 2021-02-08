@@ -338,7 +338,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
+    flex-wrap: wrap;
 }
 
 
@@ -346,6 +346,7 @@ body{
 
     color:black;
     text-align: center;
+    font-size: 12px;
 
 }
 
@@ -437,6 +438,16 @@ body{
 .btncomentar img {
 
     margin-bottom: 20px;
+}
+
+
+.container-img img {
+
+    border-radius: 5px;
+
+    width: 100px;
+
+
 }
 
 

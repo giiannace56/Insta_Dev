@@ -123,7 +123,7 @@ namespace InstaDev_MVC.Models
         {
             List<string> linhas = ReadAllLinesCSV(PATH);
 
-            linhas.RemoveAll( x => x.Split(";")[0] == IdPublicacao.ToString() );
+            linhas.RemoveAll( x => x.Split(";")[0] == id.ToString() );
 
             RewriteCSV(PATH, linhas);
         }

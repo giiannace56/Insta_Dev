@@ -14,12 +14,16 @@ namespace InstaDev_MVC.Controllers
         Publicacao Post = new Publicacao();
         Comentario Comment = new Comentario();
 
+        Usuario user = new Usuario();
+
         
         [Route("Listar")]
         public IActionResult Index()
         {
+            HttpContext.Session.GetString("_Username");
             ViewBag.POSTS = Post.ReadAll();
             ViewBag.COMMENTS = Comment.ListarComentarios();
+            ViewBag.FOTO = user.Foto;
             return View();
         }
         
@@ -79,7 +83,7 @@ namespace InstaDev_MVC.Controllers
         
         
         [Route("{id}")]
-        public IActionResult Excluir(int id)
+        public IActionResult Delete(int id)
         {
             
             Post.Delete(id);

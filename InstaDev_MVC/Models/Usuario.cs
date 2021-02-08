@@ -14,7 +14,7 @@ namespace InstaDev_MVC.Models
 
         public string Email { get; set; }
 
-        public string Foto { get; set; }
+        public string Foto = "fotopadrao.jpg";
         
         public string Username { get; set; }
         
@@ -101,7 +101,7 @@ namespace InstaDev_MVC.Models
                 usuario.Nome        = linha[1];
                 usuario.Username    = linha[2];
                 usuario.Senha       = linha[3];
-                usuario.IdUsuario   = int.Parse(linha[4]);
+                
 
                 usuarios.Add(usuario);
             }

@@ -41,7 +41,7 @@ namespace InstaDev_MVC.Controllers
             {
                 HttpContext.Session.SetString("_Username", logado.Split(";")[2]);
 
-                return LocalRedirect("~/");
+                return LocalRedirect("~/Feed/Listar");
             }
 
             Mensagem = "Dados incorretos, tente novamente...";
