@@ -47,6 +47,20 @@ namespace InstaDev_MVC.Controllers
             return LocalRedirect("~/Perfil/Listar");
         }
 
+        [Route("{id}")]
+        public IActionResult DeletePost(int id)
+        {   
+            pub.Delete(id);
+            ViewBag.Publicacoes = pub.ReadAll();
+            return LocalRedirect("~/Perfil/Listar");
+        }
+
+        [Route("Perfil/{id}")]
+        public IActionResult DeletarComentario(int id){
+            comentario.DeletarComentarioPost(id);
+
+            return LocalRedirect("~/Perfil/Listar");
+        }
 
     }
 }

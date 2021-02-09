@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/2b55e26e8a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/perfil.css">
 </head>
 
@@ -58,7 +59,7 @@
                 
                 <div class="publicacao">
                     <div class="imagem-pub">
-                            <img src="~/img_publicacao/@item.Imagem" alt="" >
+                        <img src="~/img_publicacao/@item.Imagem" alt="" >
                     </div>
                     
                     <div class="conteudo">
@@ -78,10 +79,13 @@
 
                         <div class="curtida">
                             <div class="curtir">
-                                <a><img src="/img/Vector.png" alt=""></a>
-                                <a href="#"><img src="/img/Vector2.svg" alt=""></a>
+                                <a><img src="/img/Vector.png" alt="Imagem de um coração"></a>
+                                <a href="#"><img src="/img/Vector2.svg" alt="Imagem de um balão de comentário"></a>
                                 <p>@ViewBag.Likes curtidas </p>
                             </div>
+                            
+                                <a asp-controller="Perfil" asp-action="DeletePost" asp-route-id="@item.IdPublicacao" ><i class="far fa-trash-alt" style="font-size: 20px; color: #000; margin-bottom: 1em; margin-left: 0.3em;"></i></a>
+                                
                         </div>
 
                         <div class="comentarios">
@@ -104,8 +108,11 @@
                                     @if(item.IdPublicacao == coment.IdPublicacao)
                                     {   
                                         <div class="comentario">
-                                            <p href="#"><a href="#">@ViewBag.USER</a> @coment.Mensagem </p>
-                                            <a href="#"><img src="/img/Vector.png" alt=""></a>                                        
+                                            @foreach (Usuario u in ViewBag.Usuario)
+                                            {
+                                                <p href="#"><a href="#">@u.Nome</a> @coment.Mensagem </p>
+                                            }
+                                            <a asp-controller="Perfil" asp-action="DeletarComentario" asp-route-id="@item.IdPublicacao"><img src="/img/Vector.png" alt=""></a>                                        
                                         </div>
                             
                                     }
