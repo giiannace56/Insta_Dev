@@ -97,26 +97,30 @@
                                     <a href="#"><img src="/img/Vector.png" alt=""></a>
                                 </div>
                                 
-                                @foreach(Comentario coment in ViewBag.Comentarios){
-                                    @foreach (Usuario usu in ViewBag.Usuario)
+                                @foreach(Comentario coment in ViewBag.COMMENTS){
+
+                                    Publicacao p = new Publicacao();
+
+                                    @if(item.IdPublicacao == coment.IdPublicacao)
                                     {   
                                         <div class="comentario">
-                                            <p><a href="#">@usu.Username</a>@coment.Mensagem </p>
+                                            <p href="#"><a href="#">@ViewBag.USER</a> @coment.Mensagem </p>
                                             <a href="#"><img src="/img/Vector.png" alt=""></a>                                        
                                         </div>
-                                        break;
+                            
                                     }
                                         
                                 }
                             </div>
                             
                         </div>                    
-                        <a href="#">Ver todos os 580 comentários </a>
+                        <a href="#">Ver todos os comentários </a>
                     </div>
                 </div>
                 <div class="comentar">
                     <form method="POST" action='@Url.Action("Comentar")'>
                         <input type="text" name="comentario" class="input-comentario" placeholder="Escreva um comentário">
+                        <input type="text" name="idPublicacao" class="input-comentario" style="display: none;" value="@item.IdPublicacao">
                         <button type="submit" style="display: none;"></button>
                     </form>
                 </div>
