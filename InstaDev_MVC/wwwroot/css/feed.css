@@ -276,27 +276,6 @@ body{
     margin-right: 42.76%;
 }
 
-.comments{
-
-    /* background-color:lightgreen; */
-    width: 95%;
-    height:auto;
-    max-height: 21px;
-    margin-left: 5%;
-    display:flex;
-}
-
-
-.mensagem-texto{
-
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 13px;
-    font-weight: 450;
-    line-height: 30px;
-    color: black;
-
-}
-
 
 .header-post {
     width: 100%;
@@ -444,6 +423,27 @@ body{
     border-radius: 100px;
 }
 
+
+
+.comments{
+
+    /* background-color:lightgreen; */
+    width: 95%;
+    height:auto;
+    max-height: 21px;
+    margin-left: 5%;
+    display:flex;
+}
+
+
+.comments p{
+
+    line-height: 20px;
+
+}
+
+
+
 .titulo-texto{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 13px;
@@ -453,6 +453,21 @@ body{
     font-weight: bold;
     margin-right: 3px;
 }
+
+
+.mensagem-texto{
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    font-weight: 450;
+    color:black;
+    padding-left: 12px;   /* espaçamento entre username e comentário */
+
+}
+
+
+
+
 
 
 

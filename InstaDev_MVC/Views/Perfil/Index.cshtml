@@ -22,7 +22,7 @@
                     </div>
 
                     <div class="dados">
-                        <h1>@item.Username</h1>
+                        <h1>Username:<br>@item.Username</h1>
 
                         <div class="estatisticas">
                             <a href="#">@ViewBag.NumeroDePublicacoes publicações</a>
@@ -31,7 +31,8 @@
                         </div>
 
                         <div class="nome-sair">
-                            <h2>@item.Nome</h2>
+                            
+                            <h2> <p>Nome:</p> @item.Nome</h2>
                             
                             <a asp-controller="Editar" asp-action="Index">Editar Perfil</a>
                             <a asp-area="Link para deslogar o usuário" asp-controller="Perfil" asp-action="Logout">Sair</a>
@@ -70,7 +71,7 @@
                             <div class="nome-endereco">
                                 @foreach (Usuario u in ViewBag.Usuario)
                                 {
-                                    <p>@u.Nome</p>
+                                    <p>@u.Username</p>
                                     break;
                                 }
                                 <p></p>
@@ -95,7 +96,7 @@
                                        
                                     @foreach (Usuario user in ViewBag.Usuario)
                                     {
-                                        <p style="font-weight: 500;"><a href="#" style="font-weight: 700;"> @user.Nome </a> @item.Legenda </p>
+                                        <p> <a href="#" font-weight="600">Legenda:</a> @item.Legenda </p>
                                         break;
                                     }
                                     <a href="#"><img src="/img/Vector.png" alt=""></a>
@@ -110,7 +111,7 @@
                                         <div class="comentario">
                                             @foreach (Usuario u in ViewBag.Usuario)
                                             {
-                                                <p href="#"><a href="#">@u.Nome</a> @coment.Mensagem </p>
+                                                <p href="#"> <a href="#" font-weight="600">@u.Username</a> @coment.Mensagem </p>
                                             }
                                             <a asp-controller="Perfil" asp-action="DeletarComentario" asp-route-id="@coment.IdComentario"> <i class="far fa-trash-alt"> </i></a>                                        
                                         </div>

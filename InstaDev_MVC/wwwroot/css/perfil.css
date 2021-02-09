@@ -195,7 +195,7 @@ body{
 }
 
 .nome-sair h2{
-    font-weight: 700;
+    font-weight:normal;
     font-size: 1em;
 }
 
@@ -209,6 +209,8 @@ body{
 .nome-sair a:hover{
     text-decoration: underline;
 }
+
+
 
 .linha{
     width: 100%;
@@ -311,7 +313,8 @@ body{
 }
 
 .nome-endereco p:nth-child(1){
-    font-weight: bold;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-bottom: 0.4em;
 }
 
@@ -367,9 +370,9 @@ body{
 }
 
 .comentario a{
-    color: #000;
+    color:black;
     font-size: 13px;
-    font-weight: 600;
+    font-weight: bold;
     font-family: var(--font);
     padding-right: 2em;
     text-decoration: none;
