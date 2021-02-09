@@ -121,12 +121,12 @@ namespace InstaDev_MVC.Models
         
         }
 
-        public void DeletarComentarioPost(int idPublicacao)
+        public void DeletarComentarioPost(int id)
         {
 
             List<string> linhas = ReadAllLinesCSV(path);
 
-            linhas.RemoveAll( x => x.Split(";")[2] == idPublicacao.ToString() );
+            linhas.RemoveAll( x => x.Split(";")[0] == id.ToString() );
 
             RewriteCSV(path, linhas);
 

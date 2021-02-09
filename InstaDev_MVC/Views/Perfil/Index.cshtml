@@ -95,7 +95,7 @@
                                        
                                     @foreach (Usuario user in ViewBag.Usuario)
                                     {
-                                        <p><a href="#"> @user.Nome </a> @item.Legenda </p>
+                                        <p style="font-weight: 500;"><a href="#" style="font-weight: 700;"> @user.Nome </a> @item.Legenda </p>
                                         break;
                                     }
                                     <a href="#"><img src="/img/Vector.png" alt=""></a>
@@ -112,7 +112,7 @@
                                             {
                                                 <p href="#"><a href="#">@u.Nome</a> @coment.Mensagem </p>
                                             }
-                                            <a asp-controller="Perfil" asp-action="DeletarComentario" asp-route-id="@item.IdPublicacao"><img src="/img/Vector.png" alt=""></a>                                        
+                                            <a asp-controller="Perfil" asp-action="DeletarComentario" asp-route-id="@coment.IdComentario"> <i class="far fa-trash-alt"> </i></a>                                        
                                         </div>
                             
                                     }
