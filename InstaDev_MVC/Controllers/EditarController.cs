@@ -63,7 +63,7 @@ namespace fake.Controllers
             
             if(form.Files.Count > 0)
             {
-                // Upload Início
+                
                 var file    = form.Files[0];
                 var folder  = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Imagem/Usuarios");
 
@@ -82,7 +82,7 @@ namespace fake.Controllers
             {
                 novoUsuario.Foto   = "fotopadrao.jpg";
             }
-            // Upload Final
+            
 
             usuarioModel.CadastrarUsuario(novoUsuario);
             ViewBag.Usuarios = usuarioModel.ReadAll();

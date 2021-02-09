@@ -13,7 +13,6 @@ namespace InstaDev_MVC.Controllers
         
         Publicacao Post = new Publicacao();
         Comentario Comment = new Comentario();
-
         Usuario user = new Usuario();
 
         

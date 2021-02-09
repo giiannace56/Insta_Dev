@@ -4,56 +4,62 @@
 }
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/edicaoperfil.css">
 </head>
+
 <body>
-    
-    
+
+
 
     <main>
         <section class="editar-perfil">
             <div class="content">
 
-                <div class="texto-editar" >
+                <div class="texto-editar">
                     <div class="texto-editar-perfil">
                         <h1>Editar Perfil</h1>
                     </div>
                 </div>
 
                 <aside class="editar">
+
                     <form method="POST" action='@Url.Action("Alterar")' enctype="multipart/form-data">
-                    <div class="perfil">
-                        <div class="conteudo alinhar-esquerda">
-                            <div class="Yes-baby"> 
-                            <img src="img/thank-you 2.png" alt="" >
+
+                        <div class="perfil">
+                            <div class="conteudo alinhar-esquerda">
+                                <div class="Yes-baby">
+                                    <img src="img/thank-you 2.png" alt="">
+
+                                </div>
+
+                                <div class="texto">
+                                    <h2>yes_baby</h2>
+
+                                    <div class="file-input">
+                                        <input asp-area="" asp-controller="Editar" asp-action="EditImagem" type="file"
+                                            name="Foto" id="Foto" class="file">
+                                        <label class="alterar" for="Foto">Alterar foto do perfil</label>
+                                    </div>
+
+                                </div>
 
                             </div>
-
-                            <div class="texto">
-                                <h2>yes_baby</h2>                           
-                               
-                                <div class="file-input">
-                                    <input asp-area="" asp-controller="Editar" asp-action="EditImagem" type="file" name="Foto" id="Foto" class="file">
-                                    <label class="alterar" for="Foto">Alterar foto do perfil</label>
-                                </div>                              
-                                
-                            </div>
-
                         </div>
-                    </div>
 
-                    
+
                         <div class="nome">
                             <div class="conteudo alinhar-esquerda">
                                 <h2>Nome</h2>
                                 <div class="preencher-nome">
                                     <input type="text" class="input-nome" placeholder="Marcos Jeeves" name="Nome">
                                     <div>
-                                        <p>Ajude as pessoas a descobrir sua conta usando o nome pelo qual você é conhecido: seu nome completo, apelido ou nome comercial.</p>
+                                        <p>Ajude as pessoas a descobrir sua conta usando o nome pelo qual você é
+                                            conhecido: seu nome completo, apelido ou nome comercial.</p>
                                         <p>Você pode alterar o seu nome apenas duas vezes a cada 14 dias.</p>
                                     </div>
                                 </div>
@@ -66,14 +72,18 @@
                             <div class="conteudo-usuario alinhar-esquerda">
                                 <h2>Nome de Usuário</h2>
                                 <div class="preencher-usuario">
-                                    
-                                        <input name="Username" type="text" class="input-nome-usuario" placeholder="yes_baby">
-                                        <div>
-                                            <p>Na maioria dos casos, você poderá alterar seu nome de usuário novamente para nascimento_tr por mais 14 dias.</p>
-                                            <p>Informações pessoais </p>
-                                            <p>Forneça suas informações pessoais, mesmo se a conta for usada para uma empresa, um animal de estimação ou outra coisa. Elas não farão parte do seu perfil público.</p>
-                                        </div>
-                                    
+
+                                    <input name="Username" type="text" class="input-nome-usuario"
+                                        placeholder="yes_baby">
+                                    <div>
+                                        <p>Na maioria dos casos, você poderá alterar seu nome de usuário novamente para
+                                            nascimento_tr por mais 14 dias.</p>
+                                        <p>Informações pessoais </p>
+                                        <p>Forneça suas informações pessoais, mesmo se a conta for usada para uma
+                                            empresa, um animal de estimação ou outra coisa. Elas não farão parte do seu
+                                            perfil público.</p>
+                                    </div>
+
                                 </div>
 
                             </div>
@@ -83,17 +93,20 @@
                             <div class="conteudo">
                                 <div class="endereco-email">
                                     <h2>E-mail</h2>
-                                    
-                                        <input name="Email" type="email" class="input-email" placeholder="yes_baby@gmail.com">
-                                    
+
+                                    <input name="Email" type="email" class="input-email"
+                                        placeholder="yes_baby@gmail.com">
+
                                 </div>
                                 <aside class="desativar-conta">
                                     <div class="botao-enviar">
-                                        <button type="submit" class="botao-alterar">Enviar</button> 
+                                        <button type="submit" class="botao-alterar">Enviar</button>
 
                                     </div>
                                     <div class="botao-desativar">
-                                       <a class="navbar-brand" asp-area="Link para deletar a conta" asp-controller="Editar" asp-action="Delete">Desativar minha conta definitivamente</a>
+                                        <a class="navbar-brand" asp-area="Link para deletar a conta"
+                                            asp-controller="Editar" asp-action="Delete">Desativar minha conta
+                                            definitivamente</a>
 
                                     </div>
                                 </aside>
@@ -110,4 +123,5 @@
 
 
 </body>
+
 </html>
