@@ -186,7 +186,7 @@ body{
 
 .dados h1{
     font-size: 1.5em;
-    font-weight:400;
+    font-weight: 400;
     padding-top: 7px;
 }
 
@@ -195,7 +195,7 @@ body{
 }
 
 .nome-sair h2{
-    font-weight:normal;
+    font-weight:700;
     font-size: 1em;
 }
 
