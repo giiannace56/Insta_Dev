@@ -31,7 +31,7 @@
                         </div>
 
                         <div class="nome-sair">
-                            <h2>@item.Nome</h2>
+                            <h2 line-height="20px"><br>@item.Nome</h2>
                             
                             <a asp-controller="Editar" asp-action="Index">Editar Perfil</a>
                             <a asp-area="Link para deslogar o usuário" asp-controller="Perfil" asp-action="Logout">Sair</a>
@@ -70,7 +70,7 @@
                             <div class="nome-endereco">
                                 @foreach (Usuario u in ViewBag.Usuario)
                                 {
-                                    <p>@u.Nome</p>
+                                    <p>user name:</p> <p>@u.Username</p>
                                     break;
                                 }
                                 <p></p>
@@ -95,7 +95,7 @@
                                        
                                     @foreach (Usuario user in ViewBag.Usuario)
                                     {
-                                        <p><a href="#"> @user.Nome </a> @item.Legenda </p>
+                                        <p><a href="#"> Legenda: </a> @item.Legenda </p>
                                         break;
                                     }
                                     <a href="#"><img src="/img/Vector.png" alt=""></a>
@@ -110,7 +110,7 @@
                                         <div class="comentario">
                                             @foreach (Usuario u in ViewBag.Usuario)
                                             {
-                                                <p href="#"><a href="#">@u.Nome</a> @coment.Mensagem </p>
+                                                <p href="#"><a href="#">@u.Username</a> @coment.Mensagem </p>
                                             }
                                             <a asp-controller="Perfil" asp-action="DeletarComentario" asp-route-id="@item.IdPublicacao"><img src="/img/Vector.png" alt=""></a>                                        
                                         </div>
