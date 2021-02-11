@@ -22,12 +22,18 @@ namespace InstaDev_MVC.Models
 
         
         private const string PATH = "Database/Usuario.csv";
+        private const string path = "Database/Editar.csv";
 
         
         Random idRandom = new Random();
 
-        private string PrepararLinha(Usuario user){
+        private string PrepararCadastro(Usuario user){
             return $"{user.Email};{user.Nome};{user.Username};{user.Senha};{user.IdUsuario}";
+        }
+
+        private string PrepareEditar(Usuario e)
+        {
+            return $"{e.Nome};{e.Username}; {e.Email}; {e.Foto};";
         }
 
         public int IdGenerator(){
@@ -37,8 +43,14 @@ namespace InstaDev_MVC.Models
         }
         public void CadastrarUsuario(Usuario e)
         {
-            string[] linhas = {PrepararLinha(e)};
+            string[] linhas = {PrepararCadastro(e)};
             File.AppendAllLines(PATH, linhas);
+        }
+        
+        public void CadastrarUsuarioEdicao(Usuario e)
+        {
+            string[] linhas = {PrepareEditar(e)};
+            File.AppendAllLines(path, linhas);
         }
         
         private const string PATHedit = "Database/Editar.csv";
@@ -49,12 +61,7 @@ namespace InstaDev_MVC.Models
 
         }            
 
-        private string Prepare(Usuario e)
-        {
-            return $"{e.Nome};{e.Username}; {e.Email}; {e.Foto};";
-        }
-
-        
+       
         public void EditarUsuario(Usuario e)
 
         {
@@ -62,7 +69,7 @@ namespace InstaDev_MVC.Models
             // Removemos a linha que tenha o código a ser alterado
             linhas.RemoveAll(x => x.Split(";")[0] == e.IdUsuario.ToString());
 
-            linhas.Add( Prepare(e));
+            linhas.Add( PrepareEditar(e));
 
             RewriteCSV(PATH, linhas);
 
@@ -75,13 +82,13 @@ namespace InstaDev_MVC.Models
             // Removemos a linha que tinha o código a ser alterado
             linhas.RemoveAll(x => x.Split(";")[0] == id.ToString());
 
-            // Reescreve o csv com as alterações
+            
             RewriteCSV(PATH, linhas);
         }
         
         public void Logar(Usuario userC)
         {   
-            string[] linha = { PrepararLinha (userC) };
+            string[] linha = { PrepararCadastro(userC) };
             File.AppendAllLines(PATH, linha);
         }
 

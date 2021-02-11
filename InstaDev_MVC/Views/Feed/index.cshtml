@@ -52,11 +52,11 @@
     <div class="container-user">
 
         <div class="container-img">
-            <a asp-controller="Perfil" asp-action="Index"><img class="foto-perfil" width="50" height="50" src="~/img/@ViewBag.Foto"></a>
+            <a asp-controller="Perfil" asp-action="Index"><img class="foto-perfil" width="50" height="50" src="~/img/fotopadrao.jpg"></a>
         </div>
 
         <div class="container-text">
-
+            <p>@ViewBag.USER</p>
         </div>
 
     </div>
@@ -70,7 +70,7 @@
     <div class="titulo-postar">
 
         <div class="titulo-postar-img">
-        <a asp-controller="Perfil" asp-action="Index"><img class="foto-perfil" width="50" height="50" class="img-login" src="~/img/Foto" alt="imagem do user logado"></a>
+        <a asp-controller="Perfil" asp-action="Index"><img class="foto-perfil" width="50" height="50" class="img-login" src="~/img/fotopadrao.jpg" alt="imagem do user logado"></a>
         </div>
                 
 
@@ -120,6 +120,7 @@
         <div class="header-post">
             <a asp-controller="Perfil" asp-action="Index"><img class = "foto-perfil" width="45" height="45" src="~/img/@ViewBag.Foto"></a>
             <div class="header-texto">
+            <p>@ViewBag.USER</p>
             </div>
         </div>
 
@@ -141,7 +142,7 @@
                 <div class="icones">
             
                         
-    <a asp-area="ícone para excluir post" asp-controller="Feed" asp-action="Delete" asp-route-id="@p.IdPublicacao">
+        <a asp-area="ícone para excluir post" asp-controller="Feed" asp-action="Delete" asp-route-id="@p.IdPublicacao">
                         <img src="~/img/lixeira.png" alt="imagem de uma lixeira">
                     </a>
 
@@ -156,6 +157,7 @@
 
                 <div class="input-comentar">
                     <input type="text" name="Mensagem" class="comentar-post" placeholder="Comentar...">
+                    <input type="text" name="idPublicacao" class="comentar-post" placeholder="Id" value="@p.IdPublicacao">
                     <hr class="linha" size="1" width="220">
                 </div>
 
@@ -163,26 +165,28 @@
             </form>
 
         </div>
-
+        
         @foreach (Comentario c in ViewBag.COMMENTS)
         {
             
             Usuario user = new Usuario();
         
-        
-        <div class="comments">
-
+            @if (p.IdPublicacao == c.IdPublicacao)
+            {
+                
+                <div class="comments">
+                    <p class="titulo-texto">@ViewBag.USER</p>
+                    <p class="mensagem-texto">@c.Mensagem</p>
+                </div>
+            }
             
-            <p class="titulo-texto">@ViewBag.USER</p>
-            <p class="mensagem-texto">@c.Mensagem</p>
-            
-        </div>
 
         } 
     </section>
 }
+
         
-        @* <p class="contador-curtidas">2077 curtidas</p> *@
+        
 
 
     

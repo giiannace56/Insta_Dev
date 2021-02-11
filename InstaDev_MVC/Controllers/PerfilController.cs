@@ -18,26 +18,12 @@ namespace InstaDev_MVC.Controllers
             ViewBag.Usuario = user.ReadAll();
             ViewBag.Publicacoes = pub.ReadAll();
             ViewBag.Foto = user.Foto;
-            ViewBag.Comentarios = comentario.ListarComentarios();
+            ViewBag.COMMENTS = comentario.ListarComentarios();
             ViewBag.NumeroDePublicacoes = pub.ContarPublicacoes();
+            ViewBag.USER = HttpContext.Session.GetString("_Username");
             return View();
         }
 
-        [Route("Comentario")]
-        public IActionResult Comentar(IFormCollection form){
-            
-            List<Comentario> ListaComentarios = new List<Comentario>();
-
-            Comentario coment = new Comentario();
-            coment.Mensagem = form["comentario"];
-            coment.IdComentario = 1;
-            coment.IdPublicacao = 2;
-
-            comentario.CriarComentario(coment);
-            // ViewBag.Comentarios = comentario.ListarComentarios();
-
-            return LocalRedirect("~/Perfil/Listar");
-        }
 
         [Route("Logout")]
         public IActionResult Logout()
@@ -46,6 +32,35 @@ namespace InstaDev_MVC.Controllers
             return LocalRedirect("~/Login");
         }
 
+
+        public IActionResult Comentar(IFormCollection form)
+        {
+            Comentario c = new Comentario();
+            c.IdComentario = c.GerarCodigo();
+            c.Mensagem = form["comentario"];
+            c.IdPublicacao = int.Parse(form["idPublicacao"]);
+            
+            
+            comentario.CriarComentario(c);            
+            ViewBag.COMMENTS = comentario.ListarComentarios();
+
+            return LocalRedirect("~/Perfil/Listar");
+        }
+
+        [Route("{id}")]
+        public IActionResult DeletePost(int id)
+        {   
+            pub.Delete(id);
+            ViewBag.Publicacoes = pub.ReadAll();
+            return LocalRedirect("~/Perfil/Listar");
+        }
+
+        [Route("Perfil/{id}")]
+        public IActionResult DeletarComentario(int id){
+            comentario.DeletarComentarioPost(id);
+
+            return LocalRedirect("~/Perfil/Listar");
+        }
 
     }
 }

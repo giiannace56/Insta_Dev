@@ -52,7 +52,7 @@ namespace InstaDev_MVC.Models
         
         public string PrepareCsv(Comentario c)
         {
-            return $"{c.IdComentario};{c.Mensagem}";
+            return $"{c.IdComentario};{c.Mensagem};{c.IdPublicacao}";
         }
 
 
@@ -111,6 +111,8 @@ namespace InstaDev_MVC.Models
                 Comentario Comentario = new Comentario();
                 Comentario.IdComentario = Int32.Parse(atributos[0]);
                 Comentario.Mensagem = atributos[1];
+                Comentario.IdPublicacao = Int32.Parse(atributos[2]);
+            
                 
                 ListaComentarios.Add(Comentario);
             }
@@ -118,8 +120,19 @@ namespace InstaDev_MVC.Models
             return ListaComentarios;
         
         }
+
+        public void DeletarComentarioPost(int id)
+        {
+
+            List<string> linhas = ReadAllLinesCSV(path);
+
+            linhas.RemoveAll( x => x.Split(";")[0] == id.ToString() );
+
+            RewriteCSV(path, linhas);
+
+        }
     
-    
+        
     
     
     

@@ -186,7 +186,7 @@ body{
 
 .dados h1{
     font-size: 1.5em;
-    font-weight:400;
+    font-weight: 400;
     padding-top: 7px;
 }
 
@@ -195,7 +195,7 @@ body{
 }
 
 .nome-sair h2{
-    font-weight: 700;
+    font-weight:700;
     font-size: 1em;
 }
 
@@ -209,6 +209,8 @@ body{
 .nome-sair a:hover{
     text-decoration: underline;
 }
+
+
 
 .linha{
     width: 100%;
@@ -262,11 +264,14 @@ body{
 .imagem-pub{
     width: 50%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .imagem-pub img{
     max-width: 100%;
-    height: 100%;
+    /* height: 100%; */
 }
 
 .conteudo{
@@ -308,7 +313,8 @@ body{
 }
 
 .nome-endereco p:nth-child(1){
-    font-weight: bold;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-bottom: 0.4em;
 }
 
@@ -326,6 +332,7 @@ body{
     display: flex;
     align-items: flex-end;
 }
+
 
 .curtir p{
     font-size: 13px;
@@ -363,9 +370,9 @@ body{
 }
 
 .comentario a{
-    color: #000;
+    color:black;
     font-size: 13px;
-    font-weight: 600;
+    font-weight: bold;
     font-family: var(--font);
     padding-right: 2em;
     text-decoration: none;

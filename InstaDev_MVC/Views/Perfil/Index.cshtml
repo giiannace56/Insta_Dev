@@ -1,9 +1,10 @@
-@model Publicacao
+git@model Publicacao
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/2b55e26e8a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/perfil.css">
 </head>
 
@@ -30,6 +31,7 @@
                         </div>
 
                         <div class="nome-sair">
+                            
                             <h2>@item.Nome</h2>
                             
                             <a asp-controller="Editar" asp-action="Index">Editar Perfil</a>
@@ -55,9 +57,10 @@
                 </div>
                 
                 @foreach (Publicacao item in ViewBag.Publicacoes){
+                
                 <div class="publicacao">
                     <div class="imagem-pub">
-                            <img src="~/img_publicacao/@item.Imagem" alt="" >
+                        <img src="~/img_publicacao/@item.Imagem" alt="" >
                     </div>
                     
                     <div class="conteudo">
@@ -68,7 +71,7 @@
                             <div class="nome-endereco">
                                 @foreach (Usuario u in ViewBag.Usuario)
                                 {
-                                    <p>@u.Nome</p>
+                                    <p>@u.Username</p>
                                     break;
                                 }
                                 <p></p>
@@ -77,10 +80,13 @@
 
                         <div class="curtida">
                             <div class="curtir">
-                                <a><img src="/img/Vector.png" alt=""></a>
-                                <a href="#"><img src="/img/Vector2.svg" alt=""></a>
+                                <a><img src="/img/Vector.png" alt="Imagem de um coração"></a>
+                                <a href="#"><img src="/img/Vector2.svg" alt="Imagem de um balão de comentário"></a>
                                 <p>@ViewBag.Likes curtidas </p>
                             </div>
+                            
+                                <a asp-controller="Perfil" asp-action="DeletePost" asp-route-id="@item.IdPublicacao" ><i class="far fa-trash-alt" style="font-size: 20px; color: #000; margin-bottom: 1em; margin-left: 0.3em;"></i></a>
+                                
                         </div>
 
                         <div class="comentarios">
@@ -90,29 +96,39 @@
                                        
                                     @foreach (Usuario user in ViewBag.Usuario)
                                     {
-                                        <p><a href="#"> @user.Nome </a> @item.Legenda </p>
+                                        <p> <a href="#" font-weight="600">Legenda:</a> @item.Legenda </p>
+                                        break;
                                     }
                                     <a href="#"><img src="/img/Vector.png" alt=""></a>
                                 </div>
                                 
-                                @foreach(Comentario coment in ViewBag.Comentarios){
-                                <div class="comentario">
-                                    @foreach (Usuario usu in ViewBag.Usuario)
+                                @foreach(Comentario coment in ViewBag.COMMENTS){
+
+                                    Publicacao p = new Publicacao();
+
+                                    @if(item.IdPublicacao == coment.IdPublicacao)
                                     {   
-                                        <p><a href="#">@usu.Username</a>@coment.Mensagem </p>
-                                        <a href="#"><img src="/img/Vector.png" alt=""></a>
+                                        <div class="comentario">
+                                            @foreach (Usuario u in ViewBag.Usuario)
+                                            {
+                                                <p> <a href="#">@u.Nome</a> @coment.Mensagem </p>
+                                            }
+                                            <a asp-controller="Perfil" asp-action="DeletarComentario" asp-route-id="@coment.IdComentario"> <i class="far fa-trash-alt"> </i></a>                                        
+                                        </div>
+                            
                                     }
-                                </div>
+                                        
                                 }
                             </div>
                             
                         </div>                    
-                        <a href="#">Ver todos os 580 comentários </a>
+                        <a href="#">Ver todos os comentários </a>
                     </div>
                 </div>
                 <div class="comentar">
                     <form method="POST" action='@Url.Action("Comentar")'>
                         <input type="text" name="comentario" class="input-comentario" placeholder="Escreva um comentário">
+                        <input type="text" name="idPublicacao" class="input-comentario" style="display: none;" value="@item.IdPublicacao">
                         <button type="submit" style="display: none;"></button>
                     </form>
                 </div>

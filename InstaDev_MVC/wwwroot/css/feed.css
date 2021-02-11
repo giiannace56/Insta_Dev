@@ -276,27 +276,6 @@ body{
     margin-right: 42.76%;
 }
 
-.comments{
-
-    /* background-color:lightgreen; */
-    width: 95%;
-    height:auto;
-    max-height: 21px;
-    margin-left: 5%;
-    display:flex;
-}
-
-
-.mensagem-texto{
-
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 13px;
-    font-weight: 450;
-    line-height: 30px;
-    color: black;
-
-}
-
 
 .header-post {
     width: 100%;
@@ -321,15 +300,11 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 600;
     font-size: 0.8125em;
-    color: black;
+    color:black;
+    margin-top: 1em;
 }
 
-.header-texto p:nth-child(2) {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 0.8125em;
-    color: black;
-    padding-top: 0.125em;
-}
+
 
 .img-post {
     width: 100%;
@@ -444,6 +419,27 @@ body{
     border-radius: 100px;
 }
 
+
+
+.comments{
+
+    /* background-color:lightgreen; */
+    width: 95%;
+    height:auto;
+    max-height: 21px;
+    margin-left: 5%;
+    display:flex;
+}
+
+
+.comments p{
+
+    line-height: 20px;
+
+}
+
+
+
 .titulo-texto{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 13px;
@@ -453,6 +449,21 @@ body{
     font-weight: bold;
     margin-right: 3px;
 }
+
+
+.mensagem-texto{
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    font-weight: 450;
+    color:black;
+    padding-left: 12px;   /* espaçamento entre username e comentário */
+
+}
+
+
+
+
 
 
 
